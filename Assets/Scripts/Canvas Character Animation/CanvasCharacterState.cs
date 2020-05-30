@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum AnimationState {
+    Idle, Anger
+}
 public class CanvasCharacterState : MonoBehaviour {
     public CanvasCharacter parentCharacter; 
 
     [Tooltip("What does this state depict the character doing? Example: Idle, Sitting, etc")]
-    public string stateName;
+    public AnimationState animationState;
     public float animationSpeed;
     private float lastFrameChange;
     private int currentFrame;

@@ -40,5 +40,29 @@ namespace Valve.VR
                 return SteamVR_Actions.main_SnapTurnRight;
             }
         }
+        
+        public virtual SteamVR_Action_Boolean AdvanceText
+        {
+            get
+            {
+                return SteamVR_Actions.main_AdvanceText;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean SkipSentence
+        {
+            get
+            {
+                return SteamVR_Actions.main_SkipSentence;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean StartDialog
+        {
+            get
+            {
+                return SteamVR_Actions.main_StartDialog;
+            }
+        }
     }
 }

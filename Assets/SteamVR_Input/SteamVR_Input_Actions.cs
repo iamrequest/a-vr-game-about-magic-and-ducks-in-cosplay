@@ -47,6 +47,12 @@ namespace Valve.VR
         
         private static SteamVR_Action_Boolean p_main_SnapTurnRight;
         
+        private static SteamVR_Action_Boolean p_main_AdvanceText;
+        
+        private static SteamVR_Action_Boolean p_main_SkipSentence;
+        
+        private static SteamVR_Action_Boolean p_main_StartDialog;
+        
         public static SteamVR_Action_Boolean default_InteractUI
         {
             get
@@ -167,6 +173,30 @@ namespace Valve.VR
             }
         }
         
+        public static SteamVR_Action_Boolean main_AdvanceText
+        {
+            get
+            {
+                return SteamVR_Actions.p_main_AdvanceText.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Boolean main_SkipSentence
+        {
+            get
+            {
+                return SteamVR_Actions.p_main_SkipSentence.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Boolean main_StartDialog
+        {
+            get
+            {
+                return SteamVR_Actions.p_main_StartDialog.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
         private static void InitializeActionArrays()
         {
             Valve.VR.SteamVR_Input.actions = new Valve.VR.SteamVR_Action[] {
@@ -184,7 +214,10 @@ namespace Valve.VR
                     SteamVR_Actions.default_Haptic,
                     SteamVR_Actions.main_SmoothLocomotion,
                     SteamVR_Actions.main_SnapTurnLeft,
-                    SteamVR_Actions.main_SnapTurnRight};
+                    SteamVR_Actions.main_SnapTurnRight,
+                    SteamVR_Actions.main_AdvanceText,
+                    SteamVR_Actions.main_SkipSentence,
+                    SteamVR_Actions.main_StartDialog};
             Valve.VR.SteamVR_Input.actionsIn = new Valve.VR.ISteamVR_Action_In[] {
                     SteamVR_Actions.default_InteractUI,
                     SteamVR_Actions.default_Teleport,
@@ -199,7 +232,10 @@ namespace Valve.VR
                     SteamVR_Actions.default_SnapTurnRight,
                     SteamVR_Actions.main_SmoothLocomotion,
                     SteamVR_Actions.main_SnapTurnLeft,
-                    SteamVR_Actions.main_SnapTurnRight};
+                    SteamVR_Actions.main_SnapTurnRight,
+                    SteamVR_Actions.main_AdvanceText,
+                    SteamVR_Actions.main_SkipSentence,
+                    SteamVR_Actions.main_StartDialog};
             Valve.VR.SteamVR_Input.actionsOut = new Valve.VR.ISteamVR_Action_Out[] {
                     SteamVR_Actions.default_Haptic};
             Valve.VR.SteamVR_Input.actionsVibration = new Valve.VR.SteamVR_Action_Vibration[] {
@@ -215,7 +251,10 @@ namespace Valve.VR
                     SteamVR_Actions.default_SnapTurnLeft,
                     SteamVR_Actions.default_SnapTurnRight,
                     SteamVR_Actions.main_SnapTurnLeft,
-                    SteamVR_Actions.main_SnapTurnRight};
+                    SteamVR_Actions.main_SnapTurnRight,
+                    SteamVR_Actions.main_AdvanceText,
+                    SteamVR_Actions.main_SkipSentence,
+                    SteamVR_Actions.main_StartDialog};
             Valve.VR.SteamVR_Input.actionsSingle = new Valve.VR.SteamVR_Action_Single[] {
                     SteamVR_Actions.default_Squeeze};
             Valve.VR.SteamVR_Input.actionsVector2 = new Valve.VR.SteamVR_Action_Vector2[] {
@@ -235,7 +274,10 @@ namespace Valve.VR
                     SteamVR_Actions.default_SnapTurnRight,
                     SteamVR_Actions.main_SmoothLocomotion,
                     SteamVR_Actions.main_SnapTurnLeft,
-                    SteamVR_Actions.main_SnapTurnRight};
+                    SteamVR_Actions.main_SnapTurnRight,
+                    SteamVR_Actions.main_AdvanceText,
+                    SteamVR_Actions.main_SkipSentence,
+                    SteamVR_Actions.main_StartDialog};
         }
         
         private static void PreInitActions()
@@ -255,6 +297,9 @@ namespace Valve.VR
             SteamVR_Actions.p_main_SmoothLocomotion = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/Main/in/SmoothLocomotion")));
             SteamVR_Actions.p_main_SnapTurnLeft = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/Main/in/SnapTurnLeft")));
             SteamVR_Actions.p_main_SnapTurnRight = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/Main/in/SnapTurnRight")));
+            SteamVR_Actions.p_main_AdvanceText = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/Main/in/AdvanceText")));
+            SteamVR_Actions.p_main_SkipSentence = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/Main/in/SkipSentence")));
+            SteamVR_Actions.p_main_StartDialog = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/Main/in/StartDialog")));
         }
     }
 }

@@ -23,9 +23,20 @@ public class CanvasCharacter : MonoBehaviour {
     [Header("Animation")]
     public CanvasCharacterState initialAnimationState;
     public CanvasCharacterState activeAnimationState;
-    public List<CanvasCharacterState> animationStates;
+
+    [Tooltip("This gameobject stores all of the animation states. Used for init")]
+    public GameObject animationStatesGameObject;
+    private List<CanvasCharacterState> animationStates;
 
     private void Start() {
+        // -- Populate our available animation states
+        animationStates = new List<CanvasCharacterState>();
+
+        CanvasCharacterState[] states = animationStatesGameObject.GetComponents<CanvasCharacterState>();
+        foreach (CanvasCharacterState state in states) {
+            animationStates.Add(state);
+        }
+
         SetAnimationState(initialAnimationState);
     }
 
@@ -70,14 +81,14 @@ public class CanvasCharacter : MonoBehaviour {
         activeAnimationState = newState;
     }
 
-    public void SetAnimationState(string newStateName) {
+    public void SetAnimationState(AnimationState animationState) {
         // Find the state that has the given state name
         CanvasCharacterState state;
         try {
-            state = animationStates.Find(s => s.stateName == newStateName);
+            state = animationStates.Find(s => s.animationState == animationState);
             SetAnimationState(state);
-        } catch (ArgumentNullException e) {
-            Debug.LogError("Unable to find state for this character with a state of " + newStateName);
+        } catch (ArgumentNullException) {
+            Debug.LogError("Unable to find state for this character with a state of " + animationState.ToString());
         }
     }
 }
