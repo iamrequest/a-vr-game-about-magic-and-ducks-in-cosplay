@@ -27,6 +27,9 @@ public class DialogManager : MonoBehaviour {
     private float timeSinceLastLetterTyped;
     private bool completedCurrentSentence;
 
+    public AudioSource audioSource;
+    public AudioClip typingAudio;
+
     void Awake() {
         sentences = new Queue<Sentence>();
         completedCurrentSentence = true;
@@ -101,7 +104,10 @@ public class DialogManager : MonoBehaviour {
         foreach (char letter in currentSentence.text.ToCharArray()) {
             // If the player hit the (figurative) B button, skip the dialog to the end.
             if (skipCurrentSentence) {
+                // -- Skip through all the audio
                 textUI.text = currentSentence.text;
+                audioSource.PlayOneShot(typingAudio);
+
                 completedCurrentSentence = true;
                 yield break;
             }
@@ -112,8 +118,11 @@ public class DialogManager : MonoBehaviour {
                 yield return null;
             } while (dialogSpeed > timeSinceLastLetterTyped);
 
+            // -- Type a single character
             timeSinceLastLetterTyped = 0f;
             textUI.text += letter;
+            audioSource.PlayOneShot(typingAudio);
+
             yield return null;
         }
 

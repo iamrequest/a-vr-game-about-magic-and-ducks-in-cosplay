@@ -78,6 +78,26 @@
       "name": "/actions/Main/in/StartDialog",
       "type": "boolean",
       "requirement": "mandatory"
+    },
+    {
+      "name": "/actions/Main/in/HeadsetOnHead",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/Main/in/Pose",
+      "type": "pose"
+    },
+    {
+      "name": "/actions/Main/in/SkeletonLeftHand",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/left",
+      "requirement": "suggested"
+    },
+    {
+      "name": "/actions/Main/in/SkeletonRightHand",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/right"
     }
   ],
   "action_sets": [
@@ -159,7 +179,11 @@
       "/actions/Main/in/SnapTurnLeft": "Snap Turn Left",
       "/actions/Main/in/AdvanceText": "Advance Text",
       "/actions/Main/in/SkipSentence": "Skip CurrentSentence",
-      "/actions/Main/in/StartDialog": "Start Dialog"
+      "/actions/Main/in/StartDialog": "Start Dialog",
+      "/actions/Main/in/HeadsetOnHead": "Headset on head (proximity sensor)",
+      "/actions/Main/in/Pose": "Pose",
+      "/actions/Main/in/SkeletonLeftHand": "Skeleton (Left)",
+      "/actions/Main/in/SkeletonRightHand": "Skeleton (Right)"
     }
   ]
 }

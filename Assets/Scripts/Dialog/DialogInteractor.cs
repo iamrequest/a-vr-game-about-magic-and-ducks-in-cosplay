@@ -16,6 +16,9 @@ public class DialogInteractor : MonoBehaviour {
     void Start() {
         advanceTextAction.AddOnStateUpListener(AdvanceText, SteamVR_Input_Sources.Any);
         skipSentenceAction.AddOnStateUpListener(SkipSentence, SteamVR_Input_Sources.Any);
+
+        ControllerButtonHints.ShowButtonHint(Player.instance.rightHand, advanceTextAction);
+        ControllerButtonHints.ShowButtonHint(Player.instance.rightHand, skipSentenceAction);
     }
 
     // Update is called once per frame

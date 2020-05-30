@@ -70,6 +70,8 @@ public class CanvasCharacter : MonoBehaviour {
     }
 
     public void SetAnimationState(CanvasCharacterState newState) {
+        if (activeAnimationState == newState) return;
+
         // Phase out of the previous state
         if (activeAnimationState != null) {
             activeAnimationState.OnStateExit();

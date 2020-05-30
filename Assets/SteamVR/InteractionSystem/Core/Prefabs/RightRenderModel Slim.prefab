@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 847a4fd831847974bb8d16b469b643e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handPrefab: {fileID: 7411073862402120261, guid: 2c6277b5db2aa14448f2aa3f15b5a262,
+  handPrefab: {fileID: 7411484525616256091, guid: 2c6277b5db2aa14448f2aa3f15b5a262,
     type: 3}
   displayHandByDefault: 1
   controllerPrefab: {fileID: 1000011460529826, guid: e789c2cc0c98a4c4198a4033fb8ccf96,

@@ -53,6 +53,14 @@ namespace Valve.VR
         
         private static SteamVR_Action_Boolean p_main_StartDialog;
         
+        private static SteamVR_Action_Boolean p_main_HeadsetOnHead;
+        
+        private static SteamVR_Action_Pose p_main_Pose;
+        
+        private static SteamVR_Action_Skeleton p_main_SkeletonLeftHand;
+        
+        private static SteamVR_Action_Skeleton p_main_SkeletonRightHand;
+        
         public static SteamVR_Action_Boolean default_InteractUI
         {
             get
@@ -197,6 +205,38 @@ namespace Valve.VR
             }
         }
         
+        public static SteamVR_Action_Boolean main_HeadsetOnHead
+        {
+            get
+            {
+                return SteamVR_Actions.p_main_HeadsetOnHead.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Pose main_Pose
+        {
+            get
+            {
+                return SteamVR_Actions.p_main_Pose.GetCopy<SteamVR_Action_Pose>();
+            }
+        }
+        
+        public static SteamVR_Action_Skeleton main_SkeletonLeftHand
+        {
+            get
+            {
+                return SteamVR_Actions.p_main_SkeletonLeftHand.GetCopy<SteamVR_Action_Skeleton>();
+            }
+        }
+        
+        public static SteamVR_Action_Skeleton main_SkeletonRightHand
+        {
+            get
+            {
+                return SteamVR_Actions.p_main_SkeletonRightHand.GetCopy<SteamVR_Action_Skeleton>();
+            }
+        }
+        
         private static void InitializeActionArrays()
         {
             Valve.VR.SteamVR_Input.actions = new Valve.VR.SteamVR_Action[] {
@@ -217,7 +257,11 @@ namespace Valve.VR
                     SteamVR_Actions.main_SnapTurnRight,
                     SteamVR_Actions.main_AdvanceText,
                     SteamVR_Actions.main_SkipSentence,
-                    SteamVR_Actions.main_StartDialog};
+                    SteamVR_Actions.main_StartDialog,
+                    SteamVR_Actions.main_HeadsetOnHead,
+                    SteamVR_Actions.main_Pose,
+                    SteamVR_Actions.main_SkeletonLeftHand,
+                    SteamVR_Actions.main_SkeletonRightHand};
             Valve.VR.SteamVR_Input.actionsIn = new Valve.VR.ISteamVR_Action_In[] {
                     SteamVR_Actions.default_InteractUI,
                     SteamVR_Actions.default_Teleport,
@@ -235,13 +279,18 @@ namespace Valve.VR
                     SteamVR_Actions.main_SnapTurnRight,
                     SteamVR_Actions.main_AdvanceText,
                     SteamVR_Actions.main_SkipSentence,
-                    SteamVR_Actions.main_StartDialog};
+                    SteamVR_Actions.main_StartDialog,
+                    SteamVR_Actions.main_HeadsetOnHead,
+                    SteamVR_Actions.main_Pose,
+                    SteamVR_Actions.main_SkeletonLeftHand,
+                    SteamVR_Actions.main_SkeletonRightHand};
             Valve.VR.SteamVR_Input.actionsOut = new Valve.VR.ISteamVR_Action_Out[] {
                     SteamVR_Actions.default_Haptic};
             Valve.VR.SteamVR_Input.actionsVibration = new Valve.VR.SteamVR_Action_Vibration[] {
                     SteamVR_Actions.default_Haptic};
             Valve.VR.SteamVR_Input.actionsPose = new Valve.VR.SteamVR_Action_Pose[] {
-                    SteamVR_Actions.default_Pose};
+                    SteamVR_Actions.default_Pose,
+                    SteamVR_Actions.main_Pose};
             Valve.VR.SteamVR_Input.actionsBoolean = new Valve.VR.SteamVR_Action_Boolean[] {
                     SteamVR_Actions.default_InteractUI,
                     SteamVR_Actions.default_Teleport,
@@ -254,7 +303,8 @@ namespace Valve.VR
                     SteamVR_Actions.main_SnapTurnRight,
                     SteamVR_Actions.main_AdvanceText,
                     SteamVR_Actions.main_SkipSentence,
-                    SteamVR_Actions.main_StartDialog};
+                    SteamVR_Actions.main_StartDialog,
+                    SteamVR_Actions.main_HeadsetOnHead};
             Valve.VR.SteamVR_Input.actionsSingle = new Valve.VR.SteamVR_Action_Single[] {
                     SteamVR_Actions.default_Squeeze};
             Valve.VR.SteamVR_Input.actionsVector2 = new Valve.VR.SteamVR_Action_Vector2[] {
@@ -262,7 +312,9 @@ namespace Valve.VR
             Valve.VR.SteamVR_Input.actionsVector3 = new Valve.VR.SteamVR_Action_Vector3[0];
             Valve.VR.SteamVR_Input.actionsSkeleton = new Valve.VR.SteamVR_Action_Skeleton[] {
                     SteamVR_Actions.default_SkeletonLeftHand,
-                    SteamVR_Actions.default_SkeletonRightHand};
+                    SteamVR_Actions.default_SkeletonRightHand,
+                    SteamVR_Actions.main_SkeletonLeftHand,
+                    SteamVR_Actions.main_SkeletonRightHand};
             Valve.VR.SteamVR_Input.actionsNonPoseNonSkeletonIn = new Valve.VR.ISteamVR_Action_In[] {
                     SteamVR_Actions.default_InteractUI,
                     SteamVR_Actions.default_Teleport,
@@ -277,7 +329,8 @@ namespace Valve.VR
                     SteamVR_Actions.main_SnapTurnRight,
                     SteamVR_Actions.main_AdvanceText,
                     SteamVR_Actions.main_SkipSentence,
-                    SteamVR_Actions.main_StartDialog};
+                    SteamVR_Actions.main_StartDialog,
+                    SteamVR_Actions.main_HeadsetOnHead};
         }
         
         private static void PreInitActions()
@@ -300,6 +353,10 @@ namespace Valve.VR
             SteamVR_Actions.p_main_AdvanceText = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/Main/in/AdvanceText")));
             SteamVR_Actions.p_main_SkipSentence = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/Main/in/SkipSentence")));
             SteamVR_Actions.p_main_StartDialog = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/Main/in/StartDialog")));
+            SteamVR_Actions.p_main_HeadsetOnHead = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/Main/in/HeadsetOnHead")));
+            SteamVR_Actions.p_main_Pose = ((SteamVR_Action_Pose)(SteamVR_Action.Create<SteamVR_Action_Pose>("/actions/Main/in/Pose")));
+            SteamVR_Actions.p_main_SkeletonLeftHand = ((SteamVR_Action_Skeleton)(SteamVR_Action.Create<SteamVR_Action_Skeleton>("/actions/Main/in/SkeletonLeftHand")));
+            SteamVR_Actions.p_main_SkeletonRightHand = ((SteamVR_Action_Skeleton)(SteamVR_Action.Create<SteamVR_Action_Skeleton>("/actions/Main/in/SkeletonRightHand")));
         }
     }
 }
