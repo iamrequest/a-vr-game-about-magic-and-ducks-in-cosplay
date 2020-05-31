@@ -701,29 +701,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 873330524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49e82021b0a059a4990f228518bfa777, type: 3}
+  m_Script: {fileID: 11500000, guid: d22b3ee3b24a40b44bdc305bdc9fa3ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogManager: {fileID: 873330529}
-  startingDialog:
-  - animationState: 0
-    currentSpeaker: 0
-    text: oh hey there bud how goes
-  - animationState: 0
-    currentSpeaker: 1
-    text: oh ya know, it be goin
-  - animationState: 0
-    currentSpeaker: 0
-    text: neat
-  - animationState: 0
-    currentSpeaker: 0
-    text: so like
-  - animationState: 1
-    currentSpeaker: 0
-    text: what am i supposed to do again?
-  - animationState: 0
-    currentSpeaker: 1
-    text: light the darn bonfire guy
+  dialogManager: {fileID: 0}
+  conversations:
+  - sentences:
+    - animationState: 0
+      currentSpeaker: 0
+      text: yobb
 --- !u!114 &873330529
 MonoBehaviour:
   m_ObjectHideFlags: 0

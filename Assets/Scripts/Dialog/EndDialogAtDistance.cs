@@ -18,7 +18,6 @@ public class EndDialogAtDistance : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        Debug.Log("Dialog active: " + dialogManager.isDialogActive);
         if (dialogManager.isDialogActive) {
             Vector3 positionDelta = dialogManager.transform.position - Player.instance.hmdTransform.transform.position;
 
@@ -27,8 +26,6 @@ public class EndDialogAtDistance : MonoBehaviour {
             if (sqrDistance > maxConversationDistance * maxConversationDistance) {
                 dialogManager.EndDialogEarly();
             }
-
-            Debug.Log("Distance to dialog manager: " + sqrDistance);
         }
     }
 }
