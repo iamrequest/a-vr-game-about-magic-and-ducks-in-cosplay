@@ -15,5 +15,13 @@ public abstract class BaseDialog : MonoBehaviour {
     //    onDialogComplete.Invoke();
     //}
 
+    private void Start() {
+        if (dialogManager == null) {
+            if (TryGetComponent(out DialogManager dialogManager)) {
+                this.dialogManager = dialogManager;
+            }
+        }
+    }
+
     public abstract void StartDialog();
 }

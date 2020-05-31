@@ -16,7 +16,7 @@ public class RandomDialog : BaseDialog {
 
     public override void StartDialog() {
         // Pick a random dialog to say
-        int convoIndex = Random.Range(0, conversations.Count - 1);
+        int convoIndex = Random.Range(0, conversations.Count);
 
         dialogManager.StartDialog(conversations[convoIndex].sentences, true);
     }

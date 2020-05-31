@@ -6,14 +6,30 @@ using UnityEditor;
 [CustomEditor(typeof(RandomDialog))]
 public class RandomDialogInspector : Editor {
     private List<bool> expandSentences;
-    private List<string> convoLabels;
+    public List<string> convoLabels;
 
     public void Reset() {
+        RandomDialog dialog = target as RandomDialog;
+
+        // -- These fields don't serialize properly, so they get overwritten on play mode
+        // Initialize them manually
         if (expandSentences == null) {
             expandSentences = new List<bool>();
+            foreach(Conversation c in dialog.conversations) {
+                expandSentences.Add(false);
+            }
         }
         if (convoLabels == null) {
             convoLabels = new List<string>();
+            for(int i = 0; i < dialog.conversations.Count; i++) {
+                // -- Populate the conversation TL;DR if possible
+                if (dialog.conversations[i].sentences[0] != null &&
+                    dialog.conversations[i].sentences[0].text != "") {
+                    convoLabels.Add(dialog.conversations[i].sentences[0].text);
+                } else {
+                    convoLabels.Add("Conversation " + i);
+                }
+            }
         }
     }
 
