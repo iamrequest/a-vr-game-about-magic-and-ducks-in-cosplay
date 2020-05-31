@@ -67,7 +67,7 @@ public class DialogInteractor : MonoBehaviour {
                 }
             }
         } else {
-            lineRenderer.SetPosition(1, hand.transform.forward * raycastDistance);
+            lineRenderer.SetPosition(1, hand.transform.position + hand.transform.forward * raycastDistance);
         }
 
         // -- Next dialog line

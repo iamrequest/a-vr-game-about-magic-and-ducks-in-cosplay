@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum DialogSpeaker {
-    Me, Wizard
+   Me, Wizard, Magician
 }
 public class SpeakerManager : MonoBehaviour {
     public static SpeakerManager instance;

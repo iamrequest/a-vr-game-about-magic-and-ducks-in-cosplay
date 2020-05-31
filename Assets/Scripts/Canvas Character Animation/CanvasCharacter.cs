@@ -14,7 +14,7 @@ public class CanvasCharacter : MonoBehaviour {
 
     [Header("Rotating the Canvas")]
     public Transform canvasTransform;
-    public Image imageUI;
+    public SpriteRenderer imageUI;
 
     // Typically, we only want to rotate along the Y axis.
     public bool constrainToYAxis;
