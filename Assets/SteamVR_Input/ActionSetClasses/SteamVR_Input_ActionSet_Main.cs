@@ -41,11 +41,11 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean AdvanceText
+        public virtual SteamVR_Action_Boolean DialogInteract
         {
             get
             {
-                return SteamVR_Actions.main_AdvanceText;
+                return SteamVR_Actions.main_DialogInteract;
             }
         }
         
@@ -54,14 +54,6 @@ namespace Valve.VR
             get
             {
                 return SteamVR_Actions.main_SkipSentence;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean StartDialog
-        {
-            get
-            {
-                return SteamVR_Actions.main_StartDialog;
             }
         }
         

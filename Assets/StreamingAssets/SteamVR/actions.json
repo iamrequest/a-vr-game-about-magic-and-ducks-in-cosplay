@@ -66,18 +66,13 @@
       "type": "boolean"
     },
     {
-      "name": "/actions/Main/in/AdvanceText",
+      "name": "/actions/Main/in/DialogInteract",
       "type": "boolean",
       "requirement": "mandatory"
     },
     {
       "name": "/actions/Main/in/SkipSentence",
       "type": "boolean"
-    },
-    {
-      "name": "/actions/Main/in/StartDialog",
-      "type": "boolean",
-      "requirement": "mandatory"
     },
     {
       "name": "/actions/Main/in/HeadsetOnHead",
@@ -177,13 +172,12 @@
       "/actions/Main/in/SmoothLocomotion": "Smooth Locomotion",
       "/actions/Main/in/SnapTurnRight": "Snap Turn Right",
       "/actions/Main/in/SnapTurnLeft": "Snap Turn Left",
-      "/actions/Main/in/AdvanceText": "Advance Text",
       "/actions/Main/in/SkipSentence": "Skip CurrentSentence",
-      "/actions/Main/in/StartDialog": "Start Dialog",
       "/actions/Main/in/HeadsetOnHead": "Headset on head (proximity sensor)",
       "/actions/Main/in/Pose": "Pose",
       "/actions/Main/in/SkeletonLeftHand": "Skeleton (Left)",
-      "/actions/Main/in/SkeletonRightHand": "Skeleton (Right)"
+      "/actions/Main/in/SkeletonRightHand": "Skeleton (Right)",
+      "/actions/Main/in/DialogInteract": "Start dialog / next sentence"
     }
   ]
 }

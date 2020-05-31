@@ -8,11 +8,8 @@ public class DialogManager : MonoBehaviour {
     private Queue<Sentence> sentences;
     private bool skipCurrentSentence;
     private Sentence currentSentence;
-    public bool isDialogActive {
-        get {
-            return currentSentence != null;
-        }
-    }
+
+    public bool isDialogActive { get; private set; }
 
     [Header("UI Elements")]
     public CanvasCharacter canvasCharacter;
@@ -37,6 +34,7 @@ public class DialogManager : MonoBehaviour {
 
     public void StartDialog(Sentence newSentence, bool clearExistingDialog) {
         animator.SetBool("isDialogBoxOpen", true);
+        isDialogActive = true;
 
         if (clearExistingDialog) {
             sentences.Clear();
@@ -51,8 +49,7 @@ public class DialogManager : MonoBehaviour {
     }
     public void StartDialog(List<Sentence> newSentences, bool clearExistingDialog) {
         animator.SetBool("isDialogBoxOpen", true);
-
-        Player.instance.GetComponent<DialogInteractor>().activeDialogManager = this;
+        isDialogActive = true;
 
         if (clearExistingDialog) {
             sentences.Clear();
@@ -88,8 +85,13 @@ public class DialogManager : MonoBehaviour {
         StartCoroutine(TypeSentence());
     }
 
+    public void EndDialogEarly() {
+        sentences.Clear();
+        EndDialog();
+    }
     private void EndDialog() {
         textUI.text = "";
+        isDialogActive = false;
         completedCurrentSentence = true;
         animator.SetBool("isDialogBoxOpen", false);
     }
@@ -102,6 +104,13 @@ public class DialogManager : MonoBehaviour {
 
         // TODO: Wait for opening animation
         foreach (char letter in currentSentence.text.ToCharArray()) {
+            // If the dialog ended early for some reason, stop this typing coroutine
+            //  This stops a bug where old text can bleed into a new convo when the player ends dialog early
+            //  and then starts a new dialog quickly.
+            if (!isDialogActive) {
+                yield break;
+            }
+
             // If the player hit the (figurative) B button, skip the dialog to the end.
             if (skipCurrentSentence) {
                 // -- Skip through all the audio
