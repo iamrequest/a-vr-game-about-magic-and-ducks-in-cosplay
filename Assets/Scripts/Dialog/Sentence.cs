@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class Sentence : MonoBehaviour {
+public class Sentence {
     public AnimationState animationState;
     public DialogSpeaker currentSpeaker;
     public string text;
 
+    public Sentence() { }
     public Sentence(AnimationState animationState, 
         DialogSpeaker currentSpeaker, 
         string text) {

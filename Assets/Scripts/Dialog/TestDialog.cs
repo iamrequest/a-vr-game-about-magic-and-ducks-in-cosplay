@@ -5,10 +5,16 @@ using Valve.VR;
 using Valve.VR.InteractionSystem;
 
 public class TestDialog : BaseDialog {
-    [SerializeField]
     public List<Sentence> startingDialog;
 
     public SteamVR_Action_Boolean startDialogAction;
+
+    // Initialize our list of sentences
+    //  Since it's not a monobehaviour, we have to do this ourselves
+    //  Do a nullcheck first, since Reset() will wipe out our dialog if we're not careful
+    public void Reset() {
+        if (startingDialog == null) startingDialog = new List<Sentence>();
+    }
 
     // Start is called before the first frame update
     void Start() {
@@ -18,7 +24,7 @@ public class TestDialog : BaseDialog {
     void TalkedTo() {
         // Enque start of convo
         dialogManager.StartDialog(startingDialog, true);
-        dialogManager.StartDialog(new Sentence(AnimationState.Idle, DialogSpeaker.Wizard, "yo"), true);
+        // dialogManager.StartDialog(new Sentence(AnimationState.Idle, DialogSpeaker.Wizard, "yo"), false);
 
         // some condition
         if (true) {
