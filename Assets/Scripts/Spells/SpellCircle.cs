@@ -29,7 +29,6 @@ public class SpellCircle : MonoBehaviour {
     private LineRenderer spellLineRenderer;
 
     [Tooltip("When drawing the spell sigil's spline, how many points should we use to render it?")]
-    public int numPointsInSigil;
     public Vector3 manualSigilPositionOffset;
 
     // Start is called before the first frame update
@@ -65,9 +64,9 @@ public class SpellCircle : MonoBehaviour {
     private void Update() {
         // Draw the sigil bounding box
         if (handType == SteamVR_Input_Sources.LeftHand) {
-            availableSpells[1].DrawSigil(this, spellLineRenderer, numPointsInSigil);
+            availableSpells[0].sigil.DrawSigil(this, spellLineRenderer);
         } else {
-            availableSpells[1].DrawBoundingBox(this, spellLineRenderer);
+            availableSpells[0].sigil.DrawBoundingBox(this, spellLineRenderer);
         }
     }
 }
