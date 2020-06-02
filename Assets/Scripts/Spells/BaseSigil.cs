@@ -22,7 +22,7 @@ public abstract class BaseSigil : MonoBehaviour {
     // --------------------------------------------------------------------------------
     // Sigil rendering
     // --------------------------------------------------------------------------------
-    public abstract void DrawSigil(SpellCircle spellPlane, LineRenderer lineRenderer);
+    public abstract void DrawSigil(SpellCircle spellPlane, LineRenderer lineRenderer, bool transformToSpellPlane);
 
     protected Vector3 TranslatePointToSpellPlane(Vector3 point, SpellCircle spellPlane) {
         // -- Scale the sigil to match the size of the spell plane
@@ -44,12 +44,12 @@ public abstract class BaseSigil : MonoBehaviour {
             point *= scaleDelta;
         }
 
+        // -- Center the scaled sigil
         if (applyTranslation) {
             point.x -= sigilWidth / 2 * scaleDelta;
             point.y -= sigilHeight / 2* scaleDelta;
         }
 
-        // -- Center the sigil
         return point;
     }
 

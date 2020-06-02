@@ -19,21 +19,32 @@ public class SplineSigil : BaseSigil {
     // --------------------------------------------------------------------------------
     // Sigil rendering
     // --------------------------------------------------------------------------------
-    public override void DrawSigil(SpellCircle spellPlane, LineRenderer lineRenderer) {
-        lineRenderer.enabled = true;
+    public override void DrawSigil(SpellCircle spellPlane, LineRenderer lineRenderer, bool transformToSpellPlane) {
         if (numPointsInSigil < 1) {
             Debug.LogError("Not enough points given to draw this spline!");
             return;
         }
 
+        lineRenderer.enabled = true;
         lineRenderer.positionCount = numPointsInSigil;
-        lineRenderer.SetPosition(0, TranslatePointToSpellPlane(sigil.GetPointLocalSpace(0f), spellPlane));
+        Vector3 point = sigil.GetPointLocalSpace(0f);
+
+        if (transformToSpellPlane) {
+            lineRenderer.SetPosition(0, TranslatePointToSpellPlane(point, spellPlane));
+        } else {
+            lineRenderer.SetPosition(0, point);
+        }
 
         for (int i = 1; i < numPointsInSigil; i++) {
             float splineIndex = (float) i / (numPointsInSigil - 1);
-            lineRenderer.SetPosition(i, TranslatePointToSpellPlane(sigil.GetPointLocalSpace(splineIndex), spellPlane));
-        }
+            point = sigil.GetPointLocalSpace(splineIndex);
 
+            if (transformToSpellPlane) {
+                lineRenderer.SetPosition(i, TranslatePointToSpellPlane(point, spellPlane));
+            } else {
+                lineRenderer.SetPosition(i, point);
+            }
+        }
     }
 
     // --------------------------------------------------------------------------------

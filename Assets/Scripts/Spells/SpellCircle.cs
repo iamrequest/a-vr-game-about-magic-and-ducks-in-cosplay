@@ -64,9 +64,9 @@ public class SpellCircle : MonoBehaviour {
     private void Update() {
         // Draw the sigil bounding box
         if (handType == SteamVR_Input_Sources.LeftHand) {
-            availableSpells[0].sigil.DrawSigil(this, spellLineRenderer);
+            availableSpells[0].sigil.DrawSigil(this, spellLineRenderer, true);
         } else {
-            availableSpells[0].sigil.DrawBoundingBox(this, spellLineRenderer);
+            availableSpells[1].sigil.DrawSigil(this, spellLineRenderer, true);
         }
     }
 }
