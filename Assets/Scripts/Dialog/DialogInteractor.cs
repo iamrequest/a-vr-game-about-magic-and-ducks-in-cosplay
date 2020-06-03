@@ -52,13 +52,14 @@ public class DialogInteractor : MonoBehaviour {
             return;
         }
 
-        lineRenderer.enabled = true;
-        lineRendererAnimator.SetTrigger("fire");
+        // -- Next dialog line
+        if (activeDialogManager != null) {
+            activeDialogManager.DisplayNextSentence();
+        }
 
         // Raycast forward from the hand
         // If we collide with something that we can chat with, then start that conversation
-        RaycastHit hit;
-        if (Physics.Raycast(hand.transform.position, hand.transform.forward * raycastDistance, out hit, startDialogRaycastLayerMask)) {
+        if (Physics.Raycast(hand.transform.position, hand.transform.forward * raycastDistance, out RaycastHit hit, startDialogRaycastLayerMask)) {
             if (hit.collider.TryGetComponent(out BaseDialog dialog)) {
                 // If we aren't already in a conversation with this character, then start a new convo
                 if (dialog.dialogManager != activeDialogManager || !activeDialogManager.isDialogActive) {
@@ -82,15 +83,13 @@ public class DialogInteractor : MonoBehaviour {
                 }
             }
         } else {
-            // Raycast forward
-            lineRenderer.SetPosition(0, hand.transform.position);
-            lineRenderer.SetPosition(1, hand.transform.position + hand.transform.forward * raycastDistance);
-            lineRendererAnimator.SetTrigger("fire");
-        }
-
-        // -- Next dialog line
-        if (activeDialogManager != null) {
-            activeDialogManager.DisplayNextSentence();
+            // -- Next dialog line
+            if (activeDialogManager == null) {
+                // Raycast forward
+                lineRenderer.SetPosition(0, hand.transform.position);
+                lineRenderer.SetPosition(1, hand.transform.position + hand.transform.forward * raycastDistance);
+                lineRendererAnimator.SetTrigger("fire");
+            }
         }
     }
 }
