@@ -24,7 +24,7 @@ public abstract class BaseSigil : MonoBehaviour {
     // --------------------------------------------------------------------------------
     public abstract void DrawSigil(SpellCircle spellPlane, LineRenderer lineRenderer, bool transformToSpellPlane);
 
-    protected Vector3 TranslatePointToSpellPlane(Vector3 point, SpellCircle spellPlane) {
+    public Vector3 TranslatePointToSpellPlane(Vector3 point, SpellCircle spellPlane) {
         // -- Scale the sigil to match the size of the spell plane
         // We scale x/y by the same amount, to avoid spline distortion
         //  Scale both so that they fit in the spell plane

@@ -17,6 +17,13 @@ public class SplineSigil : BaseSigil {
     }
 
     // --------------------------------------------------------------------------------
+    // Sigil position
+    // --------------------------------------------------------------------------------
+    public Vector3 GetPointOnSpellPlane(float t, SpellCircle spellPlane) {
+        return TranslatePointToSpellPlane(sigil.GetPointLocalSpace(t), spellPlane);
+    }
+
+    // --------------------------------------------------------------------------------
     // Sigil rendering
     // --------------------------------------------------------------------------------
     public override void DrawSigil(SpellCircle spellPlane, LineRenderer lineRenderer, bool transformToSpellPlane) {

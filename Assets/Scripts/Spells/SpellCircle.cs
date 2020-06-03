@@ -26,7 +26,7 @@ public class SpellCircle : MonoBehaviour {
 
     [Header("Sigils")]
     public List<BaseSpell> availableSpells;
-    private LineRenderer spellLineRenderer;
+    public LineRenderer spellLineRenderer;
 
     [Tooltip("When drawing the spell sigil's spline, how many points should we use to render it?")]
     public Vector3 manualSigilPositionOffset;
@@ -48,6 +48,7 @@ public class SpellCircle : MonoBehaviour {
         // Always allow us to stop showing the magic circle
         if (!newState) {
             magicCircleSpriteRenderer.enabled = false;
+            spellLineRenderer.enabled = false;
             return;
         }
 
@@ -61,12 +62,4 @@ public class SpellCircle : MonoBehaviour {
         }
     }
 
-    private void Update() {
-        // Draw the sigil bounding box
-        if (handType == SteamVR_Input_Sources.LeftHand) {
-            availableSpells[0].sigil.DrawSigil(this, spellLineRenderer, true);
-        } else {
-            availableSpells[1].sigil.DrawSigil(this, spellLineRenderer, true);
-        }
-    }
 }
