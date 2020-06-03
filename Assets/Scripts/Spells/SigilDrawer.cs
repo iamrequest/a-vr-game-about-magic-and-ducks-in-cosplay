@@ -108,10 +108,11 @@ public class SigilDrawer : MonoBehaviour {
     }
 
     private void Update() {
-        // -- Draw the detected sigil
+        // For every frame that the spell plane is active, attempt to detect the drawn spell
+        // Draw the currently detected sigil on the spell plane
         if (spellPlane.isSpellPlaneActive && sigil.points.Count > 0) {
-            BaseSpell detectedSpell = DetectSpell();
-            detectedSpell.sigil.DrawSigil(spellPlane, spellPlane.spellLineRenderer, true);
+            spellPlane.selectedSpell = DetectSpell();
+            spellPlane.selectedSpell.sigil.DrawSigil(spellPlane, spellPlane.spellLineRenderer, true);
         }
     }
 }

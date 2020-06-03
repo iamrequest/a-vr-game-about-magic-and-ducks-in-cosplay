@@ -25,6 +25,7 @@ public class SpellCircle : MonoBehaviour {
     public float diameter;
 
     [Header("Sigils")]
+    public BaseSpell selectedSpell;
     public List<BaseSpell> availableSpells;
     public LineRenderer spellLineRenderer;
 
@@ -49,7 +50,18 @@ public class SpellCircle : MonoBehaviour {
         if (!newState) {
             magicCircleSpriteRenderer.enabled = false;
             spellLineRenderer.enabled = false;
+
+            // When the magic circle goes away, enable the selected spell
+            if (selectedSpell != null) {
+                selectedSpell.OnSelected();
+            }
             return;
+        }
+
+        // When the magic circle comes up, deselect the active spell
+        if (selectedSpell != null) {
+            selectedSpell.OnDeselected();
+            selectedSpell = null;
         }
 
         // Only draw the magic circle if we're not in the middle of a conversation
@@ -61,5 +73,4 @@ public class SpellCircle : MonoBehaviour {
             transform.LookAt(Player.instance.hmdTransform, Vector3.up);
         }
     }
-
 }

@@ -9,4 +9,12 @@ public class BaseSpell : MonoBehaviour {
     void Start() {
         sigil = GetComponent<SplineSigil>();
     }
+
+    // Called when the sigil is detected, and the magic circle goes away
+    public void OnSelected() {
+    }
+
+    // Called when the magic circle comes back up
+    public void OnDeselected() {
+    }
 }
