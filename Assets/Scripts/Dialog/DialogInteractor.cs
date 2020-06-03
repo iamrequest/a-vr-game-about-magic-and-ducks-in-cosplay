@@ -22,6 +22,8 @@ public class DialogInteractor : MonoBehaviour {
     public float raycastDistance;
     private LineRenderer lineRenderer;
 
+    public SpellCircle spellPlane;
+
     // Start is called before the first frame update
     void Start() {
         hand = GetComponentInParent<Hand>();
@@ -40,6 +42,15 @@ public class DialogInteractor : MonoBehaviour {
     }
 
     private void DialogInteract(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource) {
+        // If we have the spell plane open, end the conversation
+        if (spellPlane.isSpellPlaneActive) {
+            lineRenderer.enabled = false;
+            if (activeDialogManager != null) {
+                activeDialogManager.EndDialogEarly();
+            }
+            return;
+        }
+
         lineRenderer.enabled = true;
         lineRenderer.SetPosition(0, hand.transform.position);
 
