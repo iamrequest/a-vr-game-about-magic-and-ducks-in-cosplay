@@ -277,28 +277,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &907149174 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8678162368794595459, guid: 6e344460939e98843b58f98a935ca6f9,
-    type: 3}
-  m_PrefabInstance: {fileID: 5674697072346986556}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &907149178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 907149174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3258abf9b49c944cb4631e69fa4ffc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textUI: {fileID: 1842328005}
-  totalAvailableLines: 10
-  totalCharsPerLine: 0
-  conversationHistory: []
 --- !u!4 &978750150 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8473848701001883437, guid: 63f135026fbe0864e840fbe367ee167d,
@@ -448,18 +426,6 @@ Transform:
   m_Father: {fileID: 355707257}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1842328005 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1346315409, guid: 6e344460939e98843b58f98a935ca6f9,
-    type: 3}
-  m_PrefabInstance: {fileID: 5674697072346986556}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5674697072346986556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -467,68 +433,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 986832413, guid: 6e344460939e98843b58f98a935ca6f9, type: 3}
-      propertyPath: m_overflowMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1346315409, guid: 6e344460939e98843b58f98a935ca6f9, type: 3}
-      propertyPath: m_text
-      value: "Hello Hello Hello Hello Hello Hello \nHello Hello Hello Hello Hello
-        Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
-        Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
-        Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
-        Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
-        Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
-        Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
-        Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
-        Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
-        Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello HelloHello Hello
-        Hello Hello Hello Hello "
-      objectReference: {fileID: 0}
-    - target: {fileID: 1346315409, guid: 6e344460939e98843b58f98a935ca6f9, type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 682
-      objectReference: {fileID: 0}
-    - target: {fileID: 1346315409, guid: 6e344460939e98843b58f98a935ca6f9, type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 114
-      objectReference: {fileID: 0}
-    - target: {fileID: 1346315409, guid: 6e344460939e98843b58f98a935ca6f9, type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 114
-      objectReference: {fileID: 0}
-    - target: {fileID: 1346315409, guid: 6e344460939e98843b58f98a935ca6f9, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 1346315409, guid: 6e344460939e98843b58f98a935ca6f9, type: 3}
-      propertyPath: m_fontStyle
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1346315409, guid: 6e344460939e98843b58f98a935ca6f9, type: 3}
-      propertyPath: m_enableAutoSizing
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1346315409, guid: 6e344460939e98843b58f98a935ca6f9, type: 3}
-      propertyPath: m_fontSize
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1346315409, guid: 6e344460939e98843b58f98a935ca6f9, type: 3}
-      propertyPath: m_firstOverflowCharacterIndex
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1346315409, guid: 6e344460939e98843b58f98a935ca6f9, type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 1346315409, guid: 6e344460939e98843b58f98a935ca6f9, type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1346315409, guid: 6e344460939e98843b58f98a935ca6f9, type: 3}
-      propertyPath: m_textAlignment
-      value: 1025
-      objectReference: {fileID: 0}
     - target: {fileID: 2134238570817506916, guid: 6e344460939e98843b58f98a935ca6f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -588,11 +492,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player Wrapper
-      objectReference: {fileID: 0}
-    - target: {fileID: 9095314207439185362, guid: 6e344460939e98843b58f98a935ca6f9,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e344460939e98843b58f98a935ca6f9, type: 3}

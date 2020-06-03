@@ -18,6 +18,7 @@ public class SigilDrawer : MonoBehaviour {
     [Header("Sigil Drawing")]
     public float pointAddDelay;
     private float timeSinceLastPoint;
+    public int maxNumPoints;
 
     // Start is called before the first frame update
     void Start() {
@@ -36,7 +37,7 @@ public class SigilDrawer : MonoBehaviour {
             return;
         }
 
-        if (newState) {
+        if (newState && sigil.points.Count < maxNumPoints) {
             timeSinceLastPoint += Time.deltaTime;
 
             if (timeSinceLastPoint > pointAddDelay) {
@@ -47,8 +48,6 @@ public class SigilDrawer : MonoBehaviour {
 
         // Draw the sigil as is if we're currently drawing
         // Once we're done, transform the points to match the scale of the magic circle
-        // TODO: Points are in local space by default, so when no transform is applied,
-        //  the points won't render properly
         sigil.DrawSigil(spellPlane, lineRenderer, !newState);
     }
 

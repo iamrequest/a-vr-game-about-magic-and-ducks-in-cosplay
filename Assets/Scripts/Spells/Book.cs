@@ -17,6 +17,7 @@ public class Book : MonoBehaviour {
         hand = GetComponentInParent<Hand>();
 
         openBookAction.AddOnChangeListener(OpenCloseBook, hand.handType);
+        animator.SetBool("isBookOpen", false);
     }
 
     private void OpenCloseBook(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource, bool newState) {

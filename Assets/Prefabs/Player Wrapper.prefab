@@ -529,7 +529,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 1
+  m_overflowMode: 0
   m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+  m_text: "Hello Hello Hello Hello Hello Hello \nHello Hello Hello Hello Hello Hello
     Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
     Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
     Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
@@ -650,7 +650,7 @@ MonoBehaviour:
     Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
     Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
     Hello Hello Hello Hello Hello Hello Hello Hello Hello HelloHello Hello Hello
-    Hello Hello Hello '
+    Hello Hello Hello "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -685,7 +685,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 257
+  m_textAlignment: 1025
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -719,9 +719,9 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1346315409}
-    characterCount: 681
+    characterCount: 682
     spriteCount: 0
-    spaceCount: 113
+    spaceCount: 114
     wordCount: 114
     linkCount: 0
     lineCount: 19
@@ -2883,6 +2883,7 @@ GameObject:
   - component: {fileID: 7889688206550218450}
   - component: {fileID: 7904308686777257796}
   - component: {fileID: 9095314207439185362}
+  - component: {fileID: 907149178}
   m_Layer: 9
   m_Name: Book
   m_TagString: Untagged
@@ -2917,7 +2918,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5253918c3a0a33b48a0492070e06a576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bookOpenDuration: 0
   openBookAction:
     actionPath: /actions/Main/in/SkipSentence
     needsReinit: 0
@@ -2940,6 +2940,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &907149178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8678162368794595459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3258abf9b49c944cb4631e69fa4ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textUI: {fileID: 1346315409}
+  totalAvailableLines: 10
+  totalCharsPerLine: 0
+  conversationHistory: []
 --- !u!1 &8919296541825010001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3037,7 +3053,8 @@ MonoBehaviour:
   createSigilAction:
     actionPath: /actions/Main/in/DialogInteract
     needsReinit: 0
-  pointAddDelay: 0.1
+  pointAddDelay: 0.05
+  maxNumPoints: 100
 --- !u!1001 &5674697071619861096
 PrefabInstance:
   m_ObjectHideFlags: 0

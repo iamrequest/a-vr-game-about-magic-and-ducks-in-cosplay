@@ -25,6 +25,7 @@ public class ConversationLog : MonoBehaviour {
 
     private void Start() {
         conversationHistory = new Sentence[totalAvailableLines];
+        textUI.text = "";
     }
 
     private void Update() {
