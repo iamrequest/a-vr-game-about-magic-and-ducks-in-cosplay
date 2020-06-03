@@ -58,7 +58,6 @@ public class SigilDrawer : MonoBehaviour {
     // For each point in our manually-drawn point sigil, compare the distance from this point
     //  to a point on the sigil. 
     // Calculate the distance from 0->t, and from t->0
-    bool tmpIsForwardDir, isForwardDir;
     private float CalculateDistance(SplineSigil spline) {
         float distanceForward = 0f;
         float distanceBackwards = 0f;
@@ -70,10 +69,6 @@ public class SigilDrawer : MonoBehaviour {
             distanceBackwards += DoDistanceComparison(spline, i, sigil.points.Count - i - 1);
         }
 
-        Debug.Log("  Forward: " + distanceForward);
-        Debug.Log("  Backwards: " + distanceBackwards);
-
-        tmpIsForwardDir = distanceForward < distanceBackwards;
         if (distanceForward < distanceBackwards) return distanceForward;
         else return distanceBackwards;
     }
@@ -102,12 +97,9 @@ public class SigilDrawer : MonoBehaviour {
 
 
         foreach (BaseSpell spell in spellPlane.availableSpells) {
-            Debug.Log("-- " + spell.name);
-            //Debug.Log(spell.name + " : " + currentDistance);
             currentDistance = CalculateDistance(spell.sigil);
 
             if (currentDistance < minDistance) {
-                isForwardDir = tmpIsForwardDir;
                 minDistance = currentDistance;
                 detectedSpell = spell;
             }
@@ -116,46 +108,11 @@ public class SigilDrawer : MonoBehaviour {
         return detectedSpell;
     }
 
-    // --------------------------------------------------------------------------------
-    // Debug drawing deltas
-    // --------------------------------------------------------------------------------
     private void Update() {
-        // Draw the sigil bounding box
+        // -- Draw the detected sigil
         if (spellPlane.isSpellPlaneActive && sigil.points.Count > 0) {
             BaseSpell detectedSpell = DetectSpell();
             detectedSpell.sigil.DrawSigil(spellPlane, spellPlane.spellLineRenderer, true);
-
-            DrawSigilDeltas(spellPlane.availableSpells[0], Color.red);
-            //DrawSigilDeltas(spellPlane.availableSpells[1], Color.green);
         }
-    }
-
-    private void DrawSigilDeltas(BaseSpell spell, Color c) {
-        if (isForwardDir) {
-            for (int i = 0; i < sigil.points.Count; i++) {
-                DoDrawSigilDelta(spell, c, i, i);
-            }
-        } else {
-            for (int i = 0; i < sigil.points.Count; i++) {
-                DoDrawSigilDelta(spell, c, i, sigil.points.Count - i - 1);
-            }
-        }
-    }
-
-    private void DoDrawSigilDelta(BaseSpell spell, Color c, int splineSigilIndex, int pointSigilIndex) {
-        float splineIndex = 0f;
-        if (splineSigilIndex > 0) {
-            splineIndex = (float)splineSigilIndex / (float)(sigil.points.Count - 1);
-        }
-
-        // Scale the point along the spline, and the current point in our manual sigil
-        Vector3 transformedSplinePoint = spell.sigil.GetPointOnSpellPlane(splineIndex, spellPlane);
-        Vector3 transformedPoint = sigil.TranslatePointToSpellPlane(sigil.points[pointSigilIndex], spellPlane);
-
-        Debug.DrawLine(spellPlane.transform.position +
-                        spellPlane.transform.rotation * transformedSplinePoint,
-                       spellPlane.transform.position +
-                        spellPlane.transform.rotation * transformedPoint,
-                       c);
     }
 }

@@ -15,40 +15,31 @@ public abstract class BaseSigil : MonoBehaviour {
         }
     }
 
-    [Header("DEBUG")]
-    public bool applyScaling;
-    public bool applyTranslation;
-
     // --------------------------------------------------------------------------------
     // Sigil rendering
     // --------------------------------------------------------------------------------
     public abstract void DrawSigil(SpellCircle spellPlane, LineRenderer lineRenderer, bool transformToSpellPlane);
 
     public Vector3 TranslatePointToSpellPlane(Vector3 point, SpellCircle spellPlane) {
+        // Shift from (-inf, inf) to (0, inf)
+        point.x -= boundingBox[0].x;
+        point.y -= boundingBox[0].y;
+
         // -- Scale the sigil to match the size of the spell plane
         // We scale x/y by the same amount, to avoid spline distortion
         //  Scale both so that they fit in the spell plane
-        float scaleDelta = 1f;
-        if (applyScaling) {
-            if (sigilWidth > sigilHeight) {
-                scaleDelta = spellPlane.diameter / sigilWidth;
-            } else {
-                scaleDelta = spellPlane.diameter / sigilHeight;
-            }
-
-            // Shift from (-inf, inf) to (0, inf)
-            point.x -= boundingBox[0].x;
-            point.y -= boundingBox[0].y;
-
-            // Apply scaling
-            point *= scaleDelta;
+        float scaleDelta;
+        if (sigilWidth > sigilHeight) {
+            scaleDelta = spellPlane.diameter / sigilWidth;
+        } else {
+            scaleDelta = spellPlane.diameter / sigilHeight;
         }
+
+        point *= scaleDelta;
 
         // -- Center the scaled sigil
-        if (applyTranslation) {
-            point.x -= sigilWidth / 2 * scaleDelta;
-            point.y -= sigilHeight / 2* scaleDelta;
-        }
+        point.x -= sigilWidth / 2 * scaleDelta;
+        point.y -= sigilHeight / 2* scaleDelta;
 
         return point;
     }
