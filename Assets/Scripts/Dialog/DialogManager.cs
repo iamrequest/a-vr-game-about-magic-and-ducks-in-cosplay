@@ -79,9 +79,15 @@ public class DialogManager : MonoBehaviour {
             return;
         }
 
+        // Prepare the dialog
         currentSentence = sentences.Dequeue();
+        ConversationLog.instance.AddSentence(currentSentence);
+
+        // Apply the animation state, prepare the textbox
         canvasCharacter.SetAnimationState(currentSentence.animationState);
         ConfigureTextboxImages();
+
+        // Start typing
         StartCoroutine(TypeSentence());
     }
 
