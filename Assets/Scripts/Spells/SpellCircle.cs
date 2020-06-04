@@ -53,7 +53,7 @@ public class SpellCircle : MonoBehaviour {
 
             // When the magic circle goes away, enable the selected spell
             if (selectedSpell != null) {
-                selectedSpell.OnSelected();
+                selectedSpell.OnSelected(hand);
             }
             return;
         }
