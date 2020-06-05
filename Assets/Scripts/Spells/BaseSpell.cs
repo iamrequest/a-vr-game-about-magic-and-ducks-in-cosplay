@@ -9,7 +9,9 @@ public class BaseSpell : MonoBehaviour {
     public SplineSigil sigil;
 
     protected Hand castingHand;
-    protected bool isSelected;
+    public bool isSelected {
+        get; protected set;
+    }
 
     protected virtual void Start() {
         sigil = GetComponent<SplineSigil>();
@@ -24,6 +26,6 @@ public class BaseSpell : MonoBehaviour {
     // Called when the magic circle comes back up
     public virtual void OnDeselected() {
         isSelected = false;
-        castingHand = null;
+        //castingHand = null;
     }
 }
