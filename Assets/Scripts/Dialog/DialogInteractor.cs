@@ -84,7 +84,7 @@ public class DialogInteractor : MonoBehaviour {
             }
         } else {
             // -- Next dialog line
-            if (activeDialogManager == null) {
+            if (activeDialogManager == null || !activeDialogManager.isDialogActive) {
                 // Raycast forward
                 lineRenderer.SetPosition(0, hand.transform.position);
                 lineRenderer.SetPosition(1, hand.transform.position + hand.transform.forward * raycastDistance);
