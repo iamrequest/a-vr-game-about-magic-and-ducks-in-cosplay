@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c7fee4af6e4a7474fb81ef54765a8f22
+guid: e794689c3116f804ea6b9d5d3f99b307
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
@@ -7,13 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Palm T ree Trunk
-    second: {fileID: 2100000, guid: 09ee2a6eaf5b7084b9c54fef5f640a11, type: 2}
+      name: Dirt Mound
+    second: {fileID: 2100000, guid: 1dc22ea4d94d38d44bbd18884b789284, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Palm Tree Leaves
-    second: {fileID: 2100000, guid: afaf663715c107c46b478b292c832435, type: 2}
+      name: Wood
+    second: {fileID: 2100000, guid: 4be965ac241346f44bbacd1546cd1282, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

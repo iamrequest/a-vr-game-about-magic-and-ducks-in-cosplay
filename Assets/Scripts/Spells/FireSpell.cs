@@ -98,6 +98,14 @@ public class FireSpell : BaseSpell {
         }
 
         if (isChanneling) {
+            if (currentFireball == null) {
+                // Player collided the fireball with some environment and it destroyed itself. Instantiate a new one
+                isChanneling = false;
+                timeSinceLastCast = 0f;
+
+                return;
+            }
+
             LerpTowardsCastingHand(currentFireball.transform, fireballFollowSpeed, handOffset);
 
             lastHandHistoryIndex = (lastHandHistoryIndex + 1) % handPositionHistoryCount;

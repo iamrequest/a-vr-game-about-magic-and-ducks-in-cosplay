@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: c7fee4af6e4a7474fb81ef54765a8f22
+guid: 06d68068c7a30a44ba749524c932f83a
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Palm T ree Trunk
-    second: {fileID: 2100000, guid: 09ee2a6eaf5b7084b9c54fef5f640a11, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Palm Tree Leaves
-    second: {fileID: 2100000, guid: afaf663715c107c46b478b292c832435, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
