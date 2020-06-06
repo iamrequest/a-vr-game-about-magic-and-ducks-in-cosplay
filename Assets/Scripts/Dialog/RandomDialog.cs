@@ -15,9 +15,13 @@ public class RandomDialog : BaseDialog {
     }
 
     public override void StartDialog() {
+        if (conversations.Count == 0) {
+            Debug.Log("Attempted to start a dialog, but no dialog was found for this character.");
+            return;
+        }
+
         // Pick a random dialog to say
         int convoIndex = Random.Range(0, conversations.Count);
-
         dialogManager.StartDialog(conversations[convoIndex].sentences, true);
     }
 }
