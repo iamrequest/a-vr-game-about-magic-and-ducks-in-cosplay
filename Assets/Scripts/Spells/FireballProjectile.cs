@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class FireballProjectile : MonoBehaviour {
     public Animator animator;
+    public Rigidbody rb;
 
     private void Start() {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
     }
 
     public void DestroyAfterLifespan(float lifespan) {
@@ -21,5 +23,11 @@ public class FireballProjectile : MonoBehaviour {
     private IEnumerator DoDestroyAfterLifetime(float lifespan) {
         yield return new WaitForSeconds(lifespan);
         Destroy(gameObject);
+    }
+
+    private void OnCollisionEnter(Collision collision) {
+        rb.isKinematic = true;
+        animator.SetTrigger("isDestroying");
+        DoDestroyAfterLifetime(1f);
     }
 }

@@ -73,20 +73,17 @@ public class FireSpell : BaseSpell {
 
             if (currentFireball.TryGetComponent(out FireballProjectile fbp)) {
                 fbp.DestroyAfterLifespan(projectileLifespan);
+
+                // Add force to the projectile
+                Vector3 handDelta = Vector3.zero;
+
+                // TODO: Iterate over each hand position, and calculate the delta. Add them up, and find the average
+                foreach(Vector3 delta in handDeltaHistory) {
+                    handDelta += delta;
+                }
+
+                fbp.rb.AddForce(handDelta / handPositionHistoryCount * throwForceMultiplier, ForceMode.VelocityChange);
             }
-
-            // Add force to the projectile
-            Rigidbody rb = currentFireball.GetComponent<Rigidbody>();
-            Vector3 handDelta = Vector3.zero;
-
-            // TODO: Iterate over each hand position, and calculate the delta. Add them up, and find the average
-            foreach(Vector3 delta in handDeltaHistory) {
-                handDelta += delta;
-            }
-
-
-            // TODO: Add better force
-            rb.AddForce(handDelta / handPositionHistoryCount * throwForceMultiplier, ForceMode.VelocityChange);
         }
     }
     private void Update() {

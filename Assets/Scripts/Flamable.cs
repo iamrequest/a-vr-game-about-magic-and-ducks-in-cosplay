@@ -21,6 +21,9 @@ public class Flamable : MonoBehaviour {
         if (!isFireLit) {
             if (other.TryGetComponent(out FireballProjectile fireball)) {
                 isFireLit = true;
+                fireball.rb.isKinematic = true;
+                fireball.DestroyAfterLifespan(1f);
+
                 foreach (ParticleSystem particleSystem in fireParticleSystem) {
                     particleSystem.Play();
                 }

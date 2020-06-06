@@ -171,6 +171,7 @@ MonoBehaviour:
   fireParticleSystem:
   - {fileID: 1388832441}
   - {fileID: 1388832440}
+  isFireLit: 0
 --- !u!65 &329603439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5277,6 +5278,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.376
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599772349815275106, guid: d7359d83039ef8647910a2c99f39de51,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599772350693420576, guid: d7359d83039ef8647910a2c99f39de51,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5599772350693420578, guid: d7359d83039ef8647910a2c99f39de51,
         type: 3}
