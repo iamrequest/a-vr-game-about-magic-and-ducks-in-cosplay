@@ -42,11 +42,9 @@ public class LightSpell : BaseSpell {
     private void Update() {
         if (isSelected) {
             // Lerp towards the player hand
-            lightSphere.transform.position = Vector3.Lerp(lightSphere.transform.position, 
-                                                          castingHand.transform.position + castingHand.transform.rotation * offset, 
-                                                          Time.deltaTime * followSpeed);
+            LerpTowardsCastingHand(lightSphere.transform, followSpeed, offset);
 
-            // If the light bugs are swarming around the light spell, then 
+            // If the light bugs are swarming around the light spell, then make them follow the light sphere
             if (lightBugs.isPlaying) {
                 lightBugs.transform.position = Vector3.Lerp(lightBugs.transform.position,
                                                             lightSphere.transform.position,

@@ -93,6 +93,11 @@
       "name": "/actions/Main/in/SkeletonRightHand",
       "type": "skeleton",
       "skeleton": "/skeleton/hand/right"
+    },
+    {
+      "name": "/actions/Main/in/ChannelSpell",
+      "type": "boolean",
+      "requirement": "mandatory"
     }
   ],
   "action_sets": [
@@ -177,7 +182,8 @@
       "/actions/Main/in/Pose": "Pose",
       "/actions/Main/in/SkeletonLeftHand": "Skeleton (Left)",
       "/actions/Main/in/SkeletonRightHand": "Skeleton (Right)",
-      "/actions/Main/in/DialogInteract": "Start dialog / next sentence"
+      "/actions/Main/in/DialogInteract": "Start dialog / next sentence",
+      "/actions/Main/in/ChannelSpell": "Channel Spell"
     }
   ]
 }

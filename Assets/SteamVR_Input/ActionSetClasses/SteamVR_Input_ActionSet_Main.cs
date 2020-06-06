@@ -88,5 +88,13 @@ namespace Valve.VR
                 return SteamVR_Actions.main_SkeletonRightHand;
             }
         }
+        
+        public virtual SteamVR_Action_Boolean ChannelSpell
+        {
+            get
+            {
+                return SteamVR_Actions.main_ChannelSpell;
+            }
+        }
     }
 }

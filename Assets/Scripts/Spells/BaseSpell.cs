@@ -28,4 +28,10 @@ public class BaseSpell : MonoBehaviour {
         isSelected = false;
         //castingHand = null;
     }
+
+    protected void LerpTowardsCastingHand(Transform target, float followSpeed, Vector3 offset) {
+            target.position = Vector3.Lerp(target.transform.position, 
+                                           castingHand.transform.position  + castingHand.transform.rotation * offset, 
+                                           Time.deltaTime * followSpeed);
+    }
 }

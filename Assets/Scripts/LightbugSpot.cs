@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LightbugSpot : MonoBehaviour {
     public ParticleSystem lightBugs;
+    public Light lightSource;
     public bool isSource;
     public bool isLit {
         get {
@@ -16,6 +17,10 @@ public class LightbugSpot : MonoBehaviour {
             lightBugs.Play();
         } else {
             lightBugs.Stop();
+
+            if (lightSource != null) {
+                lightSource.enabled = false;
+            }
         }
     }
 
@@ -32,6 +37,10 @@ public class LightbugSpot : MonoBehaviour {
                     // Transfer the light bugs to the target
                     lightBugs.Play();
                     lightSpell.StopLightBugs();
+
+                    if (lightSource != null) {
+                        lightSource.enabled = true;
+                    }
                 }
             }
         }
