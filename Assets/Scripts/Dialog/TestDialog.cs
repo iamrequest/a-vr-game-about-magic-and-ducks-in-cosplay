@@ -16,7 +16,9 @@ public class TestDialog : BaseDialog {
 
     public override void StartDialog() {
         // Enque start of convo
-        dialogManager.StartDialog(startingDialog, true);
+        dialogManager.StartDialog(this, startingDialog, true);
+    }
 
+    public override void OnDialogEnd(bool wasDialogFullyCompleted) {
     }
 }

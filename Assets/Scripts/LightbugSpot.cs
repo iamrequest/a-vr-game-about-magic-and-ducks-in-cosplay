@@ -5,7 +5,10 @@ using UnityEngine;
 public class LightbugSpot : MonoBehaviour {
     public ParticleSystem lightBugs;
     public Light lightSource;
+    public bool isLightLit;
     public bool isSource;
+    public GameObject volumetricLight;
+
     public bool isLit {
         get {
             return lightBugs.isPlaying;
@@ -19,7 +22,11 @@ public class LightbugSpot : MonoBehaviour {
             lightBugs.Stop();
 
             if (lightSource != null) {
-                lightSource.enabled = false;
+                lightSource.enabled = isLightLit;
+            }
+
+            if (volumetricLight != null) {
+                volumetricLight.SetActive(isLightLit);
             }
         }
     }
@@ -34,12 +41,17 @@ public class LightbugSpot : MonoBehaviour {
             } else {
                 // If this is a place where we can drop off lightbugs, then do so here
                 if (lightSpell.isSelected && lightSpell.hasLightBugs && lightBugs.isStopped) {
+                    isLightLit = true;
+
                     // Transfer the light bugs to the target
                     lightBugs.Play();
                     lightSpell.StopLightBugs();
 
                     if (lightSource != null) {
                         lightSource.enabled = true;
+                    }
+                    if (volumetricLight != null) {
+                        volumetricLight.SetActive(true);
                     }
                 }
             }

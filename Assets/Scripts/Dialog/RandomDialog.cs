@@ -22,6 +22,9 @@ public class RandomDialog : BaseDialog {
 
         // Pick a random dialog to say
         int convoIndex = Random.Range(0, conversations.Count);
-        dialogManager.StartDialog(conversations[convoIndex].sentences, true);
+        dialogManager.StartDialog(this, conversations[convoIndex].sentences, true);
+    }
+
+    public override void OnDialogEnd(bool wasDialogFullyCompleted) {
     }
 }

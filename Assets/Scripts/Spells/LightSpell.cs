@@ -54,10 +54,8 @@ public class LightSpell : BaseSpell {
     }
 
     public void StartLightBugs() {
-        Debug.Log("Trigger caught");
         // Start playing the particle system
         if (lightBugs.isStopped && isSelected) {
-            Debug.Log("Starting");
             lightBugs.Play();
         }
     }

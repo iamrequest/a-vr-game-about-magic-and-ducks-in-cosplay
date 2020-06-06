@@ -24,4 +24,5 @@ public abstract class BaseDialog : MonoBehaviour {
     }
 
     public abstract void StartDialog();
+    public abstract void OnDialogEnd(bool wasDialogFullyCompleted);
 }

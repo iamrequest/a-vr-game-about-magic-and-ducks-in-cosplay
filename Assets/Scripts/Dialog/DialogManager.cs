@@ -5,6 +5,7 @@ using TMPro;
 using Valve.VR.InteractionSystem;
 
 public class DialogManager : MonoBehaviour {
+    private BaseDialog activeDialog; // A reference to the base dialog, so we can let it know when we finish the convo
     private Queue<Sentence> sentences;
     private bool skipCurrentSentence;
     private Sentence currentSentence;
@@ -32,7 +33,8 @@ public class DialogManager : MonoBehaviour {
         completedCurrentSentence = true;
     }
 
-    public void StartDialog(Sentence newSentence, bool clearExistingDialog) {
+    public void StartDialog(BaseDialog dialog, Sentence newSentence, bool clearExistingDialog) {
+        activeDialog = dialog;
         animator.SetBool("isDialogBoxOpen", true);
         isDialogActive = true;
 
@@ -47,7 +49,8 @@ public class DialogManager : MonoBehaviour {
             DisplayNextSentence();
         }
     }
-    public void StartDialog(List<Sentence> newSentences, bool clearExistingDialog) {
+    public void StartDialog(BaseDialog dialog, List<Sentence> newSentences, bool clearExistingDialog) {
+        activeDialog = dialog;
         animator.SetBool("isDialogBoxOpen", true);
         isDialogActive = true;
 
@@ -69,13 +72,15 @@ public class DialogManager : MonoBehaviour {
         skipCurrentSentence = true;
     }
     public void DisplayNextSentence() {
+        if (!isDialogActive) return;
+
         if (!completedCurrentSentence) {
             //skipCurrentSentence = true;
             return;
         }
 
         if (sentences.Count == 0) {
-            EndDialog();
+            EndDialog(true);
             return;
         }
 
@@ -93,13 +98,14 @@ public class DialogManager : MonoBehaviour {
 
     public void EndDialogEarly() {
         sentences.Clear();
-        EndDialog();
+        EndDialog(false);
     }
-    private void EndDialog() {
+    private void EndDialog(bool wasDialogFullyCompleted) {
         textUI.text = "";
         isDialogActive = false;
         completedCurrentSentence = true;
         animator.SetBool("isDialogBoxOpen", false);
+        activeDialog.OnDialogEnd(wasDialogFullyCompleted);
     }
 
     private IEnumerator TypeSentence() {
