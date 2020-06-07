@@ -1,29 +1,96 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
+// Quick spaghetti that maintains a "quest" system.
+//  User has a list of objectives. For each objective, there's start/finish dialog that must be played to advance.
+//  During the objective, the NPC will loop through the same convo until the objective is marked as complete
 public class QuestDialog : BaseDialog {
-    public bool hasFinishedInitialDialog = false;
-    public List<Sentence> initialDialog;
-    public List<Sentence> followingDialog;
+    public List<QuestObjective> objectives;
+    public int activeObjectiveIndex;
 
-    private void Start() {
-        if (initialDialog.Count == 0) {
-            hasFinishedInitialDialog = true;
-        }
-    }
+    public Conversation allObjectivesCompleteDialog;
 
     public override void StartDialog() {
-        if (!hasFinishedInitialDialog) {
-            dialogManager.StartDialog(this, initialDialog, true);
+        // No quests exist
+        if (objectives.Count == 0) {
+            dialogManager.StartDialog(this, allObjectivesCompleteDialog, true);
+            return;
+        }
+
+        // -- Always play the initial dialog
+        if (!objectives[activeObjectiveIndex].initialDialogComplete) {
+            dialogManager.StartDialog(this, objectives[activeObjectiveIndex].initialDialog, true);
+            return;
+        }
+        
+        if (IsReadyToAdvanceToNextObjective()) {
+            if (IsFinalObjective()) {
+                // -- No more objectives - tell the player to finish some other quest
+                dialogManager.StartDialog(this, allObjectivesCompleteDialog, true);
+                return;
+            } else {
+                // -- Prepare the next objective, if one exists
+                activeObjectiveIndex++;
+
+                // Initial dialog for the new objective
+                if (!objectives[activeObjectiveIndex].initialDialogComplete) {
+                    dialogManager.StartDialog(this, objectives[activeObjectiveIndex].initialDialog, true);
+                    return;
+                } else {
+                    Debug.LogError("Objective " + activeObjectiveIndex + " is null!");
+                }
+            }
+        }
+
+        // -- Dialog for the current objective
+        if (objectives[activeObjectiveIndex] != null) {
+            if (objectives[activeObjectiveIndex].isComplete) {
+                // -- Objective complete
+                dialogManager.StartDialog(this, objectives[activeObjectiveIndex].onCompleteDialog, true);
+            } else {
+                if (!objectives[activeObjectiveIndex].initialDialogComplete) {
+                    // -- First dialog after the objective began
+                    dialogManager.StartDialog(this, objectives[activeObjectiveIndex].initialDialog, true);
+                } else {
+                    // -- N'th dialog after the objective began
+                    dialogManager.StartDialog(this, objectives[activeObjectiveIndex].repeatDialog, true);
+                }
+            }
         } else {
-            dialogManager.StartDialog(this, followingDialog, true);
+            Debug.LogError("Objective " + activeObjectiveIndex + " is null!");
         }
     }
 
     public override void OnDialogEnd(bool wasDialogFullyCompleted) {
+        // -- Only advance objective dialog when the conversation ended completely
         if (wasDialogFullyCompleted) {
-            hasFinishedInitialDialog = true;
+            if (objectives[activeObjectiveIndex] == null) {
+                Debug.LogError("Objective " + activeObjectiveIndex + " is null!");
+                return;
+            }
+            
+            // -- Test the initial dialog for completion
+            if (!objectives[activeObjectiveIndex].initialDialogComplete) {
+                objectives[activeObjectiveIndex].initialDialogComplete = true;
+                return;
+            }
+
+            // If you've finished talking to the NPC, and the quest has been completed, advance to the next quest
+            if (objectives[activeObjectiveIndex].isComplete) {
+                objectives[activeObjectiveIndex].finalDialogComplete = true;
+            }
         }
+    }
+
+    // Current objective is complete, and the final dialog for this quest has been said
+    private bool IsReadyToAdvanceToNextObjective() {
+        return objectives[activeObjectiveIndex].isComplete 
+            && objectives[activeObjectiveIndex].finalDialogComplete;
+    }
+
+    private bool IsFinalObjective() {
+        return activeObjectiveIndex == objectives.Count - 1;
     }
 }

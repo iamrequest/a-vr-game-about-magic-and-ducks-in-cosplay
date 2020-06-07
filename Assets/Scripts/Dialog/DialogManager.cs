@@ -49,6 +49,9 @@ public class DialogManager : MonoBehaviour {
             DisplayNextSentence();
         }
     }
+    public void StartDialog(BaseDialog dialog, Conversation convo, bool clearExistingDialog) {
+        StartDialog(dialog, convo.sentences, clearExistingDialog);
+    }
     public void StartDialog(BaseDialog dialog, List<Sentence> newSentences, bool clearExistingDialog) {
         activeDialog = dialog;
         animator.SetBool("isDialogBoxOpen", true);
@@ -105,7 +108,10 @@ public class DialogManager : MonoBehaviour {
         isDialogActive = false;
         completedCurrentSentence = true;
         animator.SetBool("isDialogBoxOpen", false);
-        activeDialog.OnDialogEnd(wasDialogFullyCompleted);
+
+        if (activeDialog != null) {
+            activeDialog.OnDialogEnd(wasDialogFullyCompleted);
+        }
     }
 
     private IEnumerator TypeSentence() {

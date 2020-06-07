@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LightbugSpot : MonoBehaviour {
     public ParticleSystem lightBugs;
@@ -8,6 +9,8 @@ public class LightbugSpot : MonoBehaviour {
     public bool isLightLit;
     public bool isSource;
     public GameObject volumetricLight;
+
+    public UnityEvent onLit;
 
     public bool isLit {
         get {
@@ -53,6 +56,8 @@ public class LightbugSpot : MonoBehaviour {
                     if (volumetricLight != null) {
                         volumetricLight.SetActive(true);
                     }
+
+                    onLit.Invoke();
                 }
             }
         }

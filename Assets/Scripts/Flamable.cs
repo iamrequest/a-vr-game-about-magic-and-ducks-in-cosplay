@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Flamable : MonoBehaviour {
     public ParticleSystem[] fireParticleSystem;
     public bool isFireLit;
+    public UnityEvent onLit;
 
     private void Start() {
         foreach (ParticleSystem particleSystem in fireParticleSystem) {
@@ -27,6 +29,8 @@ public class Flamable : MonoBehaviour {
                 foreach (ParticleSystem particleSystem in fireParticleSystem) {
                     particleSystem.Play();
                 }
+
+                onLit.Invoke();
             }
         }
     }

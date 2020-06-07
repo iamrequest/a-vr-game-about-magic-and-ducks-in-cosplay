@@ -10,37 +10,37 @@ PrefabInstance:
     - target: {fileID: 8311943639765476676, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.729
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476676, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.75
+      value: 31.729792
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476676, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 40.367
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476676, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476676, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.25881872
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476676, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476676, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.96592593
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476676, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
@@ -55,7 +55,7 @@ PrefabInstance:
     - target: {fileID: 8311943639765476676, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -30.000002
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476676, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
@@ -65,7 +65,7 @@ PrefabInstance:
     - target: {fileID: 8311943639765476677, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_Name
-      value: Base Character
+      value: Wizard Random Chat
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}

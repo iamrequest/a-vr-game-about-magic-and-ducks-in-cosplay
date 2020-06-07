@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 3783384906291749952}
   - component: {fileID: 3659693478590339509}
   - component: {fileID: 7491304692975518942}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Palm Tree 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3783384906291749952
 Transform:
