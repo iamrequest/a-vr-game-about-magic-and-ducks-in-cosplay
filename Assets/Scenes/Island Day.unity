@@ -132,7 +132,7 @@ PrefabInstance:
     - target: {fileID: 2526307804160142294, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
         type: 3}
       propertyPath: m_Name
-      value: Magician Random Chat Variant
+      value: Magician Random Chat
       objectReference: {fileID: 0}
     - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
         type: 3}
@@ -172,7 +172,7 @@ PrefabInstance:
     - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
         type: 3}
@@ -854,6 +854,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 17.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 7989762948685043511}
   - {fileID: 1900574861}
   - {fileID: 8473848699922443007}
   m_Father: {fileID: 972766752}
@@ -951,7 +952,7 @@ PrefabInstance:
     - target: {fileID: 4889749802961475314, guid: 6f6b849e827c0034da9f87a0a4326cb7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4889749802961475314, guid: 6f6b849e827c0034da9f87a0a4326cb7,
         type: 3}
@@ -1263,6 +1264,131 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 806c28b6d0ca7714bb497f89ae936904, type: 3}
+--- !u!1001 &7989762948685043510
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1654183349}
+    m_Modifications:
+    - target: {fileID: 2141641539946619253, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_margin.x
+      value: 0.16265339
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017998, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_Name
+      value: Momo Random Chat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.495058
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 31.749792
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 44.65393
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508018034, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508018034, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[0].text
+      value: idle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508018034, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[1].currentSpeaker
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508018034, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[1].animationState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508018034, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[1].text
+      value: anger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508018034, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[2].animationState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508018034, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[2].text
+      value: shock
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508018034, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[3].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508018034, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[3].text
+      value: blush
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7894047191017c647b0e1aae4ac81a7a, type: 3}
+--- !u!4 &7989762948685043511 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7989762948685043510}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8473848699922443007 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4889749802961475314, guid: 6f6b849e827c0034da9f87a0a4326cb7,
