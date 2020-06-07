@@ -189,6 +189,131 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: dialogManager
+      value: 
+      objectReference: {fileID: 1766717750}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[0].text
+      value: PICK A CARD.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[1].text
+      value: what
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[0].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[2].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[2].text
+      value: PICK.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[3].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[3].text
+      value: A.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[4].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[4].text
+      value: CARD.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[5].text
+      value: oh, uh, ok sure
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[6].text
+      value: (...)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[7].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[7].text
+      value: (not that one)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[8].text
+      value: (ok)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[9].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[9].text
+      value: '*ahem*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[10].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[10].text
+      value: NOW, PREPARE TO BE ~ d a z z l e d~
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[11].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[11].text
+      value: Was *THIS* your- FUCK
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[12].text
+      value: (the deck of cards slipped out of her hands. the cards went everywhere)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[13].text
+      value: (upon closer inspection, every card in the deck was a 2 of hearts)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11d6839daaaf74d4189b88fdf2b2ba6a, type: 3}
 --- !u!4 &138755457 stripped
@@ -1177,6 +1302,18 @@ Transform:
   m_Father: {fileID: 972766752}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1766717750 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2526307804160142315, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 125033019}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3f840513530cc4f8645c7efae862b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1844391869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,6 +1473,31 @@ PrefabInstance:
     - target: {fileID: 5954804686001880948, guid: 4a7a4b1b5601c674d8c295707aa03ec1,
         type: 3}
       propertyPath: onLit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954804686001880948, guid: 4a7a4b1b5601c674d8c295707aa03ec1,
+        type: 3}
+      propertyPath: onLit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954804686001880948, guid: 4a7a4b1b5601c674d8c295707aa03ec1,
+        type: 3}
+      propertyPath: onLit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954804686001880948, guid: 4a7a4b1b5601c674d8c295707aa03ec1,
+        type: 3}
+      propertyPath: onLit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954804686001880948, guid: 4a7a4b1b5601c674d8c295707aa03ec1,
+        type: 3}
+      propertyPath: onLit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ShowControllerHint
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954804686001880948, guid: 4a7a4b1b5601c674d8c295707aa03ec1,
+        type: 3}
+      propertyPath: onLit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6401846706916544240, guid: 4a7a4b1b5601c674d8c295707aa03ec1,

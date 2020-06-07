@@ -82,23 +82,28 @@ PrefabInstance:
     - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: conversations.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[0].text
-      value: hello hello
+      value: asdf
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[1].currentSpeaker
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: dialogManager
+      value: 
+      objectReference: {fileID: 2526307804160142315}
     - target: {fileID: 8311943639810183477, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: animationFront.Array.size
@@ -181,3 +186,15 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8311943639810183476, guid: ba886cdd96e667f4e9ff5a9e3624830e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ba886cdd96e667f4e9ff5a9e3624830e, type: 3}
+--- !u!114 &2526307804160142315 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8311943639765476728, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5789037725253029523}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3f840513530cc4f8645c7efae862b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

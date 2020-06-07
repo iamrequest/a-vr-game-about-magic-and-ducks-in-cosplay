@@ -42,6 +42,7 @@ namespace UnityEditor {
 
                 foreach (Sentence s in convo.sentences) {
                     if (s == null) break;
+                    EditorGUI.BeginChangeCheck();
 
                     // -- Horizontal section
                     EditorGUILayout.BeginHorizontal();
@@ -55,11 +56,18 @@ namespace UnityEditor {
                     if (GUILayout.Button("-")) {
                         // Can't remove an element in the middle of a foreach loop
                         sentenceToDelete = s;
+                        Undo.RecordObject(target, "Remove Sentence");
+                        EditorUtility.SetDirty(target);
                     }
                     EditorGUILayout.EndHorizontal();
 
                     // -- Text field
                     s.text = EditorGUILayout.TextField(s.text);
+
+                    if(EditorGUI.EndChangeCheck()) {
+                        Undo.RecordObject(target, "sentence change");
+                        EditorUtility.SetDirty(target);
+                    }
                 }
 
                 if (sentenceToDelete != null) {
@@ -69,6 +77,8 @@ namespace UnityEditor {
                 // -- Add sentence / remove convo
                 if (GUILayout.Button("Add Sentence")) {
                     convo.sentences.Add(new Sentence());
+                    Undo.RecordObject(target, "Add Sentence");
+                    EditorUtility.SetDirty(target);
                 }
 
             }

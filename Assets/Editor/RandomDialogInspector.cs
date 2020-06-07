@@ -77,6 +77,7 @@ namespace UnityEditor
                 EditorGUILayout.EndHorizontal();
 
                 foreach (Sentence s in dialog.conversations[i].sentences) {
+                    EditorGUI.BeginChangeCheck();
                     if (s == null) break;
 
                     // -- Horizontal section
@@ -91,11 +92,18 @@ namespace UnityEditor
                     if (GUILayout.Button("-")) {
                         // Can't remove an element in the middle of a foreach loop
                         sentenceToDelete = s;
+                        Undo.RecordObject(target, "Deleted Sentence");
+                        EditorUtility.SetDirty(dialog);
                     }
                     EditorGUILayout.EndHorizontal();
 
                     // -- Text field
                     s.text = EditorGUILayout.TextField(s.text);
+
+                    if(EditorGUI.EndChangeCheck()) {
+                        Undo.RecordObject(dialog, "sentence change");
+                        EditorUtility.SetDirty(dialog);
+                    }
                 }
 
                 if (sentenceToDelete != null) {
@@ -106,12 +114,16 @@ namespace UnityEditor
                 EditorGUILayout.BeginHorizontal();
                 if (GUILayout.Button("Add Sentence")) {
                     dialog.conversations[i].sentences.Add(new Sentence());
+                    Undo.RecordObject(target, "Added Sentence");
+                    EditorUtility.SetDirty(dialog);
                 }
 
                 if (GUILayout.Button("Delete conversation")) {
                     dialog.conversations.RemoveAt(i);
                     expandSentences.RemoveAt(i);
                     convoLabels.RemoveAt(i);
+                    Undo.RecordObject(target, "Deleted Conversation");
+                    EditorUtility.SetDirty(dialog);
                 }
                 EditorGUILayout.EndHorizontal();
             }
