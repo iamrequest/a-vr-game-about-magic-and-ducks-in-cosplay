@@ -82,28 +82,347 @@ PrefabInstance:
     - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: conversations.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.size
-      value: 1
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.size
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[0].text
-      value: asdf
+      value: PICK A CARD.
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[1].currentSpeaker
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: dialogManager
       value: 
       objectReference: {fileID: 2526307804160142315}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[0].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[1].text
+      value: what
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[2].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[2].text
+      value: PICK.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[3].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[3].text
+      value: A.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[4].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[4].text
+      value: CARD.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[5].text
+      value: oh, uh, ok sure
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[6].text
+      value: (...)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[7].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[7].text
+      value: (not that one)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[8].text
+      value: (ok)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[9].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[9].text
+      value: '*ahem*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[10].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[10].text
+      value: NOW, PREPARE TO BE ~ d a z z l e d~
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[11].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[11].text
+      value: Was *THIS* your- FUCK
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[12].text
+      value: (the deck of cards slipped out of her hands. the cards went everywhere)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[13].text
+      value: (upon closer inspection, every card in the deck was a 2 of hearts)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[0].text
+      value: so like, tell me about the wizard guy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[1].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[1].text
+      value: 'oh, ron? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[2].text
+      value: ron?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[3].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[3].text
+      value: oh
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[4].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[4].text
+      value: uh
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[5].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[5].text
+      value: please don't tell him i told you his name
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[6].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[6].text
+      value: he gets weird about it
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[7].text
+      value: oh?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[8].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[8].text
+      value: mhm. he wants me to call him "Gan, the Grand Elf". i don't know why.
+        he's a duck, not an elf
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[9].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[9].text
+      value: in fact, i've never even met an elf before, have you?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[10].text
+      value: can't say i have
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[11].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[11].text
+      value: well anyways, ron and i do research on the island
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[12].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[12].text
+      value: although lately he's been on this whole wizard trip, so we've been studying
+        magic these days
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[13].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[13].text
+      value: we uh, haven't made any progress
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[14].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[14].text
+      value: but hey, failing's the first step towards succeeding, right?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[0].text
+      value: what's up with this island?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[1].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[1].text
+      value: what do you mean?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[2].text
+      value: well I mean... it's all flat and shit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[3].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[3].text
+      value: the wizard and i are in the middle of researching that, actually
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[4].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[4].text
+      value: i mean, if it's flat, how does gravity work? shouldn't we be pulled
+        towards a single point, rather than just "down"?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[5].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[5].text
+      value: and i mean, The Void over there by the cliff, right?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[6].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[6].text
+      value: if you fall off the edge of the world, you just wake up back on the
+        island
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[7].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[7].text
+      value: not that i've ever been brave enough to try it or anything
+      objectReference: {fileID: 0}
     - target: {fileID: 8311943639810183477, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: animationFront.Array.size
@@ -162,6 +481,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943640344142206, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_textAlignment
+      value: 513
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943640344142207, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.93533
       objectReference: {fileID: 0}
     - target: {fileID: 8311943640620225901, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}

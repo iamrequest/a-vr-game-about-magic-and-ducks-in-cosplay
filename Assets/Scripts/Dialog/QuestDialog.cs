@@ -20,6 +20,7 @@ public class QuestDialog : BaseDialog {
         }
 
         // -- Always play the initial dialog
+        // TODO: All quests complete dialog isn't playing
         if (!objectives[activeObjectiveIndex].initialDialogComplete) {
             dialogManager.StartDialog(this, objectives[activeObjectiveIndex].initialDialog, true);
             return;
@@ -74,12 +75,14 @@ public class QuestDialog : BaseDialog {
             // -- Test the initial dialog for completion
             if (!objectives[activeObjectiveIndex].initialDialogComplete) {
                 objectives[activeObjectiveIndex].initialDialogComplete = true;
+                objectives[activeObjectiveIndex].onObjectiveStart.Invoke();
                 return;
             }
 
             // If you've finished talking to the NPC, and the quest has been completed, advance to the next quest
             if (objectives[activeObjectiveIndex].isComplete) {
                 objectives[activeObjectiveIndex].finalDialogComplete = true;
+                objectives[activeObjectiveIndex].onObjectiveComplete.Invoke();
             }
         }
     }

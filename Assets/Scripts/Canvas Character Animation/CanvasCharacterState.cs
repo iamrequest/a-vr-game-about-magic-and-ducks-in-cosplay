@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum AnimationState {
-    Idle, Anger
+    Idle, Anger, Shock, Blush
 }
 public class CanvasCharacterState : MonoBehaviour {
     public CanvasCharacter parentCharacter; 
