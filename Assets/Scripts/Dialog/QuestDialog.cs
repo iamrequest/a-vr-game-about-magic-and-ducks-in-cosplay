@@ -19,49 +19,49 @@ public class QuestDialog : BaseDialog {
             return;
         }
 
-        // -- Always play the initial dialog
-        // TODO: All quests complete dialog isn't playing
-        if (!objectives[activeObjectiveIndex].initialDialogComplete) {
-            dialogManager.StartDialog(this, objectives[activeObjectiveIndex].initialDialog, true);
+        // Failsafe
+        if (activeObjectiveIndex > objectives.Count) {
+            Debug.LogError("Bad count of objectives!");
             return;
         }
-        
-        if (IsReadyToAdvanceToNextObjective()) {
+        if (objectives[activeObjectiveIndex] == null) {
+            Debug.LogError("Null objective!");
+            return;
+        }
+
+        QuestObjective o = objectives[activeObjectiveIndex];
+
+        // -- Test finishing of the quest
+        if (o.initialDialogComplete && o.finalDialogComplete && o.isComplete) {
             if (IsFinalObjective()) {
-                // -- No more objectives - tell the player to finish some other quest
                 dialogManager.StartDialog(this, allObjectivesCompleteDialog, true);
                 return;
             } else {
-                // -- Prepare the next objective, if one exists
                 activeObjectiveIndex++;
 
-                // Initial dialog for the new objective
-                if (!objectives[activeObjectiveIndex].initialDialogComplete) {
-                    dialogManager.StartDialog(this, objectives[activeObjectiveIndex].initialDialog, true);
-                    return;
-                } else {
-                    Debug.LogError("Objective " + activeObjectiveIndex + " is null!");
-                }
+                StartDialog();
+                return;
             }
         }
 
-        // -- Dialog for the current objective
-        if (objectives[activeObjectiveIndex] != null) {
-            if (objectives[activeObjectiveIndex].isComplete) {
-                // -- Objective complete
-                dialogManager.StartDialog(this, objectives[activeObjectiveIndex].onCompleteDialog, true);
-            } else {
-                if (!objectives[activeObjectiveIndex].initialDialogComplete) {
-                    // -- First dialog after the objective began
-                    dialogManager.StartDialog(this, objectives[activeObjectiveIndex].initialDialog, true);
-                } else {
-                    // -- N'th dialog after the objective began
-                    dialogManager.StartDialog(this, objectives[activeObjectiveIndex].repeatDialog, true);
-                }
-            }
-        } else {
-            Debug.LogError("Objective " + activeObjectiveIndex + " is null!");
+        // -- Quest is in progress
+        if (!o.initialDialogComplete) {
+            dialogManager.StartDialog(this, o.initialDialog, true);
+
+            return;
         }
+
+        if (!o.isComplete) {
+            dialogManager.StartDialog(this, o.repeatDialog, true);
+            return;
+        }
+
+        if (!o.finalDialogComplete) {
+            dialogManager.StartDialog(this, o.onCompleteDialog, true);
+            return;
+        }
+
+        Debug.LogError("This shouldn't be reached");
     }
 
     public override void OnDialogEnd(bool wasDialogFullyCompleted) {

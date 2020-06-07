@@ -1365,7 +1365,6 @@ MonoBehaviour:
   dialogManager: {fileID: 4889749802961475278}
   objectives:
   - {fileID: 3909909487996147186}
-  - {fileID: 0}
   activeObjectiveIndex: 0
   allObjectivesCompleteDialog:
     sentences:
