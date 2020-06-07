@@ -57,7 +57,7 @@ MonoBehaviour:
       m_Calls: []
   initialDialog:
     sentences:
-    - animationState: 0
+    - animationState: 2
       currentSpeaker: 1
       text: nice ship
     - animationState: 0
@@ -66,10 +66,10 @@ MonoBehaviour:
     - animationState: 0
       currentSpeaker: 1
       text: come here often?
-    - animationState: 0
+    - animationState: 3
       currentSpeaker: 0
       text: uwu
-    - animationState: 0
+    - animationState: 3
       currentSpeaker: 1
       text: uwu
     - animationState: 0
@@ -81,7 +81,7 @@ MonoBehaviour:
     - animationState: 0
       currentSpeaker: 1
       text: so like
-    - animationState: 0
+    - animationState: 3
       currentSpeaker: 1
       text: are you also a connoisseur of the arcane arts?????
     - animationState: 1
@@ -108,14 +108,14 @@ MonoBehaviour:
     - animationState: 0
       currentSpeaker: 1
       text: uh...
-    - animationState: 0
+    - animationState: 3
       currentSpeaker: 1
       text: maybe like a magic missile or something? ooo or wait, can you cast a
         giant fireball????
-    - animationState: 0
+    - animationState: 3
       currentSpeaker: 0
       text: maybe just a small one, as a treat
-    - animationState: 0
+    - animationState: 3
       currentSpeaker: 0
       text: here, i'll set your campfire on uh... fire
     - animationState: 0
@@ -145,22 +145,29 @@ MonoBehaviour:
         chanelling the spell
     - animationState: 0
       currentSpeaker: 1
-      text: but uh, we both totally already knew that haha
-    - animationState: 0
+      text: what's real cute about wizarding shit, is that you can't do magic while
+        chatting with people
+    - animationState: 3
       currentSpeaker: 1
-      text: cause we're both wizards and stuff
+      text: cause ya know, it'd be rude. whoever made magic must've been real thoughtful~
+    - animationState: 2
+      currentSpeaker: 1
+      text: ... but uh, you probably already knew all that
+    - animationState: 3
+      currentSpeaker: 1
+      text: cause we're both wizards and stuff haha
   onCompleteDialog:
     sentences:
-    - animationState: 0
+    - animationState: 2
       currentSpeaker: 1
       text: :o
-    - animationState: 0
+    - animationState: 2
       currentSpeaker: 1
       text: damn that's lit af
-    - animationState: 0
+    - animationState: 2
       currentSpeaker: 0
       text: dang right it's lit af boiiii
-    - animationState: 0
+    - animationState: 3
       currentSpeaker: 1
       text: well uh, maybe we can swap notes or something sometime~
     - animationState: 0
@@ -1131,6 +1138,8 @@ GameObject:
   - component: {fileID: 4889749802938786436}
   - component: {fileID: 4889749802938786435}
   - component: {fileID: 4889749802938786434}
+  - component: {fileID: 8473848699900239498}
+  - component: {fileID: 8473848699900239499}
   m_Layer: 10
   m_Name: AnimationStates
   m_TagString: Untagged
@@ -1194,6 +1203,48 @@ MonoBehaviour:
   animationBack:
   - {fileID: -4511746923940115194, guid: 8977a75ccf159dc48aa9dd9e3ba255f9, type: 3}
   - {fileID: -8393983586622748689, guid: 8977a75ccf159dc48aa9dd9e3ba255f9, type: 3}
+--- !u!114 &8473848699900239498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4889749802938786437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6612a07c8ba475741a603bcad4d3baa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentCharacter: {fileID: 0}
+  animationState: 2
+  animationSpeed: 1.5
+  animationFront:
+  - {fileID: -8701457912436312195, guid: c2ea09d037a74744c88c824edcae4ee2, type: 3}
+  - {fileID: -1855432934965391813, guid: c2ea09d037a74744c88c824edcae4ee2, type: 3}
+  animationBack:
+  - {fileID: 3608205374901397125, guid: fa90bb014bbb2f2409bcbd53b2808891, type: 3}
+  - {fileID: 8560665553436524496, guid: fa90bb014bbb2f2409bcbd53b2808891, type: 3}
+--- !u!114 &8473848699900239499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4889749802938786437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6612a07c8ba475741a603bcad4d3baa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentCharacter: {fileID: 0}
+  animationState: 3
+  animationSpeed: 0.7
+  animationFront:
+  - {fileID: 5317577197596317031, guid: 42be8aa797a46c94081ed3073a2a1a55, type: 3}
+  - {fileID: 6225304822483186966, guid: 42be8aa797a46c94081ed3073a2a1a55, type: 3}
+  animationBack:
+  - {fileID: -5643666569409193512, guid: 2d3fb9be538b89d48890f1cba050df3c, type: 3}
+  - {fileID: 8126700963477696660, guid: 2d3fb9be538b89d48890f1cba050df3c, type: 3}
 --- !u!1 &4889749802961475315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,5 +1370,9 @@ MonoBehaviour:
   allObjectivesCompleteDialog:
     sentences:
     - animationState: 0
-      currentSpeaker: 0
-      text: that's all i got 4 u bb, go do something else
+      currentSpeaker: 1
+      text: that's all i got for u bb
+    - animationState: 0
+      currentSpeaker: 1
+      text: you should go down to the village, find some peeps and help set up the
+        festival

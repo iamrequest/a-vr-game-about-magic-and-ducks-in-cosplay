@@ -913,42 +913,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1654183349}
     m_Modifications:
-    - target: {fileID: 3909909487996147186, guid: 6f6b849e827c0034da9f87a0a4326cb7,
-        type: 3}
-      propertyPath: repeatDialog.sentences.Array.size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3909909487996147186, guid: 6f6b849e827c0034da9f87a0a4326cb7,
-        type: 3}
-      propertyPath: repeatDialog.sentences.Array.data[5].text
-      value: what's real cute about wizarding shit, is that you can't do magic while
-        chatting with people
-      objectReference: {fileID: 0}
-    - target: {fileID: 3909909487996147186, guid: 6f6b849e827c0034da9f87a0a4326cb7,
-        type: 3}
-      propertyPath: repeatDialog.sentences.Array.data[6].text
-      value: cause ya know, it'd be rude. whoever made magic must've been real thoughtful~
-      objectReference: {fileID: 0}
-    - target: {fileID: 3909909487996147186, guid: 6f6b849e827c0034da9f87a0a4326cb7,
-        type: 3}
-      propertyPath: repeatDialog.sentences.Array.data[7].currentSpeaker
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3909909487996147186, guid: 6f6b849e827c0034da9f87a0a4326cb7,
-        type: 3}
-      propertyPath: repeatDialog.sentences.Array.data[7].text
-      value: ... but uh, you probably already knew all that
-      objectReference: {fileID: 0}
-    - target: {fileID: 3909909487996147186, guid: 6f6b849e827c0034da9f87a0a4326cb7,
-        type: 3}
-      propertyPath: repeatDialog.sentences.Array.data[8].currentSpeaker
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3909909487996147186, guid: 6f6b849e827c0034da9f87a0a4326cb7,
-        type: 3}
-      propertyPath: repeatDialog.sentences.Array.data[8].text
-      value: cause we're both wizards and stuff haha
-      objectReference: {fileID: 0}
     - target: {fileID: 4889749802961475314, guid: 6f6b849e827c0034da9f87a0a4326cb7,
         type: 3}
       propertyPath: m_LocalPosition.x
