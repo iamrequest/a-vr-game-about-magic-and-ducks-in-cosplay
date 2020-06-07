@@ -95,6 +95,9 @@ public class DialogManager : MonoBehaviour {
         canvasCharacter.SetAnimationState(currentSentence.animationState);
         ConfigureTextboxImages();
 
+        // Look at player
+        canvasCharacter.LookAt(Player.instance.hmdTransform.position);
+
         // Start typing
         StartCoroutine(TypeSentence());
     }

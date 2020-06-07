@@ -93,4 +93,8 @@ public class CanvasCharacter : MonoBehaviour {
             Debug.LogError("Unable to find state for this character with a state of " + animationState.ToString());
         }
     }
+
+    public void LookAt(Vector3 position) {
+        transform.LookAt(position);
+    }
 }
