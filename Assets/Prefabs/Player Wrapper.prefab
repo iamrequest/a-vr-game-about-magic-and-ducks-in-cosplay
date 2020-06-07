@@ -1136,7 +1136,7 @@ MonoBehaviour:
   selectedSpell: {fileID: 0}
   availableSpells:
   - {fileID: 5155062604783271584}
-  - {fileID: 1194105785}
+  - {fileID: 5259557545625121546}
   - {fileID: 6249264546970659194}
   spellLineRenderer: {fileID: 0}
   manualSigilPositionOffset: {x: 0, y: 0, z: 0}
@@ -6743,10 +6743,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5674697071221564293}
   - component: {fileID: 5674697071221564294}
-  - component: {fileID: 1194105785}
   - component: {fileID: 1194105786}
+  - component: {fileID: 5259557545625121546}
   m_Layer: 11
-  m_Name: Rainfall
+  m_Name: Gravity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6790,19 +6790,6 @@ MonoBehaviour:
   - {x: 0.081074715, y: 0.1999001, z: 0}
   - {x: 0.17831787, y: 0.12779416, z: 0}
   modes: 00000000000000000000000000000000
---- !u!114 &1194105785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5674697071221564292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41ed4bf608ce1284aa5dfa01d71a4792, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sigil: {fileID: 1194105786}
 --- !u!114 &1194105786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6820,6 +6807,37 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   numPointsInSigil: 25
   manuallySetBoundingBox: 0
+--- !u!114 &5259557545625121546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5674697071221564292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a91109573748d478c61988e364a318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sigil: {fileID: 1194105786}
+  grabObjectAction:
+    actionPath: /actions/Main/in/ChannelSpell
+    needsReinit: 0
+  pullPushAction:
+    actionPath: /actions/Main/in/DialogInteract
+    needsReinit: 0
+  handOffset: {x: -0.12, y: -0.05, z: -0.06}
+  objectFollowSpeed: 1
+  raycastDistance: 5
+  layermask:
+    serializedVersion: 2
+    m_Bits: 11264
+  hoverDistance: 0
+  initialHoverDistance: 1
+  lineRenderer: {fileID: 5674697072524478460}
+  lineRendererAnimator: {fileID: 308371284}
+  handPositionHistoryCount: 5
+  throwForceMultiplier: 50
 --- !u!1 &5674697071580320036
 GameObject:
   m_ObjectHideFlags: 0

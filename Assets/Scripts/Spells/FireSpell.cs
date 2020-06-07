@@ -41,7 +41,7 @@ public class FireSpell : BaseSpell {
 
     public override void OnDeselected() {
         base.OnDeselected();
-        throwFireballAction.AddOnChangeListener(ThrowFireball, castingHand.handType);
+        throwFireballAction.RemoveOnChangeListener(ThrowFireball, castingHand.handType);
 
         if (currentFireball != null) {
             Destroy(currentFireball.gameObject);
