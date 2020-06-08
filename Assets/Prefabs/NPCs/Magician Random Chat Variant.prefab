@@ -76,6 +76,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -5495048707692509055, guid: c2c8485953057534989cb1aea2058103,
         type: 3}
+    - target: {fileID: 7446781913510246070, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -846399223
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446781913510246070, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8311943639541592926, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_Sprite
@@ -140,7 +150,7 @@ PrefabInstance:
     - target: {fileID: 8311943639765476677, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_Name
-      value: Magician Random Chat Variant
+      value: Magician Random Chat
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
@@ -160,7 +170,7 @@ PrefabInstance:
     - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: conversations.Array.data[2].sentences.Array.size
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
@@ -551,6 +561,46 @@ PrefabInstance:
       propertyPath: conversations.Array.data[2].sentences.Array.data[7].animationState
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[8].text
+      value: it's like we're standing on the edge of the world or something
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[9].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[9].text
+      value: i know right? no where else to go
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[10].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[10].text
+      value: that said, it's not like i'd wanna be anywhere else
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[11].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[11].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[11].text
+      value: this is home, ya know?
+      objectReference: {fileID: 0}
     - target: {fileID: 8311943639810183477, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: animationFront.Array.size
@@ -588,17 +638,17 @@ PrefabInstance:
     - target: {fileID: 8311943640344142206, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 144
+      value: 119
       objectReference: {fileID: 0}
     - target: {fileID: 8311943640344142206, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 24
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 8311943640344142206, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 24
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8311943640344142206, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
@@ -638,6 +688,31 @@ PrefabInstance:
     - target: {fileID: 8311943640620225901, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943640748328892, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -846399223
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943640761659943, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -846399223
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943640761659943, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943640821131593, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -846399223
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943640821131593, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_SortingLayer
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:

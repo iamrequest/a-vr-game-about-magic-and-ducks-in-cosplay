@@ -10,12 +10,14 @@ public class QuestDialog : BaseDialog {
     public List<QuestObjective> objectives;
     public int activeObjectiveIndex;
 
-    public Conversation allObjectivesCompleteDialog;
+    //public Conversation allObjectivesCompleteDialog;
+    public RandomDialog postObjectiveRandomDialog;
 
     public override void StartDialog() {
         // No quests exist
         if (objectives.Count == 0) {
-            dialogManager.StartDialog(this, allObjectivesCompleteDialog, true);
+            postObjectiveRandomDialog.StartDialog();
+            //dialogManager.StartDialog(this, allObjectivesCompleteDialog, true);
             return;
         }
 
@@ -34,7 +36,8 @@ public class QuestDialog : BaseDialog {
         // -- Test finishing of the quest
         if (o.initialDialogComplete && o.finalDialogComplete && o.isComplete) {
             if (IsFinalObjective()) {
-                dialogManager.StartDialog(this, allObjectivesCompleteDialog, true);
+                //dialogManager.StartDialog(this, allObjectivesCompleteDialog, true);
+                postObjectiveRandomDialog.StartDialog();
                 return;
             } else {
                 activeObjectiveIndex++;

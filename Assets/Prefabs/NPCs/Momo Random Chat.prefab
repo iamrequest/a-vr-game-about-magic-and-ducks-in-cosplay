@@ -55,20 +55,30 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -2353574770926551673, guid: a6e2873474572da4eb3de6f6fa35bc96,
         type: 3}
+    - target: {fileID: 7446781913510246070, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -846399223
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446781913510246070, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476676, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.495058
+      value: -5.75
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476676, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 31.749792
+      value: 41.577
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476676, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 44.65393
+      value: 154.66
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476676, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
@@ -123,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
@@ -138,7 +148,42 @@ PrefabInstance:
     - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[0].text
-      value: yar yar days
+      value: idle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[1].animationState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[1].currentSpeaker
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[1].text
+      value: anger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[2].animationState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[2].text
+      value: shock
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[3].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943639765476729, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[3].text
+      value: blush
       objectReference: {fileID: 0}
     - target: {fileID: 8311943639810183476, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
@@ -238,6 +283,11 @@ PrefabInstance:
       propertyPath: m_textAlignment
       value: 257
       objectReference: {fileID: 0}
+    - target: {fileID: 8311943640344142206, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_margin.x
+      value: 0.16265339
+      objectReference: {fileID: 0}
     - target: {fileID: 8311943640620225901, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -267,6 +317,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.spaceCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943640748328892, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -846399223
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943640761659943, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -846399223
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943640761659943, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943640821131593, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -846399223
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311943640821131593, guid: ba886cdd96e667f4e9ff5a9e3624830e,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba886cdd96e667f4e9ff5a9e3624830e, type: 3}
