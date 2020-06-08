@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcb3cee054280344eb4ebbe7e83707eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
 --- !u!54 &120857017
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -554,6 +555,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1844391870}
     m_Modifications:
+    - target: {fileID: 3768043510876164652, guid: 806c28b6d0ca7714bb497f89ae936904,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768043510876164652, guid: 806c28b6d0ca7714bb497f89ae936904,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5182004803597127216, guid: 806c28b6d0ca7714bb497f89ae936904,
         type: 3}
       propertyPath: m_LocalPosition.x

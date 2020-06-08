@@ -8,7 +8,11 @@ using Valve.VR.InteractionSystem;
 public class ForceGrabSpell : BaseSpell {
     public SteamVR_Action_Boolean grabObjectAction;
     public SteamVR_Action_Boolean pullPushAction;
+
+    [Header("Particle System")]
+    public ParticleSystem particles;
     public Vector3 handOffset; // Offset from the hand while channeling
+    public float particleSystemFollowSpeed;
 
     [Header("Base Force Grab")]
     private ForceGrabbable currentTarget;
@@ -18,7 +22,6 @@ public class ForceGrabSpell : BaseSpell {
     public LayerMask layermask;
 
     public float hoverDistance, initialHoverDistance;
-    private bool isPullPushModeActive;
 
     // Line Renderer (likely reuse the dialog line renderer)
     public LineRenderer lineRenderer;
@@ -31,6 +34,9 @@ public class ForceGrabSpell : BaseSpell {
     private Vector3 previousHandPosition;
     public float throwForceMultiplier;
 
+    // -- Pull/push mode
+    private bool isPullPushModeActive;
+
     protected override void Start() {
         handDeltaHistory = new Vector3[handPositionHistoryCount];
         lastHandHistoryIndex = 0;
@@ -41,6 +47,9 @@ public class ForceGrabSpell : BaseSpell {
         base.OnSelected(castingHand);
 
         hoverDistance = initialHoverDistance;
+
+        particles.transform.position = castingHand.transform.position;
+        particles.Play();
 
         grabObjectAction.AddOnUpdateListener(GrabObject, castingHand.handType);
         pullPushAction.AddOnChangeListener(SetPullPushMode, castingHand.handType); 
@@ -53,9 +62,10 @@ public class ForceGrabSpell : BaseSpell {
         pullPushAction.RemoveOnChangeListener(SetPullPushMode, castingHand.handType); 
         isGrabbing = false;
         isPullPushModeActive = false;
+        particles.Stop();
 
         if (currentTarget!= null) {
-            currentTarget.rb.useGravity = true;
+            currentTarget.OnRelease();
         }
     }
 
@@ -67,7 +77,7 @@ public class ForceGrabSpell : BaseSpell {
             if (!newState) {
                 // -- Throw the object
                 isGrabbing = false;
-                currentTarget.rb.useGravity = true;
+                currentTarget.OnRelease();
 
                 // -- Add force to the projectile
                 Vector3 handDelta = Vector3.zero;
@@ -88,10 +98,20 @@ public class ForceGrabSpell : BaseSpell {
                     lineRenderer.SetPosition(1, hit.point);
                     lineRendererAnimator.SetTrigger("fire");
 
-                    if (hit.collider.TryGetComponent(out ForceGrabbable forceGrabbable)) {
+                    // -- This object we collided with can be grabbed
+                    // Check both the immediate object, and its parent.
+                    //  We can have gameobjects with child colliders
+                    ForceGrabbable forceGrabbable = hit.collider.GetComponent<ForceGrabbable>();
+                    if (forceGrabbable == null) {
+                        forceGrabbable = hit.collider.GetComponentInParent<ForceGrabbable>();
+                    }
+                    
+                    if (forceGrabbable != null) {
+                        hoverDistance = initialHoverDistance;
+
                         isGrabbing = true;
                         currentTarget = forceGrabbable;
-                        currentTarget.rb.useGravity = false;
+                        currentTarget.OnGrab();
                     }
                 } else {
                     // -- Missed: Raycast into air
@@ -112,13 +132,21 @@ public class ForceGrabSpell : BaseSpell {
     private void Update() {
         if (!isSelected) return;
 
+        // Lerp the particle system towards the player hand
+        LerpTowardsCastingHand(particles.transform, particleSystemFollowSpeed, handOffset);
+
         if (isGrabbing) {
             // -- In the middle of a grab. Lerp the object towards the target
-            currentTarget.transform.position = Vector3.Lerp(currentTarget.transform.position, 
-                                                            castingHand.transform.position 
-                                                                + castingHand.transform.rotation * handOffset
-                                                                + castingHand.transform.forward * hoverDistance,
-                                                            Time.deltaTime * objectFollowSpeed);
+            Vector3 newPosition = Vector3.Lerp(currentTarget.transform.position,
+                                               castingHand.transform.position +
+                                                castingHand.transform.forward * hoverDistance,
+                                               Time.deltaTime * objectFollowSpeed);
+
+            currentTarget.rb.MovePosition(newPosition);
+            //currentTarget.transform.position = Vector3.Lerp(currentTarget.transform.position, 
+            //                                                castingHand.transform.position 
+            //                                                    + castingHand.transform.forward * hoverDistance,
+            //                                                Time.deltaTime * objectFollowSpeed);
         }
 
         // -- Store a history of hand positions, so that we can neatly approximate the object's velocity post-release

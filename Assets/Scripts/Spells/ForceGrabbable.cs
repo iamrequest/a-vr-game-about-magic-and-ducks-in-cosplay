@@ -10,7 +10,24 @@ using Valve.VR.InteractionSystem;
 public class ForceGrabbable : MonoBehaviour {
     public Rigidbody rb;
 
+    private bool wasKinematicEnabled;
+    private bool wasGravityEnabled;
+
     private void Start() {
         rb = GetComponent<Rigidbody>();
+    }
+
+    public void OnGrab() {
+        wasKinematicEnabled = rb.isKinematic;
+        wasGravityEnabled = rb.useGravity;
+
+        rb.velocity = Vector3.zero;
+        rb.useGravity = false;
+        rb.isKinematic = false;
+    }
+
+    public void OnRelease() {
+        rb.isKinematic = wasKinematicEnabled;
+        rb.useGravity = wasGravityEnabled;
     }
 }
