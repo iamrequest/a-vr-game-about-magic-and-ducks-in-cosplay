@@ -313,6 +313,56 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[8].text
+      value: it's like we're standing on the edge of the world or something
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[9].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[9].text
+      value: i know right? no where else to go
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[9].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[10].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[10].text
+      value: that said, it's not like i'd wanna be anywhere else
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[11].currentSpeaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[11].text
+      value: this is home, ya know?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[11].animationState
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11d6839daaaf74d4189b88fdf2b2ba6a, type: 3}
 --- !u!4 &138755457 stripped
@@ -877,6 +927,7 @@ Transform:
   - {fileID: 1299150312}
   - {fileID: 1654183349}
   - {fileID: 1844391870}
+  - {fileID: 1821451206}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1032,6 +1083,105 @@ Transform:
   m_Father: {fileID: 972766752}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1468161213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1468161214}
+  - component: {fileID: 1468161216}
+  - component: {fileID: 1468161215}
+  - component: {fileID: 1468161217}
+  m_Layer: 0
+  m_Name: Beach Water
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1468161214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468161213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -27.43, y: 38.96, z: 151.32}
+  m_LocalScale: {x: 36.44584, y: 6.5194855, z: 58.35405}
+  m_Children: []
+  m_Father: {fileID: 1821451206}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1468161215
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468161213}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 666a4aaec848ed7488e8d3bac07e546c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1468161216
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468161213}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1468161217
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468161213}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 373480bb535fcf5499a8dc95dd6f2db2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1589045759 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3909909487996147186, guid: 6f6b849e827c0034da9f87a0a4326cb7,
@@ -1076,6 +1226,37 @@ Transform:
   - {fileID: 8473848699922443007}
   m_Father: {fileID: 972766752}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1821451205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1821451206}
+  m_Layer: 0
+  m_Name: Beach Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1821451206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821451205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1468161214}
+  m_Father: {fileID: 972766752}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1844391869
 GameObject:

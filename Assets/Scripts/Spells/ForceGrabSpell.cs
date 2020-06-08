@@ -36,6 +36,8 @@ public class ForceGrabSpell : BaseSpell {
 
     // -- Pull/push mode
     private bool isPullPushModeActive;
+    private Vector3 originalHandPosition; // Original position when starting pull/push mode
+    public float pullPushSpeed;
 
     protected override void Start() {
         handDeltaHistory = new Vector3[handPositionHistoryCount];
@@ -124,25 +126,45 @@ public class ForceGrabSpell : BaseSpell {
     }
 
     private void SetPullPushMode(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource, bool newState) {
+        isPullPushModeActive = newState;
+
         if (newState) {
-            hoverDistance += 1;
+            originalHandPosition = castingHand.transform.localPosition - Player.instance.transform.position;
         }
     }
 
+    public Vector3 handLocalPosition;
+    public Vector3 delta;
+    public float deltaMagnitude;
     private void Update() {
         if (!isSelected) return;
 
         // Lerp the particle system towards the player hand
         LerpTowardsCastingHand(particles.transform, particleSystemFollowSpeed, handOffset);
 
+        // -- Pull/push mode
+        // Known bug: If the player turns (snap turn, or in meatspace), the deltas don't calculate as expected
+        handLocalPosition = castingHand.transform.localPosition;
+        if (isPullPushModeActive) {
+            delta = castingHand.transform.localPosition - Player.instance.transform.position - originalHandPosition;
+            deltaMagnitude = delta.magnitude;
+
+            Debug.Log(delta);
+            Debug.Log(deltaMagnitude);
+        }
+
+
+        // -- In the middle of a grab. Lerp the object towards the target
         if (isGrabbing) {
-            // -- In the middle of a grab. Lerp the object towards the target
+            // Rigidbody movement
             Vector3 newPosition = Vector3.Lerp(currentTarget.transform.position,
                                                castingHand.transform.position +
                                                 castingHand.transform.forward * hoverDistance,
                                                Time.deltaTime * objectFollowSpeed);
 
             currentTarget.rb.MovePosition(newPosition);
+
+            // Transform movement (object moves through walls)
             //currentTarget.transform.position = Vector3.Lerp(currentTarget.transform.position, 
             //                                                castingHand.transform.position 
             //                                                    + castingHand.transform.forward * hoverDistance,
