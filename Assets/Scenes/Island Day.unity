@@ -1800,6 +1800,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beachBall
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: feae6c19fbd6cab439009d62ebcb65bc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feae6c19fbd6cab439009d62ebcb65bc, type: 3}
 --- !u!1001 &1808491984
@@ -2010,8 +2015,8 @@ MonoBehaviour:
   rb: {fileID: 0}
   forceGrabSocket: {fileID: 901246846}
   isSlotted: 0
-  slotLerpSpeed: 0
-  minSnapDistance: 0
+  slotLerpSpeed: 1
+  minSnapDistance: 0.01
   onSlotEvent:
     m_PersistentCalls:
       m_Calls:
@@ -2794,33 +2799,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 1821451206}
     m_Modifications:
     - target: {fileID: 1819184373, guid: bb45b1d8d10c8ac46a813c7c4d77df12, type: 3}
-      propertyPath: onSlotEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1819184373, guid: bb45b1d8d10c8ac46a813c7c4d77df12, type: 3}
       propertyPath: forceGrabSocket
       value: 
       objectReference: {fileID: 1678978950}
     - target: {fileID: 1819184373, guid: bb45b1d8d10c8ac46a813c7c4d77df12, type: 3}
-      propertyPath: onSlotEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1819184373, guid: bb45b1d8d10c8ac46a813c7c4d77df12, type: 3}
-      propertyPath: onSlotEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1819184373, guid: bb45b1d8d10c8ac46a813c7c4d77df12, type: 3}
       propertyPath: onSlotEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4479334013446936903}
-    - target: {fileID: 1819184373, guid: bb45b1d8d10c8ac46a813c7c4d77df12, type: 3}
-      propertyPath: onSlotEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CompleteObjective
-      objectReference: {fileID: 0}
-    - target: {fileID: 1819184373, guid: bb45b1d8d10c8ac46a813c7c4d77df12, type: 3}
-      propertyPath: onSlotEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 368778270784236496, guid: bb45b1d8d10c8ac46a813c7c4d77df12,
         type: 3}
       propertyPath: m_Name

@@ -94,7 +94,7 @@ public class ForceGrabSpell : BaseSpell {
         } else {
             if (newState) {
                 // -- Attempt to pick up an object
-                if (Physics.Raycast(castingHand.transform.position, castingHand.transform.forward.normalized * raycastDistance, out RaycastHit hit, layermask)) {
+                if (Physics.Raycast(castingHand.transform.position, castingHand.transform.forward.normalized, out RaycastHit hit, raycastDistance, layermask)) {
                     // -- Hit: Raycast to the collision point
                     lineRenderer.SetPosition(0, castingHand.transform.position);
                     lineRenderer.SetPosition(1, hit.point);
