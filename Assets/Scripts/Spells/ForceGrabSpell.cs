@@ -94,7 +94,7 @@ public class ForceGrabSpell : BaseSpell {
         } else {
             if (newState) {
                 // -- Attempt to pick up an object
-                if (Physics.Raycast(castingHand.transform.position, castingHand.transform.forward * raycastDistance, out RaycastHit hit, layermask)) {
+                if (Physics.Raycast(castingHand.transform.position, castingHand.transform.forward.normalized * raycastDistance, out RaycastHit hit, layermask)) {
                     // -- Hit: Raycast to the collision point
                     lineRenderer.SetPosition(0, castingHand.transform.position);
                     lineRenderer.SetPosition(1, hit.point);
@@ -109,6 +109,9 @@ public class ForceGrabSpell : BaseSpell {
                     }
                     
                     if (forceGrabbable != null) {
+                        // Can't grab slotted targets
+                        if (forceGrabbable.isSlotted) return;
+
                         hoverDistance = initialHoverDistance;
 
                         isGrabbing = true;
@@ -142,8 +145,15 @@ public class ForceGrabSpell : BaseSpell {
         // Lerp the particle system towards the player hand
         LerpTowardsCastingHand(particles.transform, particleSystemFollowSpeed, handOffset);
 
+        if (currentTarget.isSlotted) {
+            isGrabbing = false;
+            isPullPushModeActive = false;
+            currentTarget.OnRelease();
+        }
+
         // -- Pull/push mode
         // Known bug: If the player turns (snap turn, or in meatspace), the deltas don't calculate as expected
+        // TODO
         handLocalPosition = castingHand.transform.localPosition;
         if (isPullPushModeActive) {
             delta = castingHand.transform.localPosition - Player.instance.transform.position - originalHandPosition;
@@ -157,12 +167,17 @@ public class ForceGrabSpell : BaseSpell {
         // -- In the middle of a grab. Lerp the object towards the target
         if (isGrabbing) {
             // Rigidbody movement
+            Quaternion newRotation = Quaternion.Lerp(currentTarget.transform.rotation,
+                                                     castingHand.transform.rotation,
+                                                     Time.deltaTime * objectFollowSpeed);
+            currentTarget.rb.MoveRotation(newRotation);
+
             Vector3 newPosition = Vector3.Lerp(currentTarget.transform.position,
                                                castingHand.transform.position +
                                                 castingHand.transform.forward * hoverDistance,
                                                Time.deltaTime * objectFollowSpeed);
-
             currentTarget.rb.MovePosition(newPosition);
+    
 
             // Transform movement (object moves through walls)
             //currentTarget.transform.position = Vector3.Lerp(currentTarget.transform.position, 

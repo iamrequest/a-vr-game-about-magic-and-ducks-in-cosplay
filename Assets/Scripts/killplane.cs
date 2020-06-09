@@ -12,6 +12,19 @@ public class killplane : MonoBehaviour {
             Debug.Log(other);
             Player.instance.transform.position = spawnTransform.position;
             Player.instance.transform.rotation = spawnTransform.rotation;
+
+            return;
+        } 
+
+        // Test for force grabbable objects
+        ForceGrabbable forceGrabbable = other.GetComponent<ForceGrabbable>();
+        if (forceGrabbable == null) {
+            forceGrabbable = other.GetComponentInParent<ForceGrabbable>();
+        }
+
+        if (forceGrabbable != null) {
+            forceGrabbable.ReturnToOriginalTransform();
+            return;
         }
     }
 }

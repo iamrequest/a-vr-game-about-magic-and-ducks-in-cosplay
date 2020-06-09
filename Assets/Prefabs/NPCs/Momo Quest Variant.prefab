@@ -1,0 +1,488 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1702708014688005712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3469505877395047097}
+  - component: {fileID: 4081051498300100582}
+  m_Layer: 10
+  m_Name: 1 Get ball
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3469505877395047097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702708014688005712}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6354839750814673331}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4081051498300100582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702708014688005712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4c161fd6d79da498e75808ea9318f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Find my ball
+  description: Momo has lost his ball, and he doesn't have a stand to get it himself.
+    Find it, and bring it to him
+  isComplete: 0
+  initialDialogComplete: 0
+  finalDialogComplete: 0
+  onObjectiveStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onObjectiveComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  initialDialog:
+    sentences:
+    - animationState: 0
+      currentSpeaker: 0
+      text: yo
+    - animationState: 0
+      currentSpeaker: 3
+      text: hey
+    - animationState: 0
+      currentSpeaker: 0
+      text: i'm going around helping peeps set up for the fest. need a hand?
+    - animationState: 1
+      currentSpeaker: 3
+      text: no.
+    - animationState: 1
+      currentSpeaker: 3
+      text: go away.
+    - animationState: 1
+      currentSpeaker: 0
+      text: oh, ok
+    - animationState: 3
+      currentSpeaker: 3
+      text: wait
+    - animationState: 3
+      currentSpeaker: 3
+      text: i need help
+    - animationState: 0
+      currentSpeaker: 0
+      text: oh?
+    - animationState: 0
+      currentSpeaker: 3
+      text: we lost some of our supplies for the fest, and i uh, can't get them myself
+    - animationState: 0
+      currentSpeaker: 3
+      text: in total, we lost... a beach ball, an umbrella, and a pair of chairs
+    - animationState: 3
+      currentSpeaker: 0
+      text: so why are you being such a tsundere about it?
+    - animationState: 0
+      currentSpeaker: 3
+      text: i uh...
+    - animationState: 0
+      currentSpeaker: 3
+      text: well, contrary to my outfit, i don't have a stand or anything, so i can't
+        do it myself
+    - animationState: 0
+      currentSpeaker: 3
+      text: and i ain't much for askin' for help
+    - animationState: 3
+      currentSpeaker: 0
+      text: no worries bb, u can rely on me~
+    - animationState: 0
+      currentSpeaker: 0
+      text: so to recap... you lost a beach ball, an umbrella, and 2 lawn chairs?
+    - animationState: 0
+      currentSpeaker: 3
+      text: ye
+    - animationState: 0
+      currentSpeaker: 3
+      text: i can see the beach ball over on that mini island... but idk how you're
+        gonna grab it from that distance
+    - animationState: 3
+      currentSpeaker: 3
+      text: god i wish i had a stand
+  repeatDialog:
+    sentences:
+    - animationState: 0
+      currentSpeaker: 0
+      text: so i see that beach ball over on that island
+    - animationState: 0
+      currentSpeaker: 3
+      text: ye
+    - animationState: 1
+      currentSpeaker: 0
+      text: why don't you just get the wizard to throw you over there or something
+    - animationState: 1
+      currentSpeaker: 3
+      text: bruh
+    - animationState: 0
+      currentSpeaker: 0
+      text: it was just a suggestion
+    - animationState: 0
+      currentSpeaker: 0
+      text: but anyways right, you want me to get your ball, and bring it to you
+    - animationState: 0
+      currentSpeaker: 0
+      text: can do bb
+  onCompleteDialog:
+    sentences:
+    - animationState: 2
+      currentSpeaker: 3
+      text: wait wtf how did you grab that
+    - animationState: 2
+      currentSpeaker: 3
+      text: bruh you didn't even touch it
+    - animationState: 3
+      currentSpeaker: 3
+      text: you have to teach me that one someday
+    - animationState: 1
+      currentSpeaker: 3
+      text: are you an enemy stand user or something
+    - animationState: 0
+      currentSpeaker: 0
+      text: nah bb i just do wizard shit sometimes
+    - animationState: 0
+      currentSpeaker: 3
+      text: 'well whatever it is, i appreciate u '
+    - animationState: 0
+      currentSpeaker: 3
+      text: i still need to get my umbrella back somehow, come chat with me when
+        you have time
+--- !u!1 &2552650352212175129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7097496378146985401}
+  - component: {fileID: 2013877128284390175}
+  m_Layer: 0
+  m_Name: 2 Get Umbrella
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7097496378146985401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2552650352212175129}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.42501688, y: -1.1376228, z: 3.1959686}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6354839750814673331}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2013877128284390175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2552650352212175129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4c161fd6d79da498e75808ea9318f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Find the Umbrella
+  description: Momo lost his umbrella too. Help him find it, and bring it back to
+    the beach
+  isComplete: 0
+  initialDialogComplete: 0
+  finalDialogComplete: 0
+  onObjectiveStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onObjectiveComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  initialDialog:
+    sentences:
+    - animationState: 0
+      currentSpeaker: 0
+      text: yo bb
+    - animationState: 0
+      currentSpeaker: 3
+      text: what's good
+    - animationState: 0
+      currentSpeaker: 0
+      text: vibin', bud
+    - animationState: 0
+      currentSpeaker: 0
+      text: you mentioned something about a lost umbrella?
+    - animationState: 0
+      currentSpeaker: 3
+      text: yep
+    - animationState: 0
+      currentSpeaker: 3
+      text: i think a gust of wind took it away
+    - animationState: 0
+      currentSpeaker: 0
+      text: is there even wind on the island? the trees don't even move. and like,
+        everything looks like it was drawn by a child
+    - animationState: 2
+      currentSpeaker: 0
+      text: including you
+    - animationState: 1
+      currentSpeaker: 3
+      text: my guy
+    - animationState: 0
+      currentSpeaker: 0
+      text: aha mb right yes
+    - animationState: 0
+      currentSpeaker: 0
+      text: the umbrella
+    - animationState: 0
+      currentSpeaker: 3
+      text: i feel like i've seen it around recently. maybe you can find it laying
+        around somewhere?
+    - animationState: 0
+      currentSpeaker: 0
+      text: sure bb, i'll take a looksie
+    - animationState: 0
+      currentSpeaker: 3
+      text: thx bb, bring it back to the beach if you find it
+  repeatDialog:
+    sentences:
+    - animationState: 0
+      currentSpeaker: 3
+      text: 'any luck on that finding that umbrella? '
+    - animationState: 0
+      currentSpeaker: 0
+      text: i mean, i'm on a much larger quest at the moment - finding myself~
+    - animationState: 0
+      currentSpeaker: 3
+      text: ...
+    - animationState: 0
+      currentSpeaker: 0
+      text: ...
+    - animationState: 0
+      currentSpeaker: 0
+      text: but uh, no, i haven't found it yet
+    - animationState: 0
+      currentSpeaker: 0
+      text: it should be around the island somewhere, right?
+    - animationState: 0
+      currentSpeaker: 3
+      text: ye
+    - animationState: 0
+      currentSpeaker: 3
+      text: 'maybe you can use your wizarding stuff to find it? '
+    - animationState: 3
+      currentSpeaker: 3
+      text: and uh, teach me afterwards senpai
+  onCompleteDialog:
+    sentences:
+    - animationState: 0
+      currentSpeaker: 3
+      text: well dang, there it is. where'd you find it?
+    - animationState: 0
+      currentSpeaker: 0
+      text: up on that hill by the wizard's house
+    - animationState: 1
+      currentSpeaker: 3
+      text: bruh, what was it doing up there?
+    - animationState: 0
+      currentSpeaker: 3
+      text: there's no way it just flew up there
+    - animationState: 2
+      currentSpeaker: 0
+      text: it eeez wat it eeeezzzz~
+    - animationState: 0
+      currentSpeaker: 3
+      text: uh, ok
+--- !u!114 &5700465757749162548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5580028378013248318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2985ea09293cef43918e22e7b4bd5e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogManager: {fileID: 5580028378013248259}
+  objectives: []
+  activeObjectiveIndex: 0
+  postObjectiveRandomDialog: {fileID: 4390010673051717044}
+--- !u!1 &6237321643446190552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6354839750814673331}
+  - component: {fileID: 4390010673051717044}
+  m_Layer: 10
+  m_Name: Objectives
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6354839750814673331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6237321643446190552}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3469505877395047097}
+  - {fileID: 7097496378146985401}
+  m_Father: {fileID: 5580028378013248319}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4390010673051717044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6237321643446190552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22b3ee3b24a40b44bdc305bdc9fa3ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogManager: {fileID: 5580028378013248259}
+  conversations:
+  - sentences:
+    - animationState: 0
+      currentSpeaker: 3
+      text: idle
+    - animationState: 1
+      currentSpeaker: 3
+      text: anger
+    - animationState: 2
+      currentSpeaker: 0
+      text: shock
+    - animationState: 3
+      currentSpeaker: 0
+      text: blush
+--- !u!1001 &5821075813967548016
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2141641540508017998, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_Name
+      value: Momo Quest Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 41.577
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 154.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2141641540508018034, guid: 7894047191017c647b0e1aae4ac81a7a, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 7894047191017c647b0e1aae4ac81a7a, type: 3}
+--- !u!1 &5580028378013248318 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2141641540508017998, guid: 7894047191017c647b0e1aae4ac81a7a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5821075813967548016}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5580028378013248319 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5821075813967548016}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5580028378013248259 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2141641540508018035, guid: 7894047191017c647b0e1aae4ac81a7a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5821075813967548016}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5580028378013248318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3f840513530cc4f8645c7efae862b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
