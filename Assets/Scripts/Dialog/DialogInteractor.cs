@@ -59,7 +59,7 @@ public class DialogInteractor : MonoBehaviour {
 
         // Raycast forward from the hand
         // If we collide with something that we can chat with, then start that conversation
-        if (Physics.Raycast(hand.transform.position, hand.transform.forward * raycastDistance, out RaycastHit hit, startDialogRaycastLayerMask)) {
+        if (Physics.Raycast(hand.transform.position, hand.transform.forward, out RaycastHit hit, raycastDistance, startDialogRaycastLayerMask)) {
             if (hit.collider.TryGetComponent(out BaseDialog dialog)) {
                 // If we aren't already in a conversation with this character, then start a new convo
                 if (dialog.dialogManager != activeDialogManager || !activeDialogManager.isDialogActive) {

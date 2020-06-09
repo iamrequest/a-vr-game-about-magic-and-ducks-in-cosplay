@@ -37,11 +37,11 @@ public class ForceGrabbable : MonoBehaviour {
     public void OnGrab() {
         rb.velocity = Vector3.zero;
         rb.useGravity = false;
+        rb.isKinematic = false;
     }
 
     public void OnRelease() {
         if (!isSlotted) {
-            //rb.useGravity = wasGravityEnabled;
             rb.useGravity = true;
         } 
     }

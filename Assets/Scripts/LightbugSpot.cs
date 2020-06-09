@@ -8,6 +8,7 @@ public class LightbugSpot : MonoBehaviour {
     public Light lightSource;
     public bool isLightLit;
     public bool isSource;
+    public bool becomeLightSourceOnLit;
     public GameObject volumetricLight;
 
     public UnityEvent onLit;
@@ -48,7 +49,11 @@ public class LightbugSpot : MonoBehaviour {
 
                     // Transfer the light bugs to the target
                     lightBugs.Play();
-                    lightSpell.StopLightBugs();
+                    if (becomeLightSourceOnLit) {
+                        isSource = true;
+                    } else {
+                        lightSpell.StopLightBugs();
+                    }
 
                     if (lightSource != null) {
                         lightSource.enabled = true;

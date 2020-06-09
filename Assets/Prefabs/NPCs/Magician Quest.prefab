@@ -1,0 +1,348 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &844196713245675620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2599243190855051691}
+  - component: {fileID: 4595194280295735179}
+  m_Layer: 10
+  m_Name: Fireflies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2599243190855051691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844196713245675620}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4541980905099618285}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4595194280295735179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844196713245675620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27b6b46d479b64845b2c9c8b19609681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: 
+  description: 
+  isComplete: 0
+  initialDialogComplete: 0
+  finalDialogComplete: 0
+  onObjectiveStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onObjectiveComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  initialDialog:
+    sentences: []
+  repeatDialog:
+    sentences: []
+  onCompleteDialog:
+    sentences: []
+  totalSubObjectives: 0
+--- !u!1 &7858622771927458602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4541980905099618285}
+  - component: {fileID: 1114318024860379617}
+  m_Layer: 10
+  m_Name: Objectives
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4541980905099618285
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7858622771927458602}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2599243190855051691}
+  m_Father: {fileID: 8345527650119690303}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1114318024860379617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7858622771927458602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22b3ee3b24a40b44bdc305bdc9fa3ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogManager: {fileID: 8345527650119690243}
+  conversations:
+  - sentences:
+    - animationState: 0
+      currentSpeaker: 2
+      text: PICK A CARD.
+    - animationState: 1
+      currentSpeaker: 0
+      text: what
+    - animationState: 1
+      currentSpeaker: 2
+      text: PICK.
+    - animationState: 1
+      currentSpeaker: 2
+      text: A.
+    - animationState: 1
+      currentSpeaker: 2
+      text: CARD.
+    - animationState: 0
+      currentSpeaker: 0
+      text: oh, uh, ok sure
+    - animationState: 0
+      currentSpeaker: 0
+      text: (...)
+    - animationState: 0
+      currentSpeaker: 2
+      text: (not that one)
+    - animationState: 0
+      currentSpeaker: 0
+      text: (ok)
+    - animationState: 0
+      currentSpeaker: 2
+      text: '*ahem*'
+    - animationState: 0
+      currentSpeaker: 2
+      text: NOW, PREPARE TO BE ~ d a z z l e d~
+    - animationState: 2
+      currentSpeaker: 2
+      text: Was *THIS* your- FUCK
+    - animationState: 2
+      currentSpeaker: 0
+      text: (the deck of cards slipped out of her hands. the cards went everywhere)
+    - animationState: 3
+      currentSpeaker: 0
+      text: (upon closer inspection, every card in the deck was a 2 of hearts)
+  - sentences:
+    - animationState: 0
+      currentSpeaker: 0
+      text: so like, tell me about the wizard guy
+    - animationState: 0
+      currentSpeaker: 2
+      text: 'oh, ron? '
+    - animationState: 2
+      currentSpeaker: 0
+      text: ron?
+    - animationState: 2
+      currentSpeaker: 2
+      text: oh
+    - animationState: 0
+      currentSpeaker: 2
+      text: uh
+    - animationState: 3
+      currentSpeaker: 2
+      text: please don't tell him i told you his name
+    - animationState: 0
+      currentSpeaker: 2
+      text: he gets weird about it
+    - animationState: 0
+      currentSpeaker: 0
+      text: oh?
+    - animationState: 0
+      currentSpeaker: 2
+      text: mhm. he wants me to call him "Gan, the Grand Elf". i don't know why.
+        he's a duck, not an elf
+    - animationState: 0
+      currentSpeaker: 2
+      text: in fact, i've never even met an elf before, have you?
+    - animationState: 0
+      currentSpeaker: 0
+      text: can't say i have
+    - animationState: 0
+      currentSpeaker: 2
+      text: well anyways, ron and i do research on the island
+    - animationState: 0
+      currentSpeaker: 2
+      text: although lately he's been on this whole wizard trip, so we've been studying
+        magic these days
+    - animationState: 3
+      currentSpeaker: 2
+      text: we uh, haven't made any progress
+    - animationState: 0
+      currentSpeaker: 2
+      text: but hey, failing's the first step towards succeeding, right?
+  - sentences:
+    - animationState: 0
+      currentSpeaker: 0
+      text: what's up with this island?
+    - animationState: 0
+      currentSpeaker: 2
+      text: what do you mean?
+    - animationState: 0
+      currentSpeaker: 0
+      text: well I mean... it's all flat and shit
+    - animationState: 0
+      currentSpeaker: 2
+      text: the wizard and i are in the middle of researching that, actually
+    - animationState: 0
+      currentSpeaker: 2
+      text: i mean, if it's flat, how does gravity work? shouldn't we be pulled towards
+        a single point, rather than just "down"?
+    - animationState: 0
+      currentSpeaker: 2
+      text: and i mean, The Void over there by the cliff, right?
+    - animationState: 2
+      currentSpeaker: 2
+      text: if you fall off the edge of the world, you just wake up back on the island
+    - animationState: 3
+      currentSpeaker: 2
+      text: not that i've ever been brave enough to try it or anything
+    - animationState: 0
+      currentSpeaker: 0
+      text: it's like we're standing on the edge of the world or something
+    - animationState: 0
+      currentSpeaker: 2
+      text: i know right? no where else to go
+    - animationState: 0
+      currentSpeaker: 2
+      text: that said, it's not like i'd wanna be anywhere else
+    - animationState: 3
+      currentSpeaker: 2
+      text: this is home, ya know?
+--- !u!114 &595012618068941833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8345527650119690302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2985ea09293cef43918e22e7b4bd5e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogManager: {fileID: 0}
+  objectives: []
+  activeObjectiveIndex: 0
+  postObjectiveRandomDialog: {fileID: 0}
+--- !u!1001 &5827229926286590952
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2526307804160142294, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: m_Name
+      value: Magician Random Chat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.987303
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 41.577
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 145.54382
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9238794
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.38268375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 135
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 11d6839daaaf74d4189b88fdf2b2ba6a, type: 3}
+--- !u!1 &8345527650119690302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2526307804160142294, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5827229926286590952}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8345527650119690303 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5827229926286590952}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8345527650119690243 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2526307804160142315, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5827229926286590952}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8345527650119690302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3f840513530cc4f8645c7efae862b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -141,14 +141,15 @@ public class ForceGrabSpell : BaseSpell {
     public float deltaMagnitude;
     private void Update() {
         if (!isSelected) return;
-
         // Lerp the particle system towards the player hand
         LerpTowardsCastingHand(particles.transform, particleSystemFollowSpeed, handOffset);
 
-        if (currentTarget.isSlotted) {
-            isGrabbing = false;
-            isPullPushModeActive = false;
-            currentTarget.OnRelease();
+        if (currentTarget != null) {
+            if (currentTarget.isSlotted) {
+                isGrabbing = false;
+                isPullPushModeActive = false;
+                currentTarget.OnRelease();
+            }
         }
 
         // -- Pull/push mode

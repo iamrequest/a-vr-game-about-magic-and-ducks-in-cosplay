@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 312dd0ec885caa5439ee87262d71d815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxConversationDistance: 5
+  maxConversationDistance: 7
 --- !u!1 &8311943639810183475
 GameObject:
   m_ObjectHideFlags: 0

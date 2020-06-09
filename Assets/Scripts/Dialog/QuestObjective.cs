@@ -18,14 +18,14 @@ public class QuestObjective : MonoBehaviour {
     public Conversation repeatDialog;
     public Conversation onCompleteDialog;
 
-    private void Start() {
+    protected virtual void Start() {
         isComplete = false;
         initialDialogComplete = false;
         finalDialogComplete = false;
     }
 
     // Called via unityevent
-    public void CompleteObjective() {
+    public virtual void CompleteObjective() {
         isComplete = true;
     }
 }
