@@ -1,0 +1,299 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1406434046198924029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2771861627816710166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4c161fd6d79da498e75808ea9318f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: 
+  description: 
+  isComplete: 0
+  initialDialogComplete: 0
+  finalDialogComplete: 0
+  onObjectiveStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onObjectiveComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  initialDialog:
+    sentences:
+    - animationState: 0
+      currentSpeaker: 0
+      text: pls light stove
+  repeatDialog:
+    sentences:
+    - animationState: 0
+      currentSpeaker: 0
+      text: ok
+  onCompleteDialog:
+    sentences:
+    - animationState: 0
+      currentSpeaker: 0
+      text: stove is lit nice
+--- !u!114 &942573081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8865160403355134270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6612a07c8ba475741a603bcad4d3baa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentCharacter: {fileID: 0}
+  animationState: 2
+  animationSpeed: 1.5
+  animationFront:
+  - {fileID: 4393123039831335902, guid: f129dd5242381a845904310246ff6db7, type: 3}
+  - {fileID: -9216329097193508930, guid: f129dd5242381a845904310246ff6db7, type: 3}
+  animationBack:
+  - {fileID: -4524969624882861154, guid: 7d33a66dda84c90418b133f976ad5fe3, type: 3}
+  - {fileID: 6408558954299727252, guid: 7d33a66dda84c90418b133f976ad5fe3, type: 3}
+--- !u!114 &942573082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8865160403355134270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6612a07c8ba475741a603bcad4d3baa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentCharacter: {fileID: 0}
+  animationState: 3
+  animationSpeed: 0.7
+  animationFront:
+  - {fileID: -6459564355609095679, guid: 3cdec98d8d69f0c488a780f64c868b1d, type: 3}
+  - {fileID: 2691359513640134336, guid: 3cdec98d8d69f0c488a780f64c868b1d, type: 3}
+  animationBack:
+  - {fileID: -123459769048280870, guid: a79a1bdc2d188f9408a83d7e098f9b87, type: 3}
+  - {fileID: 1996336939456883456, guid: a79a1bdc2d188f9408a83d7e098f9b87, type: 3}
+--- !u!1001 &3147959045103509008
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 997667594906521094, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_Name
+      value: Light Stove
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947503781234921643, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5646747412149358583, guid: c891853c377425540bcf7288a70fd98a,
+        type: 3}
+    - target: {fileID: 5458641787140192312, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: objectives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5458641787140192312, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: objectives.Array.data[0]
+      value: 
+      objectReference: {fileID: 1406434046198924029}
+    - target: {fileID: 5812084950849057648, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_text
+      value: Maid
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812084950849057648, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812084952195938088, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationFront.Array.data[0]
+      value: 
+      objectReference: {fileID: 5646747412149358583, guid: c891853c377425540bcf7288a70fd98a,
+        type: 3}
+    - target: {fileID: 5812084952195938088, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationFront.Array.data[1]
+      value: 
+      objectReference: {fileID: -8502906884464059614, guid: c891853c377425540bcf7288a70fd98a,
+        type: 3}
+    - target: {fileID: 5812084952195938088, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationBack.Array.data[0]
+      value: 
+      objectReference: {fileID: 7708693367812115160, guid: 6ab604508501cda448bd6055e98affdf,
+        type: 3}
+    - target: {fileID: 5812084952195938088, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationBack.Array.data[1]
+      value: 
+      objectReference: {fileID: 1950103846448498411, guid: 6ab604508501cda448bd6055e98affdf,
+        type: 3}
+    - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationFront.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationBack.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationFront.Array.data[0]
+      value: 
+      objectReference: {fileID: 2850285678871814239, guid: 1f056acac230ed64ab18aacc34cf9327,
+        type: 3}
+    - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationFront.Array.data[1]
+      value: 
+      objectReference: {fileID: 912604453529142028, guid: 1f056acac230ed64ab18aacc34cf9327,
+        type: 3}
+    - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationFront.Array.data[2]
+      value: 
+      objectReference: {fileID: 3278997143672281824, guid: 1f056acac230ed64ab18aacc34cf9327,
+        type: 3}
+    - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationFront.Array.data[3]
+      value: 
+      objectReference: {fileID: -7623031538139828269, guid: 1f056acac230ed64ab18aacc34cf9327,
+        type: 3}
+    - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationBack.Array.data[0]
+      value: 
+      objectReference: {fileID: 2597183158150904643, guid: ce2d7462fe60c104a8dd439419ee9299,
+        type: 3}
+    - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationBack.Array.data[1]
+      value: 
+      objectReference: {fileID: -535433739468313980, guid: ce2d7462fe60c104a8dd439419ee9299,
+        type: 3}
+    - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationBack.Array.data[2]
+      value: 
+      objectReference: {fileID: -6284911920623289155, guid: ce2d7462fe60c104a8dd439419ee9299,
+        type: 3}
+    - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationBack.Array.data[3]
+      value: 
+      objectReference: {fileID: 4754999333749760682, guid: ce2d7462fe60c104a8dd439419ee9299,
+        type: 3}
+    - target: {fileID: 5812084952240866136, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_Name
+      value: Maid Quest Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.946
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8677902
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.249
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.05051946
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9987231
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -5.7920003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: dialogManager
+      value: 
+      objectReference: {fileID: 8865160403314449781}
+    m_RemovedComponents:
+    - {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: ce3b1e14535d7b142b27318f9b36d142, type: 3}
+--- !u!114 &8865160403314449781 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5812084952240866149, guid: ce3b1e14535d7b142b27318f9b36d142,
+    type: 3}
+  m_PrefabInstance: {fileID: 3147959045103509008}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3f840513530cc4f8645c7efae862b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8865160403355134270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5812084952195938094, guid: ce3b1e14535d7b142b27318f9b36d142,
+    type: 3}
+  m_PrefabInstance: {fileID: 3147959045103509008}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2771861627816710166 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 997667594906521094, guid: ce3b1e14535d7b142b27318f9b36d142,
+    type: 3}
+  m_PrefabInstance: {fileID: 3147959045103509008}
+  m_PrefabAsset: {fileID: 0}
