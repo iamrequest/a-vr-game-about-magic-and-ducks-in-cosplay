@@ -61,6 +61,22 @@ MonoBehaviour:
   onCompleteDialog:
     sentences: []
   totalSubObjectives: 0
+--- !u!114 &595012618068941833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8345527650119690302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2985ea09293cef43918e22e7b4bd5e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogManager: {fileID: 0}
+  objectives: []
+  activeObjectiveIndex: 0
+  postObjectiveRandomDialog: {fileID: 0}
 --- !u!1 &7858622771927458602
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,22 +252,6 @@ MonoBehaviour:
     - animationState: 3
       currentSpeaker: 2
       text: this is home, ya know?
---- !u!114 &595012618068941833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8345527650119690302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2985ea09293cef43918e22e7b4bd5e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogManager: {fileID: 0}
-  objectives: []
-  activeObjectiveIndex: 0
-  postObjectiveRandomDialog: {fileID: 0}
 --- !u!1001 &5827229926286590952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -259,25 +259,73 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 552107366, guid: 11d6839daaaf74d4189b88fdf2b2ba6a, type: 3}
+      propertyPath: animationFront.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 552107366, guid: 11d6839daaaf74d4189b88fdf2b2ba6a, type: 3}
+      propertyPath: animationBack.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 552107366, guid: 11d6839daaaf74d4189b88fdf2b2ba6a, type: 3}
+      propertyPath: animationFront.Array.data[0]
+      value: 
+      objectReference: {fileID: 2850285678871814239, guid: 1f056acac230ed64ab18aacc34cf9327,
+        type: 3}
+    - target: {fileID: 552107366, guid: 11d6839daaaf74d4189b88fdf2b2ba6a, type: 3}
+      propertyPath: animationFront.Array.data[1]
+      value: 
+      objectReference: {fileID: 912604453529142028, guid: 1f056acac230ed64ab18aacc34cf9327,
+        type: 3}
+    - target: {fileID: 552107366, guid: 11d6839daaaf74d4189b88fdf2b2ba6a, type: 3}
+      propertyPath: animationFront.Array.data[2]
+      value: 
+      objectReference: {fileID: 3278997143672281824, guid: 1f056acac230ed64ab18aacc34cf9327,
+        type: 3}
+    - target: {fileID: 552107366, guid: 11d6839daaaf74d4189b88fdf2b2ba6a, type: 3}
+      propertyPath: animationFront.Array.data[3]
+      value: 
+      objectReference: {fileID: -7623031538139828269, guid: 1f056acac230ed64ab18aacc34cf9327,
+        type: 3}
+    - target: {fileID: 552107366, guid: 11d6839daaaf74d4189b88fdf2b2ba6a, type: 3}
+      propertyPath: animationBack.Array.data[0]
+      value: 
+      objectReference: {fileID: 2597183158150904643, guid: ce2d7462fe60c104a8dd439419ee9299,
+        type: 3}
+    - target: {fileID: 552107366, guid: 11d6839daaaf74d4189b88fdf2b2ba6a, type: 3}
+      propertyPath: animationBack.Array.data[1]
+      value: 
+      objectReference: {fileID: -535433739468313980, guid: ce2d7462fe60c104a8dd439419ee9299,
+        type: 3}
+    - target: {fileID: 552107366, guid: 11d6839daaaf74d4189b88fdf2b2ba6a, type: 3}
+      propertyPath: animationBack.Array.data[2]
+      value: 
+      objectReference: {fileID: -6284911920623289155, guid: ce2d7462fe60c104a8dd439419ee9299,
+        type: 3}
+    - target: {fileID: 552107366, guid: 11d6839daaaf74d4189b88fdf2b2ba6a, type: 3}
+      propertyPath: animationBack.Array.data[3]
+      value: 
+      objectReference: {fileID: 4754999333749760682, guid: ce2d7462fe60c104a8dd439419ee9299,
+        type: 3}
     - target: {fileID: 2526307804160142294, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
         type: 3}
       propertyPath: m_Name
-      value: Magician Random Chat
+      value: Magician Quest
       objectReference: {fileID: 0}
     - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.987303
+      value: 39.96
       objectReference: {fileID: 0}
     - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.577
+      value: 43.95
       objectReference: {fileID: 0}
     - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 145.54382
+      value: 138.78
       objectReference: {fileID: 0}
     - target: {fileID: 2526307804160142295, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
         type: 3}
@@ -319,6 +367,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2526307804205997990, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: animationFront.Array.data[0]
+      value: 
+      objectReference: {fileID: 5646747412149358583, guid: c891853c377425540bcf7288a70fd98a,
+        type: 3}
+    - target: {fileID: 2526307804205997990, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: animationFront.Array.data[1]
+      value: 
+      objectReference: {fileID: -8502906884464059614, guid: c891853c377425540bcf7288a70fd98a,
+        type: 3}
+    - target: {fileID: 3967252983365646373, guid: 11d6839daaaf74d4189b88fdf2b2ba6a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5646747412149358583, guid: c891853c377425540bcf7288a70fd98a,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 2526307804160142314, guid: 11d6839daaaf74d4189b88fdf2b2ba6a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 11d6839daaaf74d4189b88fdf2b2ba6a, type: 3}

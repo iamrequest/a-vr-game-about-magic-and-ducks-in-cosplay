@@ -1,0 +1,340 @@
+fileFormatVersion: 2
+guid: ce2d7462fe60c104a8dd439419ee9299
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2597183158150904643
+    second: maidAngerBack_0
+  - first:
+      213: -535433739468313980
+    second: maidAngerBack_1
+  - first:
+      213: -6284911920623289155
+    second: maidAngerBack_2
+  - first:
+      213: 4754999333749760682
+    second: maidAngerBack_3
+  - first:
+      213: 8896285581675164854
+    second: maidAngerBack_4
+  - first:
+      213: 3268304511818538383
+    second: maidAngerBack_5
+  - first:
+      213: 3502908295866073521
+    second: maidAngerBack_6
+  - first:
+      213: 8646175284659780369
+    second: maidAngerBack_7
+  - first:
+      213: 6922326825680674597
+    second: maidAngerBack_8
+  - first:
+      213: 2276935944240588604
+    second: maidAngerBack_9
+  - first:
+      213: -7700672640934248864
+    second: maidAngerBack_10
+  - first:
+      213: -6631311410190848797
+    second: maidAngerBack_11
+  - first:
+      213: -16997381811829374
+    second: maidAngerBack_12
+  - first:
+      213: -2645467148457083169
+    second: maidAngerBack_13
+  - first:
+      213: 7498589518180626125
+    second: maidAngerBack_14
+  - first:
+      213: -6851193094892030837
+    second: maidAngerBack_15
+  - first:
+      213: -6094496162611219176
+    second: maidAngerBack_16
+  - first:
+      213: -5330973382969236689
+    second: maidAngerBack_17
+  - first:
+      213: -3960203643331427719
+    second: maidAngerBack_18
+  - first:
+      213: 4240705957284580565
+    second: maidAngerBack_19
+  - first:
+      213: 7075168265970474190
+    second: maidAngerBack_20
+  - first:
+      213: 6785316940436187428
+    second: maidAngerBack_21
+  - first:
+      213: -8425320347098072441
+    second: maidAngerBack_22
+  - first:
+      213: -1609216533351410211
+    second: maidAngerBack_23
+  - first:
+      213: -2592182787471120620
+    second: maidAngerBack_24
+  - first:
+      213: -3113493695105719888
+    second: maidAngerBack_25
+  - first:
+      213: -6016518888207856374
+    second: maidAngerBack_26
+  - first:
+      213: -7410357074505984237
+    second: maidAngerBack_27
+  - first:
+      213: -8600694459435750132
+    second: maidAngerBack_28
+  - first:
+      213: -7186026663550017377
+    second: maidAngerBack_29
+  - first:
+      213: -6511325508231841240
+    second: maidAngerBack_30
+  - first:
+      213: -2725587225176910221
+    second: maidAngerBack_31
+  - first:
+      213: 3928779158107559876
+    second: maidAngerBack_32
+  - first:
+      213: -7514524730855628343
+    second: maidAngerBack_33
+  - first:
+      213: -1105378411592580056
+    second: maidAngerBack_34
+  - first:
+      213: 4822343615519318846
+    second: maidAngerBack_35
+  - first:
+      213: 1575727354666766309
+    second: maidAngerBack_36
+  - first:
+      213: 8499591227840485298
+    second: maidAngerBack_37
+  - first:
+      213: 4186989686531063212
+    second: maidAngerBack_38
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: maidAngerBack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b3636625c0b0420800000000000000
+      internalID: 2597183158150904643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maidAngerBack_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a6b3ec9d1c198f0800000000000000
+      internalID: -535433739468313980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maidAngerBack_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc71a638e187c8a0800000000000000
+      internalID: -6284911920623289155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maidAngerBack_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2af5373b62df140800000000000000
+      internalID: 4754999333749760682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f4f65e829de738b4faa8fc70cdc2f722
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
