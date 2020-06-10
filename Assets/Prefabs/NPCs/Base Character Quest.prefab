@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d22b3ee3b24a40b44bdc305bdc9fa3ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogManager: {fileID: 0}
+  dialogManager: {fileID: 5812084952240866149}
   conversations:
   - sentences:
     - animationState: 0
@@ -201,7 +201,7 @@ PrefabInstance:
     - target: {fileID: 8311943639765476677, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
       propertyPath: m_Name
-      value: Base Character Random Chat
+      value: Base Character Quest
       objectReference: {fileID: 0}
     - target: {fileID: 8311943640344142206, guid: ba886cdd96e667f4e9ff5a9e3624830e,
         type: 3}
