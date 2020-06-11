@@ -1707,6 +1707,11 @@ PrefabInstance:
       propertyPath: objectives.Array.data[2]
       value: 
       objectReference: {fileID: 1801883967}
+    - target: {fileID: 5458641787140192312, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5812084950588688227, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -1799,13 +1804,37 @@ PrefabInstance:
     - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: animationFront.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: animationBack.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationBack.Array.data[0]
+      value: 
+      objectReference: {fileID: 1383646134031172058, guid: 1b7567ec05644ff4cbffd65678e4637f,
+        type: 3}
+    - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationBack.Array.data[1]
+      value: 
+      objectReference: {fileID: 5252458317108274159, guid: 1b7567ec05644ff4cbffd65678e4637f,
+        type: 3}
+    - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationFront.Array.data[0]
+      value: 
+      objectReference: {fileID: -5128686920593328292, guid: dec801d3b3552e744b3fbc5c3a53d5ef,
+        type: 3}
+    - target: {fileID: 5812084952195938089, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: animationFront.Array.data[1]
+      value: 
+      objectReference: {fileID: -6813961262071421085, guid: dec801d3b3552e744b3fbc5c3a53d5ef,
+        type: 3}
     - target: {fileID: 5812084952240866136, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: m_Name
@@ -1866,6 +1895,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[0].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[1].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[2].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[3].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce3b1e14535d7b142b27318f9b36d142, type: 3}
 --- !u!4 &743675444 stripped
@@ -1892,6 +1941,87 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27b6b46d479b64845b2c9c8b19609681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &743675447 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5812084952195938094, guid: ce3b1e14535d7b142b27318f9b36d142,
+    type: 3}
+  m_PrefabInstance: {fileID: 743675443}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &743675448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743675447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6612a07c8ba475741a603bcad4d3baa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentCharacter: {fileID: 0}
+  animationState: 3
+  animationSpeed: 0.7
+  animationFront:
+  - {fileID: 4696334917149652544, guid: 554f8957eb42b694faa9c2c6e0af012c, type: 3}
+  - {fileID: 1249009252304525495, guid: 554f8957eb42b694faa9c2c6e0af012c, type: 3}
+  animationBack:
+  - {fileID: 248007908409288264, guid: bd88840a6b3dfb641bb020ae8732f952, type: 3}
+  - {fileID: -1506467870474609030, guid: bd88840a6b3dfb641bb020ae8732f952, type: 3}
+--- !u!114 &743675449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743675447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6612a07c8ba475741a603bcad4d3baa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentCharacter: {fileID: 0}
+  animationState: 2
+  animationSpeed: 1.5
+  animationFront:
+  - {fileID: -4373935721347570798, guid: 470e026b7d2b7174bbb1d7fd5d9ace5e, type: 3}
+  - {fileID: -7511669657505990052, guid: 470e026b7d2b7174bbb1d7fd5d9ace5e, type: 3}
+  animationBack:
+  - {fileID: 7400757273748092101, guid: 211a45cd122b3bc459b2653b08b3ae25, type: 3}
+  - {fileID: 7604629379591477727, guid: 211a45cd122b3bc459b2653b08b3ae25, type: 3}
+--- !u!1 &743675450 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5812084952240866136, guid: ce3b1e14535d7b142b27318f9b36d142,
+    type: 3}
+  m_PrefabInstance: {fileID: 743675443}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &743675451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743675450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22b3ee3b24a40b44bdc305bdc9fa3ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogManager: {fileID: 0}
+  conversations:
+  - sentences:
+    - animationState: 0
+      currentSpeaker: 5
+      text: idle
+    - animationState: 1
+      currentSpeaker: 0
+      text: anger
+    - animationState: 2
+      currentSpeaker: 0
+      text: shock
+    - animationState: 3
+      currentSpeaker: 0
+      text: blush
 --- !u!1001 &746314550
 PrefabInstance:
   m_ObjectHideFlags: 0
