@@ -1,0 +1,920 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8365028302141531090
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3330657592794204008, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_Name
+      value: Wizard Night Quest
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657592794204009, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.4931622
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657592794204009, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 41.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657592794204009, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 158.24551
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657592794204009, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657592794204009, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.25881872
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657592794204009, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657592794204009, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.96592593
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657592794204009, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657592794204009, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657592794204009, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -30.000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657592794204009, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657594078492480, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657594078492480, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657594078492480, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657594078492480, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657594363249491, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 144
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657594363249491, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657594363249491, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657594363249491, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330657594363249491, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: title
+      value: Light the bonfire
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialogComplete
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[0].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[0].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[0].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[1].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[1].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[2].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[2].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[2].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[3].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[4].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[4].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[4].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[5].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[5].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[6].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[7].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[7].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[8].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[8].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[8].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[9].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[9].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[9].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[10].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[10].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[11].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[12].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[12].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[13].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[14].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[14].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[15].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[15].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[16].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[16].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[17].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[17].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[18].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[19].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[19].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[19].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[20].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[1].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[3].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[3].text
+      value: lemme know if you need any tips. i AM a master wizard after all~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[6].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[7].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[11].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[13].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[15].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[16].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[18].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[18].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[5].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[6].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[14].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[17].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[13].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[12].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[11].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: initialDialog.sentences.Array.data[10].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[0].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[0].text
+      value: come on my guy, it's time for the festival~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[1].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[1].text
+      value: light the bonfire so i can get some of that sicc soup~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[2].text
+      value: AND! this is the chance to see a big ol' fireball~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[3].text
+      value: so hurry ur shit up!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[4].text
+      value: cause we're both wizards and stuff haha
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[5].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[5].text
+      value: cause we're both wizards and stuff haha
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[6].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[6].text
+      value: cause we're both wizards and stuff haha
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[7].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[7].text
+      value: cause we're both wizards and stuff haha
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[4].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[3].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[2].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[1].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[0].animationState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[0].text
+      value: how's that for a fireball?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[1].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[1].text
+      value: i mean, i knew what to expect, but you've surpassed my expectations
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[2].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[2].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[2].text
+      value: although, uh, you DEFINITELY have plenty to learn
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[3].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[3].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[3].text
+      value: yes yes... i think a young wizard such as yourself could use a master~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[4].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[4].text
+      value: so you want me to call you senpai, is that right?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[5].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[5].text
+      value: i meant more of the academic kind of master
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[6].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[6].text
+      value: sensei?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[7].text
+      value: uh, sure
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[8].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[8].text
+      value: then from this day forward, you shall be my student, in the pursuit
+        of the arcane arts~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[0].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[1].animationState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[7].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[0].animationState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[2].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[3].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[4].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[5].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[6].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[7].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[9].text
+      value: party hard today my guy, because tomorrow, we'll be doing the big magics~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[9].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250409, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[9].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830177985250411, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: m_Name
+      value: Bonfire
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[0].text
+      value: so momo lost an umbrella earlier, and i found it by your house
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[1].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[1].text
+      value: 'he was pretty pissed about it '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[2].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[2].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[2].text
+      value: any idea how it got up there?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[3].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[3].text
+      value: uh, no, no idea
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[4].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[4].text
+      value: the truth is that i found it in the hills one day! i didn't know it
+        was momo's
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[5].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[5].text
+      value: so you didn't take it on purpose?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[6].animationState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[6].text
+      value: nonono, it was all an accident my guy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[7].animationState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[7].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[7].text
+      value: please don't tell momo about where you found it
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[8].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[8].text
+      value: i was the one who watched all of "Momo's Strange Journey" with him.
+        and like...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[0].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[1].animationState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[3].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[5].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[6].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[0].animationState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[4].animationState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[9].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[9].text
+      value: well, i can't really confirm whether my buddy mo actually has a stand
+        or not ;-;
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[9].animationState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[10].text
+      value: and it's not exactly like i want to find out under these conditions
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[10].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[11].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[11].text
+      value: uh, sure
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[10].animationState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[12].text
+      value: maybe he'll just forget about it tomorrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[13].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[13].text
+      value: god i hope so
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[14].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[14].text
+      value: i want to eat doughnuts, not become one
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[14].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c05adc1eac23254cb095aa5d68707e9, type: 3}

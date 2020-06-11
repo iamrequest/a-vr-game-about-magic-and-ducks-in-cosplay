@@ -265,9 +265,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5715063177287867725}
-  - component: {fileID: 1892812401193600677}
+  - component: {fileID: 5314817554052533253}
   m_Layer: 10
-  m_Name: Fireflies
+  m_Name: Bonfire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -287,7 +287,7 @@ Transform:
   m_Father: {fileID: 2884060243098281300}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1892812401193600677
+--- !u!114 &5314817554052533253
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -296,191 +296,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1391093619133136409}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27b6b46d479b64845b2c9c8b19609681, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f4c161fd6d79da498e75808ea9318f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   title: 
   description: 
   isComplete: 0
-  initialDialogComplete: 0
+  initialDialogComplete: 1
   finalDialogComplete: 0
   onObjectiveStart:
     m_PersistentCalls:
       m_Calls: []
   onObjectiveComplete:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4728519088079798453, guid: 3bd34daf854f6de429d031b244c03db5,
-          type: 3}
-        m_MethodName: CompleteObjective
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   initialDialog:
-    sentences:
-    - animationState: 0
-      currentSpeaker: 2
-      text: you there! you look like a strapping young character who could give me
-        a hand
-    - animationState: 0
-      currentSpeaker: 0
-      text: i am in fact a character with hands available for the lending
-    - animationState: 0
-      currentSpeaker: 2
-      text: perfect~ because i am a duck with a problem that needs mending ~
-    - animationState: 0
-      currentSpeaker: 2
-      text: we're almost ready for the summer festival to start, but these lamp posts
-        are not lit yet!
-    - animationState: 1
-      currentSpeaker: 0
-      text: and?
-    - animationState: 0
-      currentSpeaker: 2
-      text: a n d, I want YOU to light them for me!
-    - animationState: 0
-      currentSpeaker: 2
-      text: i heard the wizard yelling over there, you can do magic, right?
-    - animationState: 0
-      currentSpeaker: 0
-      text: more or less, ye
-    - animationState: 3
-      currentSpeaker: 2
-      text: ... contrary to my outfit, i am a magical girl who is unable to cast
-        magic
-    - animationState: 3
-      currentSpeaker: 2
-      text: ... even though momo said i might be able to cast magic if i put the
-        outfit on
-    - animationState: 2
-      currentSpeaker: 2
-      text: but uh
-    - animationState: 0
-      currentSpeaker: 2
-      text: i need these lamp posts lit! but there's a twist~
-    - animationState: 0
-      currentSpeaker: 0
-      text: a twist?
-    - animationState: 0
-      currentSpeaker: 2
-      text: there's a pond behind me. Solflies like to gather back there
-    - animationState: 0
-      currentSpeaker: 2
-      text: i was thinking, wouldn't it be cute if we collected a bunch of Solflies
-        for the festival?
-    - animationState: 0
-      currentSpeaker: 0
-      text: those are the ones that light up, right? it'd be hella cute
-    - animationState: 0
-      currentSpeaker: 2
-      text: hella
-    - animationState: 0
-      currentSpeaker: 2
-      text: magic users can cast light spells right? Solflies are attracted to light!
-    - animationState: 0
-      currentSpeaker: 0
-      text: so you want me to bring some Solflies over to the beach?
-    - animationState: 0
-      currentSpeaker: 2
-      text: 'exactly~ kinda. '
-    - animationState: 0
-      currentSpeaker: 2
-      text: if you bring them to the beach now, they'll just fly away before the
-        festival starts
-    - animationState: 0
-      currentSpeaker: 2
-      text: so what i need you to do, is use your magic light spell stuff.
-    - animationState: 0
-      currentSpeaker: 2
-      text: bring the solflies, and light up the lampposts around the beach.
-    - animationState: 0
-      currentSpeaker: 2
-      text: if you light up the lampposts, the solflies will stick around long enough
-        for the festval~
-    - animationState: 0
-      currentSpeaker: 0
-      text: sure bb. use my light magic to attract the Solflies by the pond, and
-        bring them to the lampposts. got it
+    sentences: []
   repeatDialog:
-    sentences:
-    - animationState: 0
-      currentSpeaker: 0
-      text: yo bb
-    - animationState: 0
-      currentSpeaker: 2
-      text: heyy~
-    - animationState: 1
-      currentSpeaker: 0
-      text: so like, why can't  you light up the lampposts yourself?
-    - animationState: 3
-      currentSpeaker: 2
-      text: i can't cast magic, remember?
-    - animationState: 0
-      currentSpeaker: 0
-      text: what kind of magic can you cast? you're a magical girl, after all, right?
-    - animationState: 3
-      currentSpeaker: 2
-      text: i can make myself disappear from most social situations~
-    - animationState: 2
-      currentSpeaker: 0
-      text: neat, can i see?
-    - animationState: 0
-      currentSpeaker: 2
-      text: sure
-    - animationState: 3
-      currentSpeaker: 2
-      text: ...
-    - animationState: 0
-      currentSpeaker: 0
-      text: (she covered her eyes, and started holding her breath)
-    - animationState: 0
-      currentSpeaker: 0
-      text: well shit, where'd she go
-    - animationState: 0
-      currentSpeaker: 2
-      text: ~ B A M ~, you have been \n~D A Z Z L E D~
-    - animationState: 0
-      currentSpeaker: 2
-      text: anyways, i'll show you a new trick if you bring the Solflies to the lampposts~
-    - animationState: 0
-      currentSpeaker: 2
-      text: don't forget, you have to bring them to the ones on the beach
-    - animationState: 0
-      currentSpeaker: 2
-      text: you can find the Solflies by the pond, just past the cafe
+    sentences: []
   onCompleteDialog:
-    sentences:
-    - animationState: 2
-      currentSpeaker: 2
-      text: wow, those are a lot of Solflies
-    - animationState: 0
-      currentSpeaker: 0
-      text: looks rad, eh?
-    - animationState: 0
-      currentSpeaker: 2
-      text: rad af
-    - animationState: 0
-      currentSpeaker: 0
-      text: anything else for me?
-    - animationState: 0
-      currentSpeaker: 2
-      text: as much as i'd love to pawn my work off to you, that's all i've got bb
-    - animationState: 0
-      currentSpeaker: 2
-      text: but i'll see you at the festival right? you'll be there?
-    - animationState: 0
-      currentSpeaker: 0
-      text: hell yeah i'll be there boiii
-    - animationState: 0
-      currentSpeaker: 2
-      text: heck yeah~
-  totalSubObjectives: 3
+    sentences: []
 --- !u!1 &2150943861151823599
 GameObject:
   m_ObjectHideFlags: 0

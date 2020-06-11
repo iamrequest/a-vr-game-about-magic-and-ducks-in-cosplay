@@ -1,189 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1809502090126992053
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6345341196015754773}
-  - component: {fileID: 2414716636999551155}
-  m_Layer: 0
-  m_Name: 2 Get Umbrella
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6345341196015754773
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809502090126992053}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.42501688, y: -1.1376228, z: 3.1959686}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7079830677846123039}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2414716636999551155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809502090126992053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f4c161fd6d79da498e75808ea9318f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Find the Umbrella
-  description: Momo lost his umbrella too. Help him find it, and bring it back to
-    the beach
-  isComplete: 0
-  initialDialogComplete: 0
-  finalDialogComplete: 0
-  onObjectiveStart:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8724389588645932212, guid: 3bd34daf854f6de429d031b244c03db5,
-          type: 3}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  onObjectiveComplete:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4385087764027160414, guid: 3bd34daf854f6de429d031b244c03db5,
-          type: 3}
-        m_MethodName: CompleteObjective
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  initialDialog:
-    sentences:
-    - animationState: 0
-      currentSpeaker: 0
-      text: yo bb
-    - animationState: 0
-      currentSpeaker: 3
-      text: what's good
-    - animationState: 0
-      currentSpeaker: 0
-      text: vibin', bud
-    - animationState: 0
-      currentSpeaker: 0
-      text: you mentioned something about a lost umbrella?
-    - animationState: 0
-      currentSpeaker: 3
-      text: yep
-    - animationState: 0
-      currentSpeaker: 3
-      text: i think a gust of wind took it away
-    - animationState: 0
-      currentSpeaker: 0
-      text: is there even wind on the island? the trees don't even move. and like,
-        everything looks like it was drawn by a child
-    - animationState: 2
-      currentSpeaker: 0
-      text: including you
-    - animationState: 1
-      currentSpeaker: 3
-      text: my guy
-    - animationState: 0
-      currentSpeaker: 0
-      text: aha mb right yes
-    - animationState: 0
-      currentSpeaker: 0
-      text: the umbrella
-    - animationState: 0
-      currentSpeaker: 3
-      text: i feel like i've seen it around recently. maybe you can find it laying
-        around somewhere?
-    - animationState: 0
-      currentSpeaker: 0
-      text: sure bb, i'll take a looksie
-    - animationState: 0
-      currentSpeaker: 3
-      text: thx bb, bring it back to the beach if you find it
-  repeatDialog:
-    sentences:
-    - animationState: 0
-      currentSpeaker: 3
-      text: 'any luck on that finding that umbrella? '
-    - animationState: 0
-      currentSpeaker: 0
-      text: i mean, i'm on a much larger quest at the moment - finding myself~
-    - animationState: 0
-      currentSpeaker: 3
-      text: ...
-    - animationState: 0
-      currentSpeaker: 0
-      text: ...
-    - animationState: 0
-      currentSpeaker: 0
-      text: but uh, no, i haven't found it yet
-    - animationState: 0
-      currentSpeaker: 0
-      text: it should be around the island somewhere, right?
-    - animationState: 0
-      currentSpeaker: 3
-      text: ye
-    - animationState: 0
-      currentSpeaker: 3
-      text: 'maybe you can use your wizarding stuff to find it? '
-    - animationState: 3
-      currentSpeaker: 3
-      text: and uh, teach me afterwards senpai
-  onCompleteDialog:
-    sentences:
-    - animationState: 0
-      currentSpeaker: 3
-      text: well dang, there it is. where'd you find it?
-    - animationState: 0
-      currentSpeaker: 0
-      text: up on that hill by the wizard's house
-    - animationState: 1
-      currentSpeaker: 3
-      text: bruh, what was it doing up there?
-    - animationState: 0
-      currentSpeaker: 3
-      text: there's no way it just flew up there
-    - animationState: 2
-      currentSpeaker: 0
-      text: it eeez wat it eeeezzzz~
-    - animationState: 0
-      currentSpeaker: 3
-      text: uh, ok
-    - animationState: 0
-      currentSpeaker: 3
-      text: well either way, thanks. you're truely a reliable person
-    - animationState: 0
-      currentSpeaker: 0
-      text: i'm pretty unreliable in general, actually
-    - animationState: 0
-      currentSpeaker: 3
-      text: but you're doing all this work to help with the festival, right? can't
-        be all that bad my guy
 --- !u!1 &3301501931872658940
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +11,7 @@ GameObject:
   - component: {fileID: 744879950359316757}
   - component: {fileID: 203435901768533066}
   m_Layer: 10
-  m_Name: 1 Get ball
+  m_Name: Light bonfire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -227,94 +43,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f4c161fd6d79da498e75808ea9318f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Find my ball
-  description: Momo has lost his ball, and he doesn't have a stand to get it himself.
-    Find it, and bring it to him
+  title: 
+  description: 
   isComplete: 0
-  initialDialogComplete: 0
+  initialDialogComplete: 1
   finalDialogComplete: 0
   onObjectiveStart:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1093397172479254165, guid: 3bd34daf854f6de429d031b244c03db5,
-          type: 3}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   onObjectiveComplete:
     m_PersistentCalls:
       m_Calls: []
   initialDialog:
-    sentences:
-    - animationState: 0
-      currentSpeaker: 0
-      text: yo
-    - animationState: 0
-      currentSpeaker: 3
-      text: hey
-    - animationState: 0
-      currentSpeaker: 0
-      text: i'm going around helping peeps set up for the fest. need a hand?
-    - animationState: 1
-      currentSpeaker: 3
-      text: no.
-    - animationState: 1
-      currentSpeaker: 3
-      text: go away.
-    - animationState: 1
-      currentSpeaker: 0
-      text: oh, ok
-    - animationState: 3
-      currentSpeaker: 3
-      text: wait
-    - animationState: 3
-      currentSpeaker: 3
-      text: i need help
-    - animationState: 0
-      currentSpeaker: 0
-      text: oh?
-    - animationState: 0
-      currentSpeaker: 3
-      text: we lost some of our supplies for the fest, and i uh, can't get them myself
-    - animationState: 0
-      currentSpeaker: 3
-      text: in total, we lost... a beach ball, an umbrella, and a pair of chairs
-    - animationState: 3
-      currentSpeaker: 0
-      text: so why are you being such a tsundere about it?
-    - animationState: 0
-      currentSpeaker: 3
-      text: i uh...
-    - animationState: 0
-      currentSpeaker: 3
-      text: well, contrary to my outfit, i don't have a stand or anything, so i can't
-        do it myself
-    - animationState: 0
-      currentSpeaker: 3
-      text: and i ain't much for askin' for help
-    - animationState: 3
-      currentSpeaker: 0
-      text: no worries bb, u can rely on me~
-    - animationState: 0
-      currentSpeaker: 0
-      text: so to recap... you lost a beach ball, an umbrella, and 2 lawn chairs?
-    - animationState: 0
-      currentSpeaker: 3
-      text: ye
-    - animationState: 0
-      currentSpeaker: 3
-      text: i can see the beach ball over on that mini island... but idk how you're
-        gonna grab it from that distance
-    - animationState: 3
-      currentSpeaker: 3
-      text: god i wish i had a stand
+    sentences: []
   repeatDialog:
     sentences:
     - animationState: 0
@@ -376,8 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogManager: {fileID: 4902373780726621540}
   objectives:
-  - {fileID: 8828867004764454464, guid: 3bd34daf854f6de429d031b244c03db5, type: 3}
-  - {fileID: 6473392164667323065, guid: 3bd34daf854f6de429d031b244c03db5, type: 3}
+  - {fileID: 203435901768533066}
   activeObjectiveIndex: 0
   postObjectiveRandomDialog: {fileID: 476257973271954968}
 --- !u!1 &7854026598604737140
@@ -409,7 +149,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 744879950359316757}
-  - {fileID: 6345341196015754773}
   m_Father: {fileID: 4902373780726621528}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -604,17 +343,17 @@ PrefabInstance:
     - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.5
+      value: -10.13
       objectReference: {fileID: 0}
     - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 42.65
+      value: 41.38
       objectReference: {fileID: 0}
     - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 181.51
+      value: 163.51
       objectReference: {fileID: 0}
     - target: {fileID: 2141641540508017999, guid: 7894047191017c647b0e1aae4ac81a7a,
         type: 3}

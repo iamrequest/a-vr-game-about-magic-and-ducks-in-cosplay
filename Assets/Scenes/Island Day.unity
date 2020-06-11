@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 79535af90d6007440840a09e83e732a8,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -177,10 +177,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: VR Magic, and Ducks in Cosplay
+  m_text: A VR Game about Magic, and Ducks in Cosplay
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -205,8 +205,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 4
+  m_fontSizeBase: 4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -246,10 +246,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 74701473}
-    characterCount: 30
+    characterCount: 43
     spriteCount: 0
-    spaceCount: 5
-    wordCount: 6
+    spaceCount: 8
+    wordCount: 9
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -472,7 +472,7 @@ MonoBehaviour:
   m_text: Made by Request
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -497,8 +497,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 4
+  m_fontSizeBase: 4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -942,7 +942,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 26.66, y: 31.81}
+  m_AnchoredPosition: {x: 26.66, y: 30.86}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &8938919553324443872
@@ -956,6 +956,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textAlignment
       value: 257
+      objectReference: {fileID: 0}
+    - target: {fileID: 2183964771319596927, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[11].text
+      value: ~ B A M ~, you have been ~D A Z Z L E D~
       objectReference: {fileID: 0}
     - target: {fileID: 4385087764027160414, guid: 3bd34daf854f6de429d031b244c03db5,
         type: 3}
@@ -1022,6 +1027,73 @@ PrefabInstance:
       propertyPath: m_Name
       value: Environment
       objectReference: {fileID: 0}
+    - target: {fileID: 8938919554030862702, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938919554030862702, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[2].text
+      value: you prolly wanna find the mayor's. he's leading the festival efforts...
+        kinda
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938919554030862702, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[3].text
+      value: kinda?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938919554030862702, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[4].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938919554030862702, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[4].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938919554030862702, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[4].text
+      value: i'm not sure if he's actually done anything tbh
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938919554030862702, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[5].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938919554030862702, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[5].text
+      value: he just sorta sits down at the beach most days
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938919554030862702, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[6].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938919554030862702, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[6].text
+      value: although i'd do the same if i could
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938919554030862702, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[6].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938919554030862702, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[7].text
+      value: oh, and uh, don't forget to take a look at your book - it opens up in
+        your left hand.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938919554030862702, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[7].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8938919554554560799, guid: 3bd34daf854f6de429d031b244c03db5,
         type: 3}
       propertyPath: onObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
@@ -1051,6 +1123,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135782771376913426, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[3].text
+      value: '"why is everyone so muscular? which one is Momo again?"'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bd34daf854f6de429d031b244c03db5, type: 3}
