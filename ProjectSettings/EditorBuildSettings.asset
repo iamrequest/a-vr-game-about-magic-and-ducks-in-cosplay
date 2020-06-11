@@ -8,7 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Dev Scene.unity
     guid: f95bdd7d69c71484195b7338bb23399d
+  - enabled: 1
+    path: Assets/Scenes/Island Day.unity
+    guid: f3dc27f22748d9d4b9c874c8b2c71d8c
+  - enabled: 1
+    path: Assets/Scenes/Island Night.unity
+    guid: 7e7f97431d795e34ea5b730cc2982a58
   m_configObjects: {}

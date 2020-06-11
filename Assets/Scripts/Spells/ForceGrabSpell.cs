@@ -159,9 +159,6 @@ public class ForceGrabSpell : BaseSpell {
         if (isPullPushModeActive) {
             delta = castingHand.transform.localPosition - Player.instance.transform.position - originalHandPosition;
             deltaMagnitude = delta.magnitude;
-
-            Debug.Log(delta);
-            Debug.Log(deltaMagnitude);
         }
 
 
