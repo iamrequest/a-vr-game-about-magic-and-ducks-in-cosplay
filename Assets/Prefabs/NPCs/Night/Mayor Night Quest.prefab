@@ -62,12 +62,12 @@ PrefabInstance:
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: repeatDialog.sentences.Array.size
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: onCompleteDialog.sentences.Array.size
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -271,35 +271,33 @@ PrefabInstance:
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: repeatDialog.sentences.Array.data[0].text
-      value: what was i supposed to do again?
+      value: Looks like it's about time to light the bonfire, eh?
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: repeatDialog.sentences.Array.data[1].currentSpeaker
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: repeatDialog.sentences.Array.data[1].text
-      value: You kids these days, back when I was a young duckling, I was already
-        running for mayor!
+      value: looks about time to me.
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: repeatDialog.sentences.Array.data[2].text
-      value: you were a mayor when you were that young? isn't it a little unethical
-        to be an elected official for so long?
+      value: Would you mind doing the honors? You've done so much to help us get
+        this festival set up after all
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: repeatDialog.sentences.Array.data[2].animationState
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: repeatDialog.sentences.Array.data[3].text
-      value: shouldn't there be a fair distribution of the population among our elected
-        officials?
+      value: i didn't really do that much tbh
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -309,12 +307,13 @@ PrefabInstance:
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: repeatDialog.sentences.Array.data[4].text
-      value: Who said anything about ethics?
+      value: 'Sometimes it may seem like that, yes. '
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: repeatDialog.sentences.Array.data[5].text
-      value: right, uh...
+      value: But ultimately, the action of the group is only possible with the action
+        from the individual.
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -324,7 +323,8 @@ PrefabInstance:
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: repeatDialog.sentences.Array.data[6].text
-      value: Go talk to Momo, he's been stomping around all day.
+      value: We're happy to have you here. So why don't you start the festival off
+        right?
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -354,7 +354,7 @@ PrefabInstance:
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: onCompleteDialog.sentences.Array.data[0].text
-      value: Ah lovely, the beach is looking less empty now!
+      value: My my, that really is something
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -364,12 +364,12 @@ PrefabInstance:
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: onCompleteDialog.sentences.Array.data[1].text
-      value: And doesn't Momo look a lot more... relaxed now?
+      value: Where did you say you learned how to do that again?
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: onCompleteDialog.sentences.Array.data[2].text
-      value: i mean, he's pretty pissed at the wizard guy right now
+      value: oh, here and there
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -379,64 +379,63 @@ PrefabInstance:
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: onCompleteDialog.sentences.Array.data[3].text
-      value: Ah to be young again~
+      value: Well it's "Hella Lit", as the kids would say
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: onCompleteDialog.sentences.Array.data[4].currentSpeaker
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: onCompleteDialog.sentences.Array.data[4].text
-      value: You know, when I was your age, I had already scaled the Madderhorn -
-        bare handed!
+      value: hell yeah it is
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: onCompleteDialog.sentences.Array.data[3].animationState
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: onCompleteDialog.sentences.Array.data[4].animationState
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: onCompleteDialog.sentences.Array.data[5].text
-      value: And back in those days, we didn't have any clothes either! Had to knit
-        them out of bamboo!
+      value: You should consider sticking around for a while longer
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: onCompleteDialog.sentences.Array.data[6].text
-      value: (you decide to sneak off while he's lost in thought)
+      value: The ducks in this quiet pond have really welcomed you, haven't they?
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: onCompleteDialog.sentences.Array.data[7].currentSpeaker
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
-        type: 3}
-      propertyPath: onCompleteDialog.sentences.Array.data[7].text
-      value: (maybe he'll give you some new work he's settled down)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
-        type: 3}
-      propertyPath: onCompleteDialog.sentences.Array.data[8].currentSpeaker
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[7].text
+      value: In any event, we'd all love to see more of you around. You'll always
+        have a place to come home to, around here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[8].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
       propertyPath: onCompleteDialog.sentences.Array.data[8].text
-      value: She looks a little lost, doesn't she?
+      value: thanks pops, that's rad
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: onCompleteDialog.sentences.Array.data[6].currentSpeaker
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -446,17 +445,17 @@ PrefabInstance:
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: onCompleteDialog.sentences.Array.data[5].animationState
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: onCompleteDialog.sentences.Array.data[6].animationState
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: onCompleteDialog.sentences.Array.data[7].animationState
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -473,6 +472,36 @@ PrefabInstance:
       propertyPath: initialDialogComplete
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[0].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[2].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: repeatDialog.sentences.Array.data[5].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[0].animationState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[1].animationState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: onCompleteDialog.sentences.Array.data[2].animationState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4947503781234921643, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: m_Sprite
@@ -482,7 +511,7 @@ PrefabInstance:
     - target: {fileID: 5458641787140192312, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: objectives.Array.size
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5458641787140192312, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -646,7 +675,7 @@ PrefabInstance:
     - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3792305
+      value: 2.35
       objectReference: {fileID: 0}
     - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -656,7 +685,7 @@ PrefabInstance:
     - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 158.73688
+      value: 162.89
       objectReference: {fileID: 0}
     - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -700,23 +729,265 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
+      propertyPath: conversations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[0].currentSpeaker
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[1].currentSpeaker
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[2].currentSpeaker
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[3].currentSpeaker
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[0].text
+      value: Now then... Let's see about getting a cup of coffee...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[1].animationState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[1].text
+      value: i really don't think that's a good idea right now
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[2].text
+      value: it's sunset my guy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[3].text
+      value: It's not THAT bad
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[4].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[4].text
+      value: how much coffee are you drinking anyways?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[5].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[5].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[5].text
+      value: Oh... maybe two or three...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[6].text
+      value: Per day?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[7].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[7].text
+      value: Per hour.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[8].text
+      value: oh
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[9].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[9].text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[10].text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[0].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[0].text
+      value: You know, I came to this island 40 years ago today!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[1].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[1].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[1].text
+      value: Just me and the Solflies! It was that day, that I became mayor~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[2].text
+      value: You elected yourself as mayor?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[3].animationState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[3].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[3].text
+      value: Yes, yes! The voter turnout was overwhelming! I was up to my knees in
+        balots!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[4].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[4].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[4].text
+      value: Granted, I spent the day counting balots while laying on the beach,
+        so my knees were at ground level...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[5].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[5].text
+      value: so, this festival wouldn't happen to have anything to do with your debut
+        as a mayor, would it?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[6].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[6].text
+      value: It started out that way, yes.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[7].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[7].text
+      value: But over time as more ducks came to the island, it became much more
+        than that.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[8].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[8].text
+      value: You see, a community isn't made up by its elected officials.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[9].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[9].text
+      value: It's made from the grit, culture, and character from every single duck
+        that calls it home.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[10].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[10].text
+      value: And so, we instead made it a celebration of what we've accomplished
+        in the past year
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[11].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[11].currentSpeaker
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[11].text
+      value: And more importantly, to celebrate all the great things we'll do next
+        year~
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce3b1e14535d7b142b27318f9b36d142, type: 3}

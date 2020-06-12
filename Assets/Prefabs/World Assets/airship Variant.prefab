@@ -181,7 +181,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: b33ba20f60a2b76438683dea7e49dd88,
         type: 3}
       propertyPath: m_Name
-      value: airship
+      value: airship Variant
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: b33ba20f60a2b76438683dea7e49dd88,
         type: 3}

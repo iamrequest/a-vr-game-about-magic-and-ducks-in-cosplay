@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3330657592794203798, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: postObjectiveRandomDialog
+      value: 
+      objectReference: {fileID: 3438353161222318026}
     - target: {fileID: 3330657592794204008, guid: 7c05adc1eac23254cb095aa5d68707e9,
         type: 3}
       propertyPath: m_Name
@@ -711,7 +716,12 @@ PrefabInstance:
     - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
         type: 3}
       propertyPath: conversations.Array.size
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.size
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
         type: 3}
@@ -916,5 +926,88 @@ PrefabInstance:
       propertyPath: conversations.Array.data[0].sentences.Array.data[14].animationState
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[0].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[0].text
+      value: so like, this is a cosplay festival, right?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[1].text
+      value: yep
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[2].text
+      value: Suzie, the one dressed up as a maid, it was her idea to do it all like
+        this
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[3].text
+      value: and so you're cosplaying as a wizard?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[4].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[4].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[4].text
+      value: oh, i'm not cosplaying today. too busy with my research to dress up~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[5].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[5].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[5].text
+      value: besides, isn't my regular outfit cool? made the hat myself~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[6].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[6].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[6].text
+      value: well uh, with Suzie's help that is
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c05adc1eac23254cb095aa5d68707e9, type: 3}
+--- !u!114 &3438353161222318026 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6602830178534245400, guid: 7c05adc1eac23254cb095aa5d68707e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 8365028302141531090}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22b3ee3b24a40b44bdc305bdc9fa3ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

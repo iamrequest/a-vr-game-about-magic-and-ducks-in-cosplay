@@ -66,85 +66,32 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   initialDialog:
-    sentences:
-    - animationState: 0
-      currentSpeaker: 4
-      text: FOR THE LAST TIME MAYOR, YOU'LL HAVE TO SORT YOUR COFFEE SITUATION OUT
-        YOURSELF
-    - animationState: 2
-      currentSpeaker: 0
-      text: nani
-    - animationState: 0
-      currentSpeaker: 4
-      text: ah sorry hun, i thought you were someone else
-    - animationState: 0
-      currentSpeaker: 4
-      text: look, i'd love to serve you a slice of pie and chat, but the festival
-        is today, and i have a lot of food to prepare
-    - animationState: 0
-      currentSpeaker: 0
-      text: need a hand, my guy?
-    - animationState: 0
-      currentSpeaker: 4
-      text: nonono, i've got everything under control... now where did i put those
-        darn matches
-    - animationState: 0
-      currentSpeaker: 0
-      text: matches?
-    - animationState: 0
-      currentSpeaker: 4
-      text: mhm, i've got to put this soup on, but a gust of wind blew out my fire
-    - animationState: 0
-      currentSpeaker: 0
-      text: maybe you should invest in some doors for your houses?
-    - animationState: 0
-      currentSpeaker: 4
-      text: maybe you should invest in some capital letters for your sentences, hun~
-    - animationState: 0
-      currentSpeaker: 4
-      text: now shoo, i have a lot of cooking to do
+    sentences: []
   repeatDialog:
     sentences:
     - animationState: 0
       currentSpeaker: 4
-      text: (now where did i leave those matches... )
-    - animationState: 0
-      currentSpeaker: 0
-      text: need a hand with the fireplace?
+      text: It's time to light the bonfire, Hun
     - animationState: 0
       currentSpeaker: 4
-      text: 'what? nonono, i''ve got this under control. '
-    - animationState: 0
-      currentSpeaker: 4
-      text: (ugh, this brocolli soup's gonna be a salmonella soup boi if i can't
-        get that fire lit...)
+      text: Be quick about it, my pot is getting cold~
   onCompleteDialog:
     sentences:
     - animationState: 0
       currentSpeaker: 4
-      text: oh, the fire's on! did you do that, hun?
+      text: Oh that's a lovely fire right there~
+    - animationState: 0
+      currentSpeaker: 4
+      text: You've really done these ducks a fine service
     - animationState: 0
       currentSpeaker: 0
-      text: ye, it's lit af
+      text: just doing my part, my guy
     - animationState: 0
       currentSpeaker: 4
-      text: uh, yeah, sure
+      text: Well, we appreciate the help. And you.
     - animationState: 0
       currentSpeaker: 4
-      text: well in any event, i appreciate your help~
-    - animationState: 0
-      currentSpeaker: 4
-      text: i'll be sure to serve you up a bowl when it's ready
-    - animationState: 0
-      currentSpeaker: 4
-      text: oh, i suppose if you have some extra time, come swing by
-    - animationState: 0
-      currentSpeaker: 4
-      text: it's hard for me to admit sometimes, but i could use an extra hand in
-        the kitchen right now
-    - animationState: 0
-      currentSpeaker: 0
-      text: kkbb, will do
+      text: Swing by the cafe tomorrow, first cup of coffee's on me~
 --- !u!1001 &5723325521526980193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -166,7 +113,7 @@ PrefabInstance:
     - target: {fileID: 5458641787140192312, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: objectives.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5458641787140192312, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -330,17 +277,17 @@ PrefabInstance:
     - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 38.441147
+      value: -2.33
       objectReference: {fileID: 0}
     - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 43.85779
+      value: 41.52
       objectReference: {fileID: 0}
     - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 131.80255
+      value: 171.75
       objectReference: {fileID: 0}
     - target: {fileID: 5812084952240866137, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -385,22 +332,28 @@ PrefabInstance:
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.size
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.size
-      value: 18
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.size
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[8].text
-      value: so it was you that brought all this weeb shit into town?
+      value: Oh it isn't that dangerous. I'm sure the others won't agree with me
+        though
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -410,22 +363,22 @@ PrefabInstance:
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[0].currentSpeaker
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[0].text
-      value: so why is everyone dressed up like this?
+      value: Thinking of going for a swim, hun?
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[1].animationState
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[1].text
-      value: oh, you don't like it?
+      value: nah, i'm not much for heights
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -435,7 +388,7 @@ PrefabInstance:
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[2].text
-      value: i mean, i didn't say that
+      value: especially if i can't see the ground
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -445,32 +398,33 @@ PrefabInstance:
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[3].text
-      value: hehe
+      value: Bit strange hearing that from you, your ship is more of a dingy, huh?
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[4].currentSpeaker
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
-        type: 3}
-      propertyPath: conversations.Array.data[0].sentences.Array.data[4].text
-      value: well, when i came to this island, i thought it was lacking... something
-      objectReference: {fileID: 0}
-    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
-        type: 3}
-      propertyPath: conversations.Array.data[0].sentences.Array.data[5].animationState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[4].text
+      value: I'm sure you're looking at the ground plenty when you're on the metaphorical
+        road
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[5].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[5].currentSpeaker
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[5].text
-      value: i mean, for starters, there's nothing to do here
+      value: i try not to look. helps to keep my eyes on the horizon.
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -480,27 +434,28 @@ PrefabInstance:
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[6].text
-      value: there wasn't even a restaurant here before i setup the cafe
+      value: That'll do~
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[7].animationState
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[7].currentSpeaker
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[7].text
-      value: they didn't even know what anime was
+      value: you mentioned swimming? isn't that kind dangerous? there's like a void
+        down there
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[9].animationState
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -510,22 +465,23 @@ PrefabInstance:
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[9].text
-      value: don't talk shit about weeb shit
+      value: The nice thing about swimming out into the void, is that once you're
+        all set to go home, you just sink to the bottom~
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[10].animationState
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[10].text
-      value: wow jeez ok jeez
+      value: And then, poof~
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[11].animationState
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -535,7 +491,7 @@ PrefabInstance:
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[0].sentences.Array.data[11].text
-      value: anyways
+      value: you're back at home~
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -586,7 +542,7 @@ PrefabInstance:
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.data[0].text
-      value: so you run the cafe here?
+      value: so what's the story about the magician over there?
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -596,7 +552,7 @@ PrefabInstance:
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.data[1].text
-      value: that's right, hun~
+      value: Oh Maggie? She's just a doll, isn't she?
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -606,40 +562,40 @@ PrefabInstance:
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.data[2].text
-      value: buisness is pretty good, on account of there being no other options
-        on the island
+      value: Well when I suggested the idea of turning this festival into an anime
+        convention, she jumped at the idea
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.data[3].text
-      value: wouldn't you get better buisness setting up shop like... somewhere where
-        there's more than 5 ducks in town?
+      value: And when I started talking about magical girls, you know, like Sailor
+        Move... She jumped at the idea.
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.data[4].currentSpeaker
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.data[4].text
-      value: i suppose that makes 6 counting you - although you're not a duck, are
-        you?
+      value: '"a magical girl~ that''s perfect~ i don''t really get the sailor part,
+        but i LOVE it~"'
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.data[5].animationState
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.data[5].text
-      value: idk, no one drew me or anything, all i have are these hands
+      value: ah, so it was a misunderstanding then?
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.data[6].animationState
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -649,7 +605,7 @@ PrefabInstance:
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.data[6].text
-      value: right...
+      value: That's right, hun. Didn't have the heart to tell her otherwise
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -659,24 +615,22 @@ PrefabInstance:
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.data[7].text
-      value: anyways, it's true that we only have a handful of residents, but i've
-        come to take a liking to this place
+      value: She fell in love with the idea of being a magician
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.data[8].currentSpeaker
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.data[8].text
-      value: the sunsets are just gorgeous, and the beach is really nice this time
-        of year
+      value: i suppose it's the spirit of it all that matters, huh?
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.data[9].animationState
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -686,7 +640,7 @@ PrefabInstance:
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.data[9].text
-      value: even if the beach is just a floating disk suspended on top of the void
+      value: That's the ticket, hun~
       objectReference: {fileID: 0}
     - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
         type: 3}
@@ -778,6 +732,91 @@ PrefabInstance:
         type: 3}
       propertyPath: conversations.Array.data[1].sentences.Array.data[17].text
       value: i do say so
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[1].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[2].animationState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[8].currentSpeaker
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[0].sentences.Array.data[10].currentSpeaker
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[3].currentSpeaker
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[1].sentences.Array.data[7].animationState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[0].text
+      value: talk to me
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[1].currentSpeaker
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[1].text
+      value: What do you wanna talk about, hun?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[2].text
+      value: uh, i didn't think this far ahead
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[3].text
+      value: i figured that all NPCs would just have something they'd wanna say
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[4].currentSpeaker
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[4].text
+      value: Uh, ok
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[5].text
+      value: uh...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[6].text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[7].currentSpeaker
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176698187730728162, guid: ce3b1e14535d7b142b27318f9b36d142,
+        type: 3}
+      propertyPath: conversations.Array.data[2].sentences.Array.data[7].text
+      value: ...
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4672376790728165773, guid: ce3b1e14535d7b142b27318f9b36d142, type: 3}

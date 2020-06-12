@@ -938,136 +938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogManager: {fileID: 8648869805013979159}
-  conversations:
-  - sentences:
-    - animationState: 0
-      currentSpeaker: 2
-      text: PICK A CARD.
-    - animationState: 1
-      currentSpeaker: 0
-      text: what
-    - animationState: 1
-      currentSpeaker: 2
-      text: PICK.
-    - animationState: 1
-      currentSpeaker: 2
-      text: A.
-    - animationState: 1
-      currentSpeaker: 2
-      text: CARD.
-    - animationState: 0
-      currentSpeaker: 0
-      text: oh, uh, ok sure
-    - animationState: 0
-      currentSpeaker: 0
-      text: (...)
-    - animationState: 0
-      currentSpeaker: 2
-      text: (not that one)
-    - animationState: 0
-      currentSpeaker: 0
-      text: (ok)
-    - animationState: 0
-      currentSpeaker: 2
-      text: '*ahem*'
-    - animationState: 0
-      currentSpeaker: 2
-      text: NOW, PREPARE TO BE ~ d a z z l e d~
-    - animationState: 2
-      currentSpeaker: 2
-      text: Was *THIS* your- FUCK
-    - animationState: 2
-      currentSpeaker: 0
-      text: (the deck of cards slipped out of her hands. the cards went everywhere)
-    - animationState: 3
-      currentSpeaker: 0
-      text: (upon closer inspection, every card in the deck was a 2 of hearts)
-  - sentences:
-    - animationState: 0
-      currentSpeaker: 0
-      text: so like, tell me about the wizard guy
-    - animationState: 0
-      currentSpeaker: 2
-      text: 'oh, ron? '
-    - animationState: 2
-      currentSpeaker: 0
-      text: ron?
-    - animationState: 2
-      currentSpeaker: 2
-      text: oh
-    - animationState: 0
-      currentSpeaker: 2
-      text: uh
-    - animationState: 3
-      currentSpeaker: 2
-      text: please don't tell him i told you his name
-    - animationState: 0
-      currentSpeaker: 2
-      text: he gets weird about it
-    - animationState: 0
-      currentSpeaker: 0
-      text: oh?
-    - animationState: 0
-      currentSpeaker: 2
-      text: mhm. he wants me to call him "Gan, the Grand Elf". i don't know why.
-        he's a duck, not an elf
-    - animationState: 0
-      currentSpeaker: 2
-      text: in fact, i've never even met an elf before, have you?
-    - animationState: 0
-      currentSpeaker: 0
-      text: can't say i have
-    - animationState: 0
-      currentSpeaker: 2
-      text: well anyways, ron and i do research on the island
-    - animationState: 0
-      currentSpeaker: 2
-      text: although lately he's been on this whole wizard trip, so we've been studying
-        magic these days
-    - animationState: 3
-      currentSpeaker: 2
-      text: we uh, haven't made any progress
-    - animationState: 0
-      currentSpeaker: 2
-      text: but hey, failing's the first step towards succeeding, right?
-  - sentences:
-    - animationState: 0
-      currentSpeaker: 0
-      text: what's up with this island?
-    - animationState: 0
-      currentSpeaker: 2
-      text: what do you mean?
-    - animationState: 0
-      currentSpeaker: 0
-      text: well I mean... it's all flat and shit
-    - animationState: 0
-      currentSpeaker: 2
-      text: the wizard and i are in the middle of researching that, actually
-    - animationState: 0
-      currentSpeaker: 2
-      text: i mean, if it's flat, how does gravity work? shouldn't we be pulled towards
-        a single point, rather than just "down"?
-    - animationState: 0
-      currentSpeaker: 2
-      text: and i mean, The Void over there by the cliff, right?
-    - animationState: 2
-      currentSpeaker: 2
-      text: if you fall off the edge of the world, you just wake up back on the island
-    - animationState: 3
-      currentSpeaker: 2
-      text: not that i've ever been brave enough to try it or anything
-    - animationState: 0
-      currentSpeaker: 0
-      text: it's like we're standing on the edge of the world or something
-    - animationState: 0
-      currentSpeaker: 2
-      text: i know right? no where else to go
-    - animationState: 0
-      currentSpeaker: 2
-      text: that said, it's not like i'd wanna be anywhere else
-    - animationState: 3
-      currentSpeaker: 2
-      text: this is home, ya know?
+  conversations: []
 --- !u!1 &5283720655626209515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,7 +1063,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7353840395194107032}
-  m_LocalRotation: {x: -0, y: 0.9238794, z: -0, w: 0.38268375}
+  m_LocalRotation: {x: 0, y: 0.92387956, z: 0, w: 0.38268343}
   m_LocalPosition: {x: 16.785765, y: 42.62179, z: 145.42651}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1283,7 +1154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogManager: {fileID: 8648869805013979159}
   objectives:
-  - {fileID: 2183964771319596927, guid: 3bd34daf854f6de429d031b244c03db5, type: 3}
+  - {fileID: 5314817554052533253}
   activeObjectiveIndex: 0
   postObjectiveRandomDialog: {fileID: 8648869805013979158}
 --- !u!1 &7677740015139269245

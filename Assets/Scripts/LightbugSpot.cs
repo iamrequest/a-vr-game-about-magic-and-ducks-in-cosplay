@@ -23,7 +23,11 @@ public class LightbugSpot : MonoBehaviour {
         if (isSource) {
             lightBugs.Play();
         } else {
-            lightBugs.Stop();
+            if (isLightLit) {
+                lightBugs.Play();
+            } else {
+                lightBugs.Stop();
+            }
 
             if (lightSource != null) {
                 lightSource.enabled = isLightLit;

@@ -59,50 +59,28 @@ MonoBehaviour:
   repeatDialog:
     sentences:
     - animationState: 0
-      currentSpeaker: 0
-      text: so i see that beach ball over on that island
-    - animationState: 0
       currentSpeaker: 3
-      text: ye
+      text: bruh light that bonfire already, i wanna eat
     - animationState: 1
       currentSpeaker: 0
-      text: why don't you just get the wizard to throw you over there or something
-    - animationState: 1
+      text: u can eat this butt ayy lmao
+    - animationState: 0
       currentSpeaker: 3
-      text: bruh
-    - animationState: 0
-      currentSpeaker: 0
-      text: it was just a suggestion
-    - animationState: 0
-      currentSpeaker: 0
-      text: but anyways right, you want me to get your ball, and bring it to you
-    - animationState: 0
-      currentSpeaker: 0
-      text: can do bb
+      text: yar yar days
   onCompleteDialog:
     sentences:
-    - animationState: 2
+    - animationState: 0
       currentSpeaker: 3
-      text: wait wtf how did you grab that
-    - animationState: 2
-      currentSpeaker: 3
-      text: bruh you didn't even touch it
-    - animationState: 3
-      currentSpeaker: 3
-      text: you have to teach me that one someday
-    - animationState: 1
-      currentSpeaker: 3
-      text: are you an enemy stand user or something
+      text: took ya long enough
     - animationState: 0
       currentSpeaker: 0
-      text: nah bb i just do wizard shit sometimes
+      text: i wanted to make sure it was done just right
+    - animationState: 0
+      currentSpeaker: 0
+      text: i am a connosieur of the arcane arts after all
     - animationState: 0
       currentSpeaker: 3
-      text: 'well whatever it is, i appreciate u '
-    - animationState: 0
-      currentSpeaker: 3
-      text: i still need to get my umbrella back somehow, come chat with me when
-        you have time
+      text: god you sound just like that damn wizard
 --- !u!114 &8461258811998730648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,121 +146,31 @@ MonoBehaviour:
   conversations:
   - sentences:
     - animationState: 0
-      currentSpeaker: 0
-      text: so what's with the outfit?
-    - animationState: 1
       currentSpeaker: 3
-      text: you don't know about Momo's Strange Journey? it's only the FINEST work
-        of art in our generation
-    - animationState: 2
-      currentSpeaker: 0
-      text: i mean, i've heard of it in passing
-    - animationState: 1
-      currentSpeaker: 3
-      text: bruh
-    - animationState: 1
-      currentSpeaker: 3
-      text: after the festival, you and i are gonna sit down and watch all 5 parts.
-        no exceptions
+      text: so you found the umbrella up by that wizard's house?
     - animationState: 0
       currentSpeaker: 0
-      text: 5 parts?
+      text: yep
     - animationState: 0
       currentSpeaker: 3
-      text: yep. gotta watch all 5 to get the full picture.
+      text: wonder how it got up there. the more i think about it, the less i wanna
+        know
     - animationState: 0
       currentSpeaker: 3
-      text: my favourite part's the 4'th one. it's set in the swingin' 70's, in the
-        small American town of Moorio, following a spy named Moe Mojo
+      text: i think i'm over it
     - animationState: 0
-      currentSpeaker: 3
-      text: hence the name Momo
-    - animationState: 3
       currentSpeaker: 0
-      text: you don't look like much of a swinger right now to me
+      text: you're not mad?
     - animationState: 0
       currentSpeaker: 3
-      text: oh, that's because all of the protagonists are named Momo.
-    - animationState: 0
-      currentSpeaker: 3
-      text: right now i'm dressed as Motaro Mujo, from part 3.
+      text: nah. he means well
     - animationState: 3
       currentSpeaker: 3
-      text: he's who i aspire to be one day
-  - sentences:
-    - animationState: 0
-      currentSpeaker: 0
-      text: so what's with the anime vibes?
-    - animationState: 0
-      currentSpeaker: 3
-      text: well when Suzie came to the island, she brought all this weeb shit with
-        her
-    - animationState: 0
-      currentSpeaker: 3
-      text: brought all kinds of stuff with her, like merch, DVDs, manga...
-    - animationState: 0
-      currentSpeaker: 3
-      text: ... and she suggested we turn the summer festival into an anime convention
-    - animationState: 2
-      currentSpeaker: 3
-      text: although, i think the wizard who lives up on the hill takes it a lot
-        more seriously than the rest of us
-    - animationState: 0
-      currentSpeaker: 0
-      text: you think he's legit?
-    - animationState: 0
-      currentSpeaker: 3
-      text: well i mean...
-    - animationState: 2
-      currentSpeaker: 3
-      text: he doesn't take his wizard shit off
-    - animationState: 0
-      currentSpeaker: 3
-      text: i think he's trying to be an ACTUAL wizard...
-    - animationState: 0
-      currentSpeaker: 3
-      text: but i suppose after meeting you, that doesn't seem like it's all that
-        unobtainable, does it?
-  - sentences:
-    - animationState: 0
-      currentSpeaker: 0
-      text: what's the word on the mayor?
-    - animationState: 0
-      currentSpeaker: 3
-      text: oh, Tort? he's a cool guy
-    - animationState: 0
-      currentSpeaker: 3
-      text: i tried to get him to watch Momo with me, but he kept complaining about
-        it
+      text: besides, i think he's kinda intimidated by me. can't say why
     - animationState: 1
-      currentSpeaker: 5
-      text: '"why is everyone so muscular?"\n"which one is Momo again?"'
-    - animationState: 3
       currentSpeaker: 3
-      text: they're all Momo, gramps...
-    - animationState: 0
-      currentSpeaker: 0
-      text: maybe he's just not built for Momo
-    - animationState: 0
-      currentSpeaker: 3
-      text: guess so.
-    - animationState: 0
-      currentSpeaker: 3
-      text: these days he spends a lot of days at the cafe.
-    - animationState: 0
-      currentSpeaker: 3
-      text: says the sound of the ocean brings him back to the good old days
-    - animationState: 0
-      currentSpeaker: 3
-      text: not like i can blame him. he's been on the island a lot longer than any
-        of us
-    - animationState: 0
-      currentSpeaker: 3
-      text: he's a good guy once you get to chatting with him, just uh, make sure
-        you have an escape route
-    - animationState: 0
-      currentSpeaker: 3
-      text: he tends to talk a lot
+      text: and if he's hiding from me, that means i won't have anyone to watch Momo's
+        Strange Journey with
 --- !u!1001 &6462693333546647575
 PrefabInstance:
   m_ObjectHideFlags: 0
