@@ -12424,7 +12424,7 @@ MonoBehaviour:
   spellPlane: {fileID: 2189336209341625370}
   lineRenderer: {fileID: 7920551842548053878}
   createSigilAction:
-    actionPath: /actions/Main/in/DialogInteract
+    actionPath: /actions/Main/in/ChannelSpell
     needsReinit: 0
   pointAddDelay: 0.05
   maxNumPoints: 100
