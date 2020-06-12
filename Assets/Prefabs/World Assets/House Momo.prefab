@@ -1,0 +1,629 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8111352639774480270
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5182004803597127216, guid: 806c28b6d0ca7714bb497f89ae936904,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182004803597127216, guid: 806c28b6d0ca7714bb497f89ae936904,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 42.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182004803597127216, guid: 806c28b6d0ca7714bb497f89ae936904,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 201
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182004803597127216, guid: 806c28b6d0ca7714bb497f89ae936904,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182004803597127216, guid: 806c28b6d0ca7714bb497f89ae936904,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.87790924
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182004803597127216, guid: 806c28b6d0ca7714bb497f89ae936904,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182004803597127216, guid: 806c28b6d0ca7714bb497f89ae936904,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.478827
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182004803597127216, guid: 806c28b6d0ca7714bb497f89ae936904,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182004803597127216, guid: 806c28b6d0ca7714bb497f89ae936904,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182004803597127216, guid: 806c28b6d0ca7714bb497f89ae936904,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -122.782005
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182004803597127216, guid: 806c28b6d0ca7714bb497f89ae936904,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6430272666788520795, guid: 806c28b6d0ca7714bb497f89ae936904,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.677
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718448479563232862, guid: 806c28b6d0ca7714bb497f89ae936904,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192456951927454755, guid: 806c28b6d0ca7714bb497f89ae936904,
+        type: 3}
+      propertyPath: m_Name
+      value: momo's house
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 806c28b6d0ca7714bb497f89ae936904, type: 3}
+--- !u!4 &3997927262571272638 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5182004803597127216, guid: 806c28b6d0ca7714bb497f89ae936904,
+    type: 3}
+  m_PrefabInstance: {fileID: 8111352639774480270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8111352640046501800
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3997927262571272638}
+    m_Modifications:
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_text
+      value: 'momo''s strange journey
+
+
+        yellow gust'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.153
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3278542
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.415
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.017166676
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7068984
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7068984
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.017166676
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 182.782
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.19647005
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.19647004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622418426360733712, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_Name
+      value: closedBook Variant (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+--- !u!1001 &8111352640051668504
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3997927262571272638}
+    m_Modifications:
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_text
+      value: 'momo''s strange journey
+
+
+        starduck crusaders'
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0604277
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3278542
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.60166574
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.017166676
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7068984
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7068984
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.017166676
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 182.782
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.19647005
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.19647004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622418426360733712, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_Name
+      value: closedBook Variant (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+--- !u!1001 &8111352640153883301
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3997927262571272638}
+    m_Modifications:
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_text
+      value: 'momo''s strange journey
+
+
+        fighting temperance'
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0169379
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3278542
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.1228461
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.07524876
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7030915
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7030915
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.07524876
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 45.000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.19647005
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.19647004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622418426360733712, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_Name
+      value: closedBook Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+--- !u!1001 &8111352640627120033
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3997927262571272638}
+    m_Modifications:
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_text
+      value: 'channeling the occult
+
+
+        how to summon your personal spirit'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.505
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.217
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.4167128
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.57127094
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.57127094
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.4167128
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 107.782005
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.19647005
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.19647004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622418426360733712, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_Name
+      value: closedBook Variant (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+--- !u!1001 &8111352641454638153
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3997927262571272638}
+    m_Modifications:
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_text
+      value: 'momo''s strange journey
+
+
+        precious gems are not destroyable'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335749155, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.1505702
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3278542
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.15833616
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.07524874
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.70309144
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.70309144
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.07524874
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 167.78201
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.19647005
+      objectReference: {fileID: 0}
+    - target: {fileID: 296731272390726147, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.19647004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622418426360733712, guid: 980be6268af12dc49b4cf479018d4d5d,
+        type: 3}
+      propertyPath: m_Name
+      value: closedBook Variant (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 980be6268af12dc49b4cf479018d4d5d, type: 3}
