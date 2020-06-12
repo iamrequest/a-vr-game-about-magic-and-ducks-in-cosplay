@@ -1068,7 +1068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sigil: {fileID: 6752151868080923985}
   lightSphere: {fileID: 2482932076412369735}
-  followSpeed: 5
+  followSpeed: 10
   offset: {x: -0.12, y: -0.05, z: -0.06}
   lightBugs: {fileID: 5302974989073433565}
 --- !u!95 &2134492896528023333
@@ -11691,8 +11691,8 @@ MonoBehaviour:
     needsReinit: 0
   particles: {fileID: 3218440605525452764}
   handOffset: {x: -0.12, y: -0.05, z: -0.06}
-  particleSystemFollowSpeed: 5
-  objectFollowSpeed: 3
+  particleSystemFollowSpeed: 10
+  objectFollowSpeed: 5
   raycastDistance: 15
   layermask:
     serializedVersion: 2
@@ -11795,7 +11795,7 @@ MonoBehaviour:
   fireballPrefab: {fileID: 1575695104309495767, guid: 4b44d9d5bb2502a4b934e4a74e85b2ce,
     type: 3}
   projectileLifespan: 3
-  fireballFollowSpeed: 5
+  fireballFollowSpeed: 10
   channelDelay: 1
   handPositionHistoryCount: 5
   throwForceMultiplier: 50
