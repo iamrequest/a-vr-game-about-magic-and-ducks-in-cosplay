@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1335749154}
   - component: {fileID: 1335749156}
   - component: {fileID: 1335749155}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 1615749459}
   - component: {fileID: 1615749458}
   - component: {fileID: 1615749457}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,6 +270,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &387665134411797773
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3622418426360733712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6783674, y: 2.0000005, z: 0.3137879}
+  m_Center: {x: -0.33918378, y: 1.1981258e-14, z: -0.84310627}
 --- !u!114 &1604705218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,7 +383,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 06affc4fba53bce41bd40609f880b60b,
         type: 3}
       propertyPath: m_Name
-      value: closedBook
+      value: closedBook Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 06affc4fba53bce41bd40609f880b60b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06affc4fba53bce41bd40609f880b60b, type: 3}
