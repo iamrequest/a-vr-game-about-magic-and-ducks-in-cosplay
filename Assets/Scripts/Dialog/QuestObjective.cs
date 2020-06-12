@@ -19,7 +19,7 @@ public class QuestObjective : MonoBehaviour {
     public Conversation onCompleteDialog;
 
     protected virtual void Start() {
-        isComplete = false;
+        //isComplete = false;
         //initialDialogComplete = false;
         finalDialogComplete = false;
     }

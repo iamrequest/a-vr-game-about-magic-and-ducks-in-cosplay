@@ -1164,6 +1164,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: herb2 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3071310227864956784, guid: b5a9a0d504d4c3e42b61061b5074d947,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5a9a0d504d4c3e42b61061b5074d947, type: 3}
 --- !u!4 &319192167 stripped
@@ -1539,6 +1544,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: herb2 Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3071310227864956784, guid: b5a9a0d504d4c3e42b61061b5074d947,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5a9a0d504d4c3e42b61061b5074d947, type: 3}
@@ -7878,7 +7888,7 @@ GameObject:
   - component: {fileID: 282225843029226096}
   - component: {fileID: 3235370768012293468}
   - component: {fileID: 6992390239272419636}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8730,7 +8740,7 @@ GameObject:
   - component: {fileID: 4807959881776926499}
   - component: {fileID: 4807959881776926498}
   - component: {fileID: 4807959881776926497}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Pot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9062,7 +9072,7 @@ PrefabInstance:
     - target: {fileID: 106505108178689586, guid: 0722f9cd30090bc46adcceee9a5c8f22,
         type: 3}
       propertyPath: conversations.Array.data[2].sentences.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 106505108178689586, guid: 0722f9cd30090bc46adcceee9a5c8f22,
         type: 3}
@@ -9082,7 +9092,8 @@ PrefabInstance:
     - target: {fileID: 106505108178689586, guid: 0722f9cd30090bc46adcceee9a5c8f22,
         type: 3}
       propertyPath: conversations.Array.data[2].sentences.Array.data[1].text
-      value: 
+      value: Why don't you take some time and chat with the rest of the ducks? I'm
+        sure they all have new things to chat about~
       objectReference: {fileID: 0}
     - target: {fileID: 318286532342032776, guid: 0722f9cd30090bc46adcceee9a5c8f22,
         type: 3}

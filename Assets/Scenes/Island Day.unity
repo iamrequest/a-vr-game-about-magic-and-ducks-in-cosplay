@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 79535af90d6007440840a09e83e732a8,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1183,6 +1183,18 @@ RectTransform:
   m_AnchoredPosition: {x: 26.66, y: 30.86}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2003952609 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8938919553888881191, guid: 3bd34daf854f6de429d031b244c03db5,
+    type: 3}
+  m_PrefabInstance: {fileID: 8938919553324443872}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5a6a70209b6e6345bfe18b02314a54e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2937028562245552147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1345,8 +1357,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4385087764027160414, guid: 3bd34daf854f6de429d031b244c03db5,
         type: 3}
+      propertyPath: onObjectiveStart.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385087764027160414, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
       propertyPath: initialDialog.sentences.Array.data[13].currentSpeaker
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385087764027160414, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: onObjectiveStart.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385087764027160414, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: onObjectiveStart.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385087764027160414, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: onObjectiveStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2003952609}
+    - target: {fileID: 4385087764027160414, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: onObjectiveStart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385087764027160414, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: onObjectiveStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8938919552898127552, guid: 3bd34daf854f6de429d031b244c03db5,
         type: 3}
@@ -1407,6 +1449,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938919553888881191, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: levelName
+      value: Island Night
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938919553888881191, guid: 3bd34daf854f6de429d031b244c03db5,
+        type: 3}
+      propertyPath: autoTriggerOnEnable
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8938919554030862702, guid: 3bd34daf854f6de429d031b244c03db5,
         type: 3}
