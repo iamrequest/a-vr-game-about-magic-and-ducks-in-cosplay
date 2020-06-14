@@ -7,6 +7,8 @@ This is my submission to the "I Can't Draw But Want To Make A Game (Again)" game
 I'm once again posting my spaghetti code, there's some neat stuff in here. [You can find the game here (itch.io)](
 https://request.itch.io/a-vr-game-about-magic-and-ducks-in-cosplay), it's free to play, and runs on any SteamVR capable headset (PCVR).
 
+You're free to do whatever with this code, but if you do use it, it'd be real cool of you to link back to this page or the itch.io page (or both). Thanks o/
+
 ## About
 
 In this game, you play as a magician who's come to an island inhabitted by cosplaying ducks. You'll have to draw magic sigils, and cast magic in order to help them prepare for the upcoming festival!
